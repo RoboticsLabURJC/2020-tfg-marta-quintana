@@ -16,9 +16,9 @@ minimal_mistakes_skin    : "air"
 
 # Site Settings
 #locale                   : "en-US"
-title                    : "Robotics Lab URJC"
+title                    : "Marta Quintana TFG Blog "
 title_separator          : "-"
-subtitle                 : My Work Blog
+subtitle                 : TFG title
 name                     : "JdeRobot"
 description              : "TFG TITLE"
 url                      : http://jderobot.github.io/2019-tfm-ignacio-arranz
