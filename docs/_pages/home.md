@@ -8,7 +8,7 @@ header:
     #- label: "<i class='fas fa-download'></i> Install now"
     #  url: "/installation/"
 excerpt: 
-  TFG
+  Marta Quintana
 feature_row:
   - image_path: /assets/images/cover/logbook.jpg
     alt: "Logbook"
