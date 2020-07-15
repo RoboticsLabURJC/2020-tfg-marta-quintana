@@ -38,13 +38,18 @@ youTube_id: ID7qaEcIu4k
 
 {% include feature_row %}
 
-Hello, everybody.
+Hello, everybody! Welcome to my TFG Page! 
 
-I'm Nacho Arranz and this is the place where we will be putting the advances that are made on the work of end of master.
+I'm Marta Quintana, 
+here I am going to put all the advanges of my end of degree project, and everything I have learned in this process.
 
-The objective of the work is the learning of the controllers of an autonomous vehicle so that it is able to complete the return to a circuit through learning by reinforcement.
+Regards!
 
-The tutors of the project are:
+TFG title: 
+
+
+TFG Tutor:
 
 - [Jose Maria Cañas](https://gsyc.urjc.es/jmplaza/)
-- [Eduardo Perdices](https://gsyc.urjc.es/~eperdices/)
+
+
