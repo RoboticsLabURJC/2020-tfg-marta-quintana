@@ -8,7 +8,7 @@ header:
     #- label: "<i class='fas fa-download'></i> Install now"
     #  url: "/installation/"
 excerpt: 
-  Deep Reinforcement Learning for autonomous car
+  TFG
 feature_row:
   - image_path: /assets/images/cover/logbook.jpg
     alt: "Logbook"
