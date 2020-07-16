@@ -10,7 +10,7 @@ header:
 excerpt: 
   Marta Quintana
 feature_row:
-  - image_path: /assets/images/cover/logbook.jpg
+  - image_path: /assets/images/cover/logbook.png
     alt: "Logbook"
     title: "Logbook"
     excerpt: "Goals, progress, problems and solutions achieved during development"
