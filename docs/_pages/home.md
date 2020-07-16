@@ -2,7 +2,7 @@
 layout: splash
 permalink: /
 header:
-  overlay_color: "#5e616c"
+  overlay_color: "#AED6F1"
   overlay_image: /assets/images/cover/peloto_texto_urjc.png
   actions:
     #- label: "<i class='fas fa-download'></i> Install now"
@@ -10,7 +10,7 @@ header:
 excerpt: 
   Marta Quintana
 feature_row:
-  - image_path: /assets/images/cover/logbook.jpg
+  - image_path: /assets/images/cover/logbook.png
     alt: "Logbook"
     title: "Logbook"
     excerpt: "Goals, progress, problems and solutions achieved during development"
