@@ -26,9 +26,9 @@ feature_row:
     btn_class: "btn--primary"
     btn_label: "Learn more"
 
-  - image_path: /assets/images/cover/about.jpg
+  - image_path: /assets/images/cover/about.png
     alt: "About"
-    title: "About"
+    title: "References"
     excerpt: "More information about the project. References used, guides, articles, etc."
     url: "/about/"
     btn_class: "btn--primary"
