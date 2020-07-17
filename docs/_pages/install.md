@@ -11,5 +11,5 @@ sidebar:
 
 Run Django 2.2.10 Mac Steps:
 
-source env_myclub/bin/activate
-python3 manage.py runserver
+- source env_myclub/bin/activate
+- python3 manage.py runserver
