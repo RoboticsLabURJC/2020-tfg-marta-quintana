@@ -41,7 +41,7 @@ youTube_id: ID7qaEcIu4k
 Hello, everybody! Welcome to my TFG Page! 
 
 I'm Marta Quintana, 
-here I am going to put all the advanges of my end of degree project, and everything I have learned in this process.
+here I am going to put all the advances of my end of degree project, and everything I have learned in this process.
 
 Regards!
 
