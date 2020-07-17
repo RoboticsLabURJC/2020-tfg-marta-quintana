@@ -2,7 +2,7 @@
 layout: splash
 permalink: /
 header:
-  overlay_color: "#AED6F1"
+  overlay_color: "#F7DC6F"
   overlay_image: /assets/images/cover/peloto_texto_urjc.png
   actions:
     #- label: "<i class='fas fa-download'></i> Install now"
