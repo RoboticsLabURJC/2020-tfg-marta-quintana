@@ -13,12 +13,13 @@ classes: wide
 
 ## REFERENCES
 
-  [1] https://aframe.io/docs/1.0.0/introduction/
+  [1] https://aframe.io/docs/1.0.0/introduction/ 
   [2] https://docs.djangoproject.com/en/2.2/releases/2.2/
 
 
 *Tutor's links*
-Links for first steps landing on the tfg:
+
+## Links for first steps landing on the tfg:
   [1] https://kibotics.org/
   [2] https://www.youtube.com/channel/UCVH_ODFODyRUidhtR0IIZnw/videos
   [3] https://gsyc.urjc.es/jmplaza/students/tfg-websim-alvaro_paniagua-2019.pdf
