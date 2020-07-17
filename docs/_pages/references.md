@@ -17,9 +17,10 @@ classes: wide
   - [2] https://docs.djangoproject.com/en/2.2/releases/2.2/
 
 
-*Tutor's links*
+
 
 ## Links for first steps landing on the tfg:
+*Tutor's links*
   - [1] https://kibotics.org/
   - [2] https://www.youtube.com/channel/UCVH_ODFODyRUidhtR0IIZnw/videos
   - [3] https://gsyc.urjc.es/jmplaza/students/tfg-websim-alvaro_paniagua-2019.pdf
