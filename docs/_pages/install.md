@@ -9,6 +9,8 @@ sidebar:
 
 ## Installation
 
+- https://github.com/myTeachingURJC/2019-2020-LTAW/wiki/L4:-Practica-2_1
+
 Run Django 2.2.10 Mac Steps:
 
 - source env_myclub/bin/activate
