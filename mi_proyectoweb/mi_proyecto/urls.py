@@ -9,5 +9,5 @@ from . import views
 urlpatterns = [
     # -- Vista pricipal (índice)
     path('', views.index, name='index'),
-   
+    path('a-frame.html', views.aframe, name='aframe'),
 ]
