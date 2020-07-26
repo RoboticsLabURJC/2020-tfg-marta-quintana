@@ -24,4 +24,8 @@ urlpatterns = [
 
     # -- URL de administracion (por defecto en django)
     path('admin/', admin.site.urls),
+
+
 ]
+
+ 

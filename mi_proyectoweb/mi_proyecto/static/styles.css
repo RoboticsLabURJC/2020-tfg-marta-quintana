@@ -29,3 +29,12 @@ button:active {
 #audio{
 display: none
 }
+
+#mic, #record {
+  font-size:40px;
+  text-decoration:none;
+  margin-right: 30px;
+  background-color:rgba(0,150,220,1);
+
+
+}
