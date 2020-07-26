@@ -15,7 +15,7 @@ classes: wide
 
   - [1] https://aframe.io/docs/1.0.0/introduction/ 
   - [2] https://docs.djangoproject.com/en/2.2/releases/2.2/
-
+  - [3] Media Recorder https://github.com/philnash/web-assistant/blob/master/media-recorder/web-recorder.html
 
 
 
