@@ -1,3 +1,4 @@
+{% load staticfiles %}
 <html>
   <head>
     <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
@@ -5,12 +6,23 @@
   </head>
   <body>
     <a-scene>
+      <a-assets>
+        <img id="moon" src={% static 'moon.jpg'%}>
+        <img id="cesped" src={% static 'cesped.jpeg'%}>
+      </a-assets>
 
-      <a-sphere position="-2 1.25 -5" radius="1.25" color="red"></a-sphere>
+      <a-sphere position="4 7 -5" radius="1.25" rotation="0 -50 0" src="#moon"></a-sphere>
+      <a-sphere position="-1.5 1.25 -4" radius="1.25" rotation="0 -50 0" color="red"></a-sphere>
       <a-cylinder position="1 1.25 -3" radius="0.5" height="2.5" color="blue"></a-cylinder>
-      <a-plane position="0 0 -4" rotation="-90 0 0" width="15" height="6" color="green"></a-plane>
+      <a-plane position="0 0 -4" rotation="-90 0 0" width="15" height="6" src="#cesped"></a-plane>
       <a-box position="-4 1.25 -4" color="orange" depth="0.5" height="0.5" with="1"></a-box>
-      <a-camera position="0 2 5"></a-camera>
+      <a-camera position="0 5 6"></a-camera>
+      <a-light type="ambient" color="grey"></a-light>
+
+     <a-light type="point" intensity="1" position="0 10 0"></a-light>
+
+
+     <a-sky color="#0044BB"></a-sky>
     </a-scene>
   </body>
 </html>
