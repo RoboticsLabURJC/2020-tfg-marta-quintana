@@ -1,4 +1,4 @@
-//Boton play html<p>
+//<p>
 //<button id="boton2">&#9655;</button>
 //</p>
 
@@ -98,73 +98,55 @@ window.addEventListener('DOMContentLoaded', () => {
 ///ANALIZADOR AUDIO
 // variables para el audio
 var audioCtx = new (window.AudioContext || window.webkitAudioContext)();
-var analizador = audioCtx.createAnalyser();
-analizador.fftSize = 2048; // [32, 64, 128, 256, 512, 1024, 2048]
-var dataArray = new Uint8Array(analizador.frequencyBinCount);
+var analyser = audioCtx.createAnalyser();
+
 //  Inicializa el canvas
 var canvas = document.querySelector("canvas");
-ctx = canvas.getContext("2d");
+canvasCtx = canvas.getContext("2d");
 var cw = canvas.width = 700; // la anchura del canvas
 var ch = canvas.height = 350;// la altura del canvas
-ctx.fillStyle = "hsla(210,95%,45%,.75)"; //color del analizador
-
-// crea el array de los puntos
-var puntos = [];
-var pNum = 25;// número de puntos
-var puntoW = cw / pNum;// calcula la distribución de los puntos
-
-  for (var i = 0; i < pNum + 1; i++) {
-    var punto = {};
-    punto.x = i * puntoW;
-    punto.y = ch;
-    puntos.push(punto);
-  }
-
 
 navigator.mediaDevices
   .getUserMedia({ audio: true, video: false })
   .then(function(stream) {
     var fuenteDeSonido = audioCtx.createMediaStreamSource(stream);
-    fuenteDeSonido.connect(analizador);
-    Animacion();
+    //nodos que vamos a usar
+    fuenteDeSonido.connect(analyser);
+    draw();
   }).catch(function(err) {
   txt("E R R O R")
 });
 
-function Animacion() {
-  requestId = window.requestAnimationFrame(Animacion);
-  /*el método getByteFrequencyData() toma como argumento un array de tipo Uint8Array*/
-  analizador.getByteFrequencyData(dataArray);
-  ctx.clearRect(0, 0, cw, ch);
-  // la doble tilde (~~) es un operador equivalente a Math.floor() o casi
-  var n = ~~(analizador.frequencyBinCount / pNum);
-  // un bucle for calcula la coordenada en y de cada punto del array de puntos.
-  for (var i = 0; i < puntos.length; i++) {
-    puntos[i].y = ch - dataArray[i * n] - 50;
+
+
+analyser.fftSize = 128;
+var bufferLength = analyser.frequencyBinCount;
+console.log(bufferLength);
+var dataArray = new Uint8Array(bufferLength);
+
+canvasCtx.clearRect(0, 0, cw , ch);
+
+function draw() {
+   window.requestAnimationFrame(draw);
+
+  analyser.getByteFrequencyData(dataArray);
+
+  //canvasCtx.fillStyle = 'rgb(40, 40, 40)';
+  canvasCtx.fillStyle = "rgb(245,245,245)";
+  canvasCtx.fillRect(0, 0, cw, ch);
+
+  var barWidth = (cw / bufferLength) //* 2.5;
+  var barHeight;
+  var x = 0;
+
+  for(var i = 0; i < bufferLength; i++) {
+    barHeight = dataArray[i];
+    //console.log(barHeight)
+    canvasCtx.fillStyle = 'rgb(100,0,' + (barHeight+100) + ')';
+    canvasCtx.fillRect(x,ch-barHeight/2,barWidth,barHeight/2);
+
+    x += barWidth + 1;
   }
-  trazarCurvas(puntos);
-  ctx.fillText("Tiempo", cw*.5, ch*.5);
-}
+};
 
-//Animacion();
-
-function trazarCurvas(puntos) {
-  ctx.beginPath();
-  ctx.moveTo(puntos[0].x, puntos[0].y);
-
-  for (var i = 1; i < puntos.length - 2; i++) {
-     var x = (puntos[i].x + puntos[i + 1].x) / 2;
-     var y = (puntos[i].y + puntos[i + 1].y) / 2;
-    ctx.quadraticCurveTo(puntos[i].x, puntos[i].y, x, y);
-  }
-  ctx.quadraticCurveTo(
-    puntos[i].x,
-    puntos[i].y,
-    puntos[i + 1].x,
-    puntos[i + 1].y
-  );
-  ctx.lineTo(cw, ch);
-  ctx.lineTo(0, ch);
-  ctx.closePath();
-  ctx.fill();
-}
+draw();
