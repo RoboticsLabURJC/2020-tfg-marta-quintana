@@ -15,3 +15,7 @@ Run Django 2.2.10 Mac Steps:
 
 - source env_myclub/bin/activate
 - python3 manage.py runserver
+
+
+Despliegue a 1 Kibotics
+- D1 Kibotics  https://github.com/jderobot-hub/kibotics-websim
