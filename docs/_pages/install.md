@@ -19,3 +19,5 @@ Run Django 2.2.10 Mac Steps:
 
 Despliegue a 1 Kibotics
 - D1 Kibotics  https://github.com/jderobot-hub/kibotics-websim
+
+  npm run start -->  http://localhost:8080/JavaScript-editor/
