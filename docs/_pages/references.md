@@ -16,7 +16,9 @@ classes: wide
   - [1] https://aframe.io/docs/1.0.0/introduction/ 
   - [2] https://docs.djangoproject.com/en/2.2/releases/2.2/
   - [3] Media Recorder https://github.com/philnash/web-assistant/blob/master/media-recorder/web-recorder.html
-
+  - [4] WebAudio API Analyser 
+  - [5] Tensorflow https://www.tensorflow.org/js/tutorials/transfer/audio_recognizer
+  - [6] Tutorial Audio Recognition https://github.com/tensorflow/docs/blob/master/site/en/r1/tutorials/sequences/audio_recognition.md
 
 
 ## Links for first steps landing on the tfg:
