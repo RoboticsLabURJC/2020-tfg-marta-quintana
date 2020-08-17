@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <link rel="shortcut icon" href="favicon.ico">
+       <title>CAPAS</title>
+      <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs/dist/tf.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/p5.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/addons/p5.dom.js"></script>
+  </head>
+  <body>
+     <script>
+
+      //https://playground.tensorflow.org/#activation=tanh&batchSize=10&dataset=circle&regDataset=reg-plane&learningRate=0.03&regularizationRate=0&noise=0&networkShape=4,2&seed=0.36673&showTestData=false&discretize=false&percTrainData=50&x=true&y=true&xTimesY=false&xSquared=false&ySquared=false&cosX=false&sinX=false&cosY=false&sinY=false&collectStats=false&problem=classification&initZero=false&hideText=false
+      //1. Crear modelo
+       const modelo = tf.sequential();
+
+       //2. capa oculta de 4 unidades
+       const oculta = tf.layers.dense({
+          units:4,
+          inputShape:[2],
+          activation:'sigmoid'
+       });
+      //meter al modelo
+       modelo.add(oculta);
+
+       //3.capa de salida 1 unidad
+       const salida =tf.layers.dense({
+         units: 1,
+         //inputShape:[4], lo sobreentiende
+         activation:'sigmoid'
+       });
+       //añadir al modelo
+       modelo.add(salida);
+
+       //optimizador ayuda a mejorar el desempeño del modelo
+       const sgdOpciones = tf.train.sgd(0.1);
+
+       //Compilamos
+
+       modelo.compile({
+         optimizer:sgdOpciones,
+         loss: tf.losses.meanSquaredError
+       })
+
+
+
+     </script>
+  </body>
+</html>

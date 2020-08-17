@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <link rel="shortcut icon" href="favicon.ico">
+       <title>REGRESIÓN LINEAL</title>
+      <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs/dist/tf.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/p5.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/addons/p5.dom.js"></script>
+  </head>
+  <body>
+     <script>
+        let x_pos=[];
+        let y_pos=[];
+        let w; //grado de inclinacion de la LINEAL
+        let b ;//sesgo
+
+        const learingRate= 0.5; //movimientos pequeños para encontrar la linea
+        const optimizer= tf.train.sgd();
+
+        function setup(){  //funcion de p5 para inicializar
+              createCanvas(400,400);
+              background(0);
+              w=tf.variable (tf.scalar(random(1)))//tensor variable porque va a estar cambiando
+              b=tf.variable (tf.scalar(random(1)))
+        }
+        //Formula que predice la linea
+        function predecir(x){
+          const xs=tf.tensor1d(x);
+          //y=n*x+b  (formula de la recta)
+          const ys= xs.mul(w).add(b);
+          return ys;
+        }
+
+        function mousePressed(){
+          let x=map(mouseX,0,width,0,1); //sacar mi posicion X escala de 0 a 1
+          let y=map(mouseY,0,height,1,0);
+          x_pos.push(x);
+          y_pos.push(y);
+        }
+
+
+        function draw(){
+          background(0);
+          stroke(255);
+          strokeWeight(8);
+          for (i=0;i<x_pos.length;i++){
+                     let px=map(x_pos[i],0,1,0,width);
+                     let py=map(y_pos[i],0,1,height,0);
+                     point(px,py);
+          }
+          const ys=ts.tensor1d(y_pos);
+          optimizer.minimize(()=> predecir(x_pos).sub(ys).square().mean()); //prediccion de ys - ys de verdad y hacer el error cuadratico medio
+          let y_pred= tf.tidy(()=>predecir([0,1]));
+        }
+
+
+     </script>
+  </body>
+</html>
