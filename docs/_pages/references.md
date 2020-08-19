@@ -34,7 +34,8 @@ classes: wide
   
   TensorFlow.js :
   - [8]Tensorflow https://www.tensorflow.org/js/tutorials/transfer/audio_recognizer
-  - [9] Tutorial Audio Recognition https://github.com/tensorflow/docs/blob/master/site/en/r1/tutorials/sequences/audio_recognition.md
+  - [9] Tutorial Audio Recognition https://codelabs.developers.google.com/codelabs/tensorflowjs-audio-codelab/index.html#0
+https://github.com/tensorflow/docs/blob/master/site/en/r1/tutorials/sequences/audio_recognition.md  
   
   More links:
   - [1] https://gsyc.urjc.es/jmplaza/students/tfg-Robotics_Academy-alvaro_villamil-2017.pdf
