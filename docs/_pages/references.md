@@ -39,7 +39,7 @@ https://github.com/tensorflow/docs/blob/master/site/en/r1/tutorials/sequences/au
 
   - [10]Tutorial Image Recognition Pre Trained model  https://codelabs.developers.google.com/codelabs/tensorflowjs-object-detection/index.html?index=..%2F..index#8
   - [11] Tutorial Classifier  (Try Again it doesn't work) https://codelabs.developers.google.com/codelabs/tensorflowjs-teachablemachine-codelab/index.html#6
-  
+  - [12] https://learn.ml5js.org/docs/#/reference/knn-classifier?id=tutorials
   More links:
   - [1] https://gsyc.urjc.es/jmplaza/students/tfg-Robotics_Academy-alvaro_villamil-2017.pdf
   - [2] https://gsyc.urjc.es/jmplaza/students/tfg-Robotics_Academy-vanessa_fernandez-2017.pdf
