@@ -21,3 +21,9 @@ Despliegue a 1 Kibotics
 - D1 Kibotics  https://github.com/jderobot-hub/kibotics-websim
 
   npm run start -->  http://localhost:8080/JavaScript-editor/
+
+
+
+-TENSOR FLOW JS
+ 
+  python -m SimpleHTTPSErver 9000 o el puerto que quieras para usar tensorflow

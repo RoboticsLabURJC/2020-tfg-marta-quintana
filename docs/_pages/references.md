@@ -36,6 +36,9 @@ classes: wide
   - [8]Tensorflow https://www.tensorflow.org/js/tutorials/transfer/audio_recognizer
   - [9] Tutorial Audio Recognition https://codelabs.developers.google.com/codelabs/tensorflowjs-audio-codelab/index.html#0
 https://github.com/tensorflow/docs/blob/master/site/en/r1/tutorials/sequences/audio_recognition.md  
+
+  - [10]Tutorial Image Recognition Pre Trained model  https://codelabs.developers.google.com/codelabs/tensorflowjs-object-detection/index.html?index=..%2F..index#8
+  - [11] Tutorial Classifier  (Try Again it doesn't work) https://codelabs.developers.google.com/codelabs/tensorflowjs-teachablemachine-codelab/index.html#6
   
   More links:
   - [1] https://gsyc.urjc.es/jmplaza/students/tfg-Robotics_Academy-alvaro_villamil-2017.pdf
