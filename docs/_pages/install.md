@@ -26,4 +26,4 @@ Despliegue a 1 Kibotics
 
 -TENSOR FLOW JS
  
-  python -m SimpleHTTPSErver 9000 o el puerto que quieras para usar tensorflow
+  python -m SimpleHTTPServer 8000 o el puerto que quieras para usar tensorflow
