@@ -4,7 +4,7 @@
 ## Teleoperator drone
 
 
-| Key pressed 	| Function                	|
+| Microphone  	| Function                	|
 |-------------	|-------------------------	|
 | go           	| Moves drone frontwards  	|
 | seven         | Moves drone backwards   	|
