@@ -6,29 +6,14 @@
 
 | Key pressed 	| Function                	|
 |-------------	|-------------------------	|
-| i           	| Moves drone frontwards  	|
-| k           	| Moves drone backwards   	|
-| j           	| Turn left               	|
-| l           	| Turn right              	|
-| u           	| Go up drone             	|
-| h           	| Do down drone           	|
+| go           	| Moves drone frontwards  	|
+| seven         | Moves drone backwards   	|
+| stop          | The   drone stops     	  |
+
+----------------------------------------------
+| left          | Turn left                 |
+| right        	| Turn right              	|
+| up          	| Go up drone             	|
+| down         	| Do down drone            	|
 
 
-## Teleoperator PiBot
-
-| Key pressed 	| Function                	|
-|-------------	|-------------------------	|
-| i           	| Moves piBot frontwards  	|
-| k           	| Moves piBot backwards   	|
-| j           	| Turn left               	|
-| l           	| Turn right              	|
-
-
-## Teleoperator F1
-
-| Key pressed 	| Function                	|
-|-------------	|-------------------------	|
-| i           	| Moves F1 frontwards  	|
-| k           	| Moves F1 backwards   	|
-| j           	| Turn left               	|
-| l           	| Turn right              	|
