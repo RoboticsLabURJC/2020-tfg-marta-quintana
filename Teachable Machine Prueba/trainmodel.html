@@ -31,6 +31,7 @@
         const recognizer = await createModel();
         const classLabels = recognizer.wordLabels(); // get class labels
         const labelContainer = document.getElementById("label-container");
+
         for (let i = 0; i < classLabels.length; i++) {
             labelContainer.appendChild(document.createElement("div"));
         }
@@ -39,12 +40,25 @@
         // 1. A callback function that is invoked anytime a word is recognized.
         // 2. A configuration object with adjustable fields
         recognizer.listen(result => {
+
             const scores = result.scores; // probability of prediction for each class
+            var word_index = 0;
+
             // render the probability scores per class
             for (let i = 0; i < classLabels.length; i++) {
                 const classPrediction = classLabels[i] + ": " + result.scores[i].toFixed(2);
                 labelContainer.childNodes[i].innerHTML = classPrediction;
+                //most probable word
+
+                if (result.scores[i].toFixed(2) >= result.scores[word_index].toFixed(2)) {
+                   word_index = i;
+
+                }
+
             }
+             var prediction = classLabels[word_index]
+             console.log(prediction);
+
         }, {
             includeSpectrogram: true, // in case listen should return result.spectrogram
             probabilityThreshold: 0.75,
