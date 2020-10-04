@@ -6,14 +6,12 @@
 
 | Microphone  	| Function                	|
 |-------------	|-------------------------	|
-| go           	| Moves drone frontwards  	|
-| seven         | Moves drone backwards   	|
-| stop          | The   drone stops     	  |
-
-----------------------------------------------
-| left          | Turn left                 |
-| right        	| Turn right              	|
-| up          	| Go up drone             	|
-| down         	| Do down drone            	|
+| Go           	| Moves drone frontwards  	|
+| Back          | Moves drone backwards   	|
+| Stop          | The   drone stops     	  |
+| Left          | Turn left                 |
+| Right        	| Turn right              	|
+| Up          	| Go up drone             	|
+| Down         	| Do down drone            	|
 
 
