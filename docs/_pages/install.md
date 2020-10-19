@@ -27,3 +27,19 @@ Despliegue a 1 Kibotics
 -TENSOR FLOW JS
  
   python -m SimpleHTTPServer 8000 o el puerto que quieras para usar tensorflow
+
+
+-D3 Kibotics https://github.com/jderobot-hub/kibotics-webserver
+  Poner en marcha kibotics en localhost:8000
+  1) cd kibotics-webserver
+
+  2) source kibotics-env/bin/activate
+
+  3) cd kibotics-webserver
+  
+  4)python manage.py runserver
+  
+  
+  D1 en el D3 en localhost:8080
+  En kibotics-webserver/kibotics-webserver/websim  --> npm run start 
+  
