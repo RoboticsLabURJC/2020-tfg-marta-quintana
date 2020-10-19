@@ -31,6 +31,8 @@ Despliegue a 1 Kibotics
 
 -D3 Kibotics https://github.com/jderobot-hub/kibotics-webserver   (clonar y hacer cosas en code-style y en websim npm run build)
   Poner en marcha kibotics en localhost:8000
+  
+  
   1) cd kibotics-webserver
 
   2) source kibotics-env/bin/activate
