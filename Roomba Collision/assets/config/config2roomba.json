@@ -27,6 +27,51 @@
             }
         },
         {
+            "tag": "img",
+            "attr": {
+                "id": "door",
+                "alt": "Texture door",
+                "src": "../assets/textures/door.png"
+
+            }
+        },
+        {
+            "tag": "img",
+            "attr": {
+                "id": "wall",
+                "alt": "Texture for the walls ",
+                "src": "../assets/textures/wallgrey.jpg"
+
+            }
+        },
+        {
+            "tag": "img",
+            "attr": {
+                "id": "window",
+                "alt": "Texture for the walls ",
+                "src": "../assets/textures/window_wall.jpeg"
+
+            }
+        },
+        {
+            "tag": "img",
+            "attr": {
+                "id": "techo",
+                "alt": "Texture for the walls ",
+                "src": "../assets/textures/techo.jpg"
+
+            }
+        },
+        {
+            "tag": "img",
+            "attr": {
+                "id": "window1",
+                "alt": "Texture for the walls ",
+                "src": "../assets/textures/window1.jpg"
+
+            }
+        },
+        {
             "tag": "a-asset-item",
             "attr": {
                 "id": "model-pibot"
@@ -42,16 +87,7 @@
         }
     ],
     "objects":[
-        {
-            "tag": "a-cylinder",
-            "attr": {
-                "id":"confeti",
-                "position": { "x":0, "y":0, "z":20},
-                "color": "#FF0000",
-                "height": "0.25",
-                "radius": "1"
-            }
-        },
+
         {
             "tag": "a-entity",
             "attr": {
@@ -137,6 +173,126 @@
                 "height": "100",
                 "src":"#ground"
 
+
+            }
+        },
+        {
+            "tag": "a-plane",
+            "attr": {
+                "id":"plane",
+                "static-body": {
+                    "mass": 100000
+                },
+                "position": { "x":0, "y":25, "z":0 },
+                "rotation": { "x":90, "y":0, "z":0 },
+                "width": "100",
+                "height": "100",
+                  "src":"#techo"
+
+            }
+        },
+        {
+            "tag": "a-plane",
+            "attr": {
+                "id":"wall1",
+                "static-body": {
+                    "mass": 100000
+                },
+                "position": { "x":0, "y":12.5, "z":-50 },
+                "rotation": { "x":0, "y":0, "z":0 },
+                "width": "100",
+                "height": "25",
+                "src":"#wall"
+
+            }
+        },
+        {
+            "tag": "a-plane",
+            "attr": {
+                "id":"wall1w2",
+                "static-body": {
+                    "mass": 100000
+                },
+                "position": { "x":20, "y":12.5, "z":-49.5 },
+                "rotation": { "x":0, "y":0, "z":0 },
+                "width": "25",
+                "height": "15",
+                "src":"#window1"
+
+            }
+        },
+        {
+            "tag": "a-plane",
+            "attr": {
+                "id":"window1",
+                "static-body": {
+                    "mass": 100000
+                },
+                "position": { "x":-20, "y":12.5, "z":-49.5 },
+                "rotation": { "x":0, "y":0, "z":0 },
+                "width": "25",
+                "height": "15",
+                "src":"#window1"
+
+            }
+        },
+        {
+            "tag": "a-plane",
+            "attr": {
+                "id":"door",
+                "static-body": {
+                    "mass": 100000
+                },
+                "position": { "x":20, "y":11, "z":49.5 },
+                "rotation": { "x":0, "y":180, "z":0 },
+                "width": "15",
+                "height": "22",
+                "src":"#door"
+
+            }
+        },
+        {
+            "tag": "a-plane",
+            "attr": {
+                "id":"wall2",
+                "static-body": {
+                    "mass": 100000
+                },
+                "position": { "x":50, "y":12.5, "z":0 },
+                "rotation": { "x":0, "y":-90, "z":0 },
+                "width": "100",
+                "height": "25",
+                "src":"#wall"
+
+            }
+        },
+        {
+            "tag": "a-plane",
+            "attr": {
+                "id":"wall3",
+                "static-body": {
+                    "mass": 100000
+                },
+                "position": { "x":-50, "y":12.5, "z":0 },
+                "rotation": { "x":0, "y":90, "z":0 },
+                "width": "100",
+                "height": "25",
+                "src":"#wall"
+
+            }
+        },
+        {
+            "tag": "a-plane",
+            "attr": {
+                "id":"wall4",
+                "static-body": {
+                    "mass": 100000
+                },
+                "position": { "x":0, "y":12.5, "z":50 },
+                "rotation": { "x":0, "y":180, "z":0 },
+                "width": "100",
+                "height": "25",
+                "src":"#wall"
 
             }
         },
