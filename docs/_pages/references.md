@@ -43,7 +43,7 @@ https://github.com/tensorflow/docs/blob/master/site/en/r1/tutorials/sequences/au
   
   -[13] Google Teachable Machine ]https://teachablemachine.withgoogle.com/train
   -[14] Videos of Teachable Machine:https://www.youtube.com/watch?v=TOrVsLklltM , https://thecodingtrain.com/learning/ml5/ , https://www.youtube.com/watch?v=Sn7AwpGFXLw .
-  
+  -[15] Register a Custom Geometry https://github.com/aframevr/aframe/blob/master/docs/components/geometry.md
   
   More links:
   - [1] https://gsyc.urjc.es/jmplaza/students/tfg-Robotics_Academy-alvaro_villamil-2017.pdf
