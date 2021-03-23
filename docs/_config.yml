@@ -18,9 +18,9 @@ minimal_mistakes_skin    : "air"
 #locale                   : "en-US"
 title                    : "TFG Blog "
 title_separator          : "-"
-subtitle                 : TFG title
+subtitle                 : GAMIFICATION OF AN EDUCATIONAL PLATFORM
 name                     : "JdeRobot"
-description              : "TFG Gamification of an educational platform"
+description              : "TFG Title"
 url                      : http://jderobot.github.io/2019-tfm-ignacio-arranz
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : JdeRobot
