@@ -45,7 +45,7 @@ here I am going to put all the advances of my end of degree project, and everyth
 
 Regards!
 
-TFG title: 
+TFG title: GAMIFICACIÓN DE UNA PLATAFORMA EDUCATIVA - GAMIFICATION OF AN EDUCATIONAL PLATFORM
 
 
 TFG Tutor:
