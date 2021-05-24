@@ -1,0 +1,34 @@
+\chapter{Ejercicio juego del pañuelo} \label{gripper}
+En este capítulo se expone como ha sido el desarrollo del ejercicio del juego del pañuelo. Primero hablaremos del enunciado del ejercicio, seguidamente se muestra como ha sido su implementación, que herramientas se han utilizado, prototipos y como finalmente se ha llevado a cabo el ejercicio.Finalmente se ofrecen dos soluciones de referencia que resuelven el ejercicio en Kibotics.
+
+\section{Enunciado}
+El propósito de este ejercicio es crear un nuevo ejercicio en Kibotics con un nuevo robot que sea capaz de coger objetos y moverlos por el escenario. El nuevo robot debe tener pinzas móviles para atrapar otros objetos. El juego del pañuelo es muy popular entre los más pequeños y también en el mundo de la robótica. En las competiciones de robots este juego consiste en programar un sigue lineas el robot debe recorrrer un circuito y el robot debe ser capaz quitar una o varias latas que obstaculicen el camino para poder realizar el circuito. Para que nuestro ejercicio sea más acorde con el juego del pañuelo que conocemos todos, necesitamos hacer un robot con pinzas, un circuito y una lata ajustados a las necesidades del circuito.
+
+El alumno deberá programar en Python o en Scratch un algoritmo que permita que el Mbot Pinza avance siguiendo la linea negra del circuito hasta que se encuentre a poca distancia de la lata, una vez se encuentre enfrente de la lata, tu robot debe cerrar las pinzas y dar media vuelta para volver a la casilla de salida y  llevar consigo la lata en todo momento. Gracias a un evaluador automático vamos a obtener la puntuación, esta depende del porcentaje de ciruito recorrido y si se lleva o no la lata entre las pinzas.
+
+
+**Juego del pañuelo robotica**
+\section{Desarrollo del ejercicio}
+Para este ejercicio se investigó con un prototipo en A-Frame nativo, (HTML5, JavaScript y la librería de A-Frame) sin Websim.
+En este primer prototipo se cogía el modelo gltf del Mbot que ya se usaba en Kibotics para algunos ejercicios y lo representaba en la escena, el robot se movia con eventos de teclado desde JavaScript que hacian que este cambiara su posición. Se crearon las pinzas que eran dos octaedros a los lados del robot. Estas pinzas estaban creadas con a-box y eran  independientes del robot. Con este prototipo se estudió el movimiento de las pinzas con respecto a la posición del robot. En el código JavaScript era muy complejo y depependia de la actualización continua de la posición y se encontraron muchas dificultades a la hora de realizar giros del robot con las pinzas dado que estas estan definidas por el centro de masas y al rotarlas habia que hacerlo con funciones senoidales para que se movieran en concordancia con la rotación del robot. Esta dependencia continua de la posición del robot con respecto a las pinzas y la lata con el cierre de las pinzas era muy compleja y muy poco realista en este video se puede ver como era el funcionamiento de este prototipo. *video
+
+La idea principal es que el robot pudiera coger con las pinzas una lata de la forma más natural posible. Se creó un segundo prototipo esta vez habia que hacer que las pinzas fueran dependientes del robot para que su movimiento y los giros sean coherentes.
+
+Se estudió la posibilidad de hacer unas pinzas que con mallas de colisión fueran capaces de atrapar una lata.
+
+*mallas colision aframe
+
+Se creó el modelo 3D en Blender de una lata, con GIMP un programa de edición de imagenes gratuito y multiplataforma se diseño la imagen .png del circuito.
+
+**LAta
+**Pinzas
+** implementacion config
+**implementación HAL API  brains/miniproxy-worker.js e interfaces robot.
+
+** mallas colision y elemento static. 
+
+
+\section{Solución de referencia}
+Este ejercicio se puede resolver de muchas formas, una de ellas es la que se muestra en la Figura ... para Python y para Scratch una solución posible es la que se indica en la Figura... . 
+
+*videos promocionales e imagenes soluciones*
