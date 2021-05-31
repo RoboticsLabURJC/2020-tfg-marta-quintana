@@ -1,2 +1,42 @@
 \chapter{Conclusiones y trabajos futuros}\label{conclusion}
-Para finalizar este trabajo, en este capítulo hablaremos de las concluisiones a las que se han llegado con este proyecto y futuros proyectos.
+Para finalizar este trabajo, en este capítulo hablaremos de las conclusiones a las que se han llegado con este proyecto, si se han cumplido o no los objetivos y los conocimientos adquiridos, posibles mejoras y futuros proyectos.
+
+\section{Conclusiones}
+
+El objetivo principal de este trabajo era introducir la gamificación en la plataforma Kibotics, a continuación vamos a analizar los subobjetivos propuestos y ver si se ha cumplido o no el objetivo principal.
+
+\begin{itemize}
+    \item Diseñar y desarrollar un nuevo juego que analice el audio en tiempo real y explorar la posibilidad de añadir bandas sonoras a los ejercicios actuales.  Este subobjetivo se ha cumplido satisfactoriamente, gracias a Teachable Machine, tenemos un ejercicio de reconocimiento de audio en el que el usuario puede dirigir al dron por los dos escenarios que se han creado. También se ha cumplido la posibilidad de tener bandas sonoras en los ejercicios ya disponibles en la plataforma y adicionalmente se ha añadido un efecto de sonido de colisión. 
+
+    \item Diseñar y desarrollar un nuevo ejercicio sobre una aspiradora robótica que tiene que limpiar una habitación.  Este subobjetivo se ha cumplido dado que se ha  diseñado y realizado un ejercicio de una aspiradora robótica que tiene que limpiar una habitación llena de piezas de confeti y obstáculos para que la dificultad sea mayor y el usuario lo vea como un reto.
+
+    \item Diseñar y desarrollar un nuevo ejercicio sobre un robot que juega al pañuelo, recorriendo una línea, una lata que ejerce de pañuelo y regresando con ella al lugar de partida. Este subobjetivo también se ha cumplido, se ha creado un nuevo escenario y un robot con pinzas capaz de recoger objetos, gracias a su diseño y las mallas de colisión de A-Frame, las pinzas son capaces de atrapar una lata y moverla por el circuito. Ell circuito es similar a los que aparecen en las competiciones oficiales de robótica y para su resolución el usuario tiene que usar varios sensores, el sensor de distancia para atrapar la lata y el sensor infrarrojos para detectar la linea negra del circuito y obtener la máxima puntuación. 
+\end{itemize}
+
+Los requisitos  también se han cumplido, los robots y juegos desarrollados son compatibles con la versión actual v.2.8 o superior de Kibotics. No requieren instalaciones adicionales, el usuario entra a la plataforma de Kibotics.org y todo se ejecuta desde su navegador.  En este trabajo se usa el software de simulación Websim y A-Frame y principalmente el lenguaje JavaScript, el lenguaje de documentos JSON y el programa de modelado 3D Blender.
+
+En conclusión,  podemos decir que el objetivo principal de este trabajo se ha cumplido y los ejercicios del juego del pañuelo y el aspirador robótico están actualmente disponibles en la plataforma Kibotics, en la que alumnos de diferentes institutos están aprendiendo a programar con ellos.
+
+No obstante estos ejercicios pueden mejorarse en próximos proyectos, se mencionaran algunas posibles mejoras en el siguiente apartado 7.2.
+
+A nivel personal este trabajo me ha dado la oportunidad de ampliar mucho más mis conocimientos sobre tecnologías web (Django, HTML5, JavaScript y CSS3) y me ha entusiasmado conocer tecnologías como A-Frame para realidad virtual y Blender para modelado 3D, así como herramientas de reconocimiento de audio a través de la web con TensorFlow.JS y Teachable Machine.
+Con este proyecto también he aprendido a manejar GitHub para el desarrollo software en equipo y Latex donde se ha escrito la memoria de este TFG.
+
+También he tenido la oportunidad de dar un curso de Kibotics a un grupo de chicos con el lenguaje Scratch. Desde mi expericencia los comentarios hacia estos ejercicios orientados a juegos han sido muy positivos y he percibido un mayor interés.
+
+    
+\section{Trabajos futuros}
+
+La \textit{Gamificación} es un mundo por explorar, se pueden crear miles de juegos con muchas temáticas diferentes. Estos son algunos de los futuros proyectos que se proponen relacionados con este trabajo:
+
+\begin{itemize}
+\item Mejorar el teleoperador acústico: El teleoperador acústico no esta implementado aún en los cursos de  Kibotics. El reconocimiento de audio es aceptable pero seguro que se puede mejorar investigando otras tecnologías. También se puede mejorar creando un escenario mucho más complejo y modelando una cueva o un castillo del que tiene que salir el dron con las órdenes que le de el usuario.
+
+\item Mejorar juego del pañuelo: Se puede mejorar el juego del pañuelo añadiendo dos robots a la escena que compitan para ver quien es el primero en llegar a la meta con la lata, este segundo robot podría ser con un código con distintas dificultades o con el código de otro usuario.
+
+\item  Juegos con reconocimiento de imágenes o de poses : Techable Machine nos facilitaba el modelo de reconocimiento de audio pero también para imágenes y poses, se podría crear un modelo que basado en imágenes guíes a un robot, por ejemplo dibujando una flecha e indicarle para que lado quieres que se mueva. Con poses también se podría investigar como guiar al robot con las poses que detecte el modelo.
+
+\item Creación de juegos multirobot en linea:  Juegos en los que puedan competir entre los alumnos y poder retransmitirlo por plataformas como Twitch o Youtube para que lo vean otros usuarios.
+
+
+\end{itemize}
