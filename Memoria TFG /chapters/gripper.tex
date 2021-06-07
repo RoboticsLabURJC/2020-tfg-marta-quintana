@@ -1,10 +1,10 @@
 \chapter{Ejercicio juego del pañuelo} \label{gripper}
-En este capítulo se expone como ha sido el desarrollo del ejercicio del juego del pañuelo. Primero hablaremos del enunciado del ejercicio, seguidamente se muestra como ha sido su implementación, las herramientas se han utilizado, prototipos y como se ha llevado a cabo el ejercicio. Finalmente se ofrecen dos soluciones de referencia que resuelven el ejercicio en Kibotics.
+En este capítulo se expone como ha sido el desarrollo del ejercicio del juego del pañuelo. Primero hablaremos del enunciado del ejercicio, seguidamente se muestra como ha sido su implementación, las herramientas que se han utilizado, prototipos y como se ha llevado a cabo finalmente el ejercicio. Para terminar se ofrecen dos soluciones de referencia que resuelven el ejercicio en Kibotics.
 
 \section{Enunciado}
 El propósito de este ejercicio es crear un nuevo ejercicio en Kibotics con un nuevo robot que sea capaz de coger objetos y moverlos por el escenario. El nuevo robot debe tener pinzas móviles para atrapar otros objetos. 
 
-El juego del pañuelo es muy popular entre los más pequeños y también en el mundo de la robótica. En las competiciones de robots este juego consiste en programar un sigue líneas. El robot debe recorrer un circuito y el robot debe ser capaz coger una lata que obstaculiza el camino  y volver con ella a la posición de salida. En la Figura 6.1 a y 6.2 b podemos ver como es este juego en competiciones de robótica.
+El juego del pañuelo es muy popular entre los más pequeños y también en el mundo de la robótica. En las competiciones de robots este juego consiste en programar un sigue líneas. El robot debe recorrer un circuito y debe ser capaz coger una lata que obstaculiza el camino  y volver con ella a la posición de salida. En la Figura 6.1 a y 6.1 b podemos ver como es este juego en competiciones de robótica.
 
 \begin{figure}[H]
   \begin{subfigure}[b]{0.5\textwidth}
@@ -25,25 +25,31 @@ El juego del pañuelo es muy popular entre los más pequeños y también en el m
 \end{figure}
 
  
-El alumno deberá programar en Python o en Scratch un algoritmo que permita que el Mbot Pinza avance siguiendo la linea negra del circuito hasta que se encuentre a poca distancia de la lata, una vez se encuentre enfrente de la lata, tu robot debe cerrar las pinzas y dar media vuelta para volver a la casilla de salida y  llevar consigo la lata en todo momento. Gracias a un evaluador automático vamos a obtener la puntuación, esta depende del porcentaje de circuito recorrido y si se lleva o no la lata entre las pinzas.
+El alumno deberá programar en Python o en Scratch un algoritmo que permita que el Mbot Pinza avance siguiendo la linea negra del circuito hasta que se encuentre a poca distancia de la lata, una vez se encuentre enfrente de la lata, el robot debe cerrar las pinzas y dar media vuelta para volver a la casilla de salida y  llevar consigo la lata en todo momento. Gracias a un evaluador automático vamos a obtener la puntuación, esta depende del porcentaje de circuito recorrido y si lleva o no la lata entre las pinzas.
 
 \section{Desarrollo del ejercicio}
 
 Para que nuestro ejercicio sea acorde con el juego del pañuelo que conocemos todos y con las competiciones actuales, necesitamos hacer un robot con pinzas, una lata  y un circuito.
 Se investigó un prototipo que estaba realizado en A-Frame nativo, (HTML5, JavaScript y la librería de A-Frame) sin Websim.
-En este primer prototipo se cogía el modelo .gltf del Mbot que ya se usaba en Kibotics para algunos ejercicios y lo representaba en la escena, el robot se movía con eventos de teclado desde JavaScript que hacían que este cambiara su posición. Las pinzas que eran dos octaedros a los lados del robot. Estas pinzas estaban creadas con a-box y eran  independientes del robot. Con este prototipo se estudió el movimiento de las pinzas con respecto a la posición del robot. En el código JavaScript era muy complejo y dependía de la actualización continua de la posición y se encontraron muchas dificultades a la hora de realizar giros del robot con las pinzas dado que estas estaban definidas por el centro de masas y al rotarlas había que hacerlo con funciones senoidales para que se movieran en concordancia con la rotación del robot. En estos vídeos \footnote{https://www.youtube.com/watch?v=BpAujxcWx-Y}\footnote{https://www.youtube.com/watch?v=w5plHB\_4G7Y} se puede ver el prototipo y los problemas con el giro.
+En este primer prototipo se cogía el fichero .gltf  que es el modelo del Mbot que ya se usaba en Kibotics para algunos ejercicios y lo representaba en la escena, el robot se movía con eventos de teclado desde JavaScript que hacían que este cambiara su posición. Las pinzas eran dos octaedros a los lados del robot. Estas pinzas estaban creadas con a-box y eran  independientes del robot. Con este prototipo se estudió el movimiento de las pinzas con respecto a la posición del robot. El código JavaScript era muy complejo y dependía de la actualización continua de la posición y se encontraron muchas dificultades a la hora de realizar giros del robot con las pinzas dado que estas estaban definidas por el centro de masas y al rotarlas había que hacerlo con funciones senoidales para que se movieran en concordancia con la rotación del robot. En la Figura 6.2 y en estos vídeos \footnote{https://www.youtube.com/watch?v=BpAujxcWx-Y}\footnote{https://www.youtube.com/watch?v=w5plHB\_4G7Y} se puede ver el prototipo y los problemas con el giro.
 
-En este trabajo fin de grado ese prototipo se llevó Websim pero no funcionaba bien. Esta dependencia continua de la posición del robot con respecto a las pinzas y la lata con el cierre de las pinzas era muy compleja y muy poco realista. En este video  \footnote{https://www.youtube.com/watch?v=eVM9n4mziTQ\&t=46s} se puede ver como era el funcionamiento en Websim con el JavaScript del primer prototipo.  
+ \begin{figure}[H]
+  \centering
+ \includegraphics[width=0.8\textwidth, height=0.5\textwidth]{chapters/images/prototipo.png}
+  \caption{Prototipo robot con pinza en A-Frame nativo.}
+\end{figure}
+
+En este trabajo fin de grado ese prototipo se llevó a Websim pero no funcionaba bien. Esta dependencia continua de la posición del robot con respecto a las pinzas y la lata con el cierre de las pinzas era muy compleja y muy poco realista. En este video  \footnote{https://www.youtube.com/watch?v=eVM9n4mziTQ\&t=46s} se puede ver como era el funcionamiento en Websim con el JavaScript del primer prototipo.  
 
 
 La idea principal de este ejercicio era que el robot pudiera coger con las pinzas una lata de la forma más natural posible. Las pinzas había que hacerlas dependientes del robot para que su movimiento y los giros sean coherentes. 
 
-Primero se se creó el modelo 3D de una lata en Blender y con  GIMP un programa de edición de imágenes gratuito y multiplataforma se diseño la imagen .png del circuito. Para el robot base se uso el modelo base del Mbot que ya teniamos su  .gltf, para que fuera diferente a los anteriores que se usaban en la plataforma se cambió el color del robot desde Blender con tonos amarillos y azules.
-Los objetos se añadieron con sus respectivos modeos al fichero de configuración.
+Se creó el modelo 3D de una lata en Blender (Figura 6.3 a) y con  GIMP, un programa de edición de imágenes gratuito y multiplataforma (versión 2.10), se diseño la imagen .png del circuito (Figura 6.4) . Para el robot base se uso el modelo base del Mbot que ya teniamos su  .gltf, para que fuera diferente a los anteriores que se usaban en la plataforma se cambió el color del robot desde Blender con tonos amarillos y azules (Figura 6.3 b) .
+Los objetos se añadieron con sus respectivos modelos al fichero de configuración.
 
- Para que las pinzas fueran dependientes del robot desde el fichero de configuración se definieron como \textit{childs} del objeto Mbot base, de esta forma las pinzas y el robot forman un mismo objeto y se mueven a la vez.
+Para que las pinzas fueran dependientes del robot desde el fichero de configuración se definieron como \textit{childs} del objeto robot base, en este caso el Mbot. De esta forma las pinzas y el robot forman un mismo objeto y se mueven a la vez.
 
-Ala hora de crear la escena en el fichero de configuración de este ejercicio gripper.json se tuvo que añadir el atributo ``renderer":``colorManagement: true"  para que los colores en Websim, fueran los mimos que se habían diseñado en Blender, sino los modelos se veían más oscuros. 
+A la hora de crear la escena en el fichero de configuración de este ejercicio se tuvo que añadir el atributo ``renderer":``colorManagement: true"  para que los colores en Websim, fueran los mismos que se habían diseñado en Blender, sino los modelos se verían más oscuros. 
 
 \begin{figure}[H]
   \begin{subfigure}[b]{0.5\textwidth}
@@ -69,7 +75,7 @@ Ala hora de crear la escena en el fichero de configuración de este ejercicio gr
   \caption{Circuito diseñado en GIMP del juego del pañuelo}
 \end{figure}
 
-Para las pinzas  primero se implementaron ortoedros gracias a la etiqueta  \textless box \textgreater de A-Frame. Pero finalmente se cambiaron por un modelo más moderno diseñado en Blender.
+Para las pinzas  primero se implementaron ortoedros gracias a la etiqueta  \textless box \textgreater de A-Frame. Pero finalmente se cambiaron por un modelo más moderno diseñado en Blender (Figura 6.5) .
 
 \begin{figure}[H]
   \centering
@@ -77,10 +83,10 @@ Para las pinzas  primero se implementaron ortoedros gracias a la etiqueta  \text
   \caption{Modelos de las pinzas en Blender}
 \end{figure}
 
-Una vez con todo el escenario creado se estudió la posibilidad de que ajustando  las mallas de colisión de las pinzas se pudiera atrapar una lata con la fuerza que ejercieran las pinzas al cerrarse. 
+Una vez con todo el escenario creado se estudió la posibilidad de que ajustando  las mallas de colisión de las pinzas se pudiera atrapar una lata con la fuerza que ejercieran al cerrarse. 
 Las mallas de colisión son las líneas rojas que delimitan el entorno de un objeto y permiten definir una forma física alrededor de modelos personalizados. De esta forma funcionarán mejor y se comportarán con mayor realismo.
 
-En A-Frame existen dos tipos de cuerpos de los objetos: dynamic\-body y static\-body. Un objeto con dynamic-body  se mueve libremente. Los cuerpos dinámicos tienen masa, chocan con otros objetos, rebotan o se ralentizan durante las colisiones y caen si la gravedad está habilitada.
+En A-Frame existen dos tipos de cuerpos de los objetos: dynamic-body y static-body. Un objeto con dynamic-body  se mueve libremente. Los cuerpos dinámicos tienen masa, chocan con otros objetos, rebotan o se ralentizan durante las colisiones y caen si la gravedad está habilitada.
 Los cuerpos estáticos son objetos animados o de posición fija. Otros objetos pueden chocar con cuerpos estáticos, pero los cuerpos estáticos en sí mismos no se ven afectados por la gravedad y las colisiones.
 
 El robot se definió como un cuerpo dinámico mientras que las palas de las pinzas eran cuerpos estáticos, de esta forma, las palas pueden estar elevadas del suelo y no les afecta  radicalmente las colisiones que pueda tener con la lata a la hora de cerrarse.  La lata en cambio es un objeto dinámico.
@@ -110,12 +116,20 @@ Cada pala se define de la siguiente forma:
 
 
 La malla de colisión se define por \textit{shape\_main y shape\_handle}. En body se pone a ``none'' la malla de colisión que viene por defecto para poder ajustarla a mano.
-\textit{Shape\_main} es la malla de colisión principal en la que se puede elegir la forma\textit{shape}, lo que ocupa \textit{halfExtents} y se puede desplazar del centro del objeto \textit{offset}. Esto nos permite hacer la malla de colisión más grande o más pequeña que las dimensiones de nuestro objeto. \textit{ Shape\_handle} nos permite añadir una malla de colisión extra independientemente de si dentro de ese  objeto hay otro objeto o no. Esta malla de colision extra se define respecto a la malla de colisión shape\_ main. Ambas mallas de colision dependeran de la posición del objeto y se moverán lo mismo que él.
+\textit{Shape\_main} es la malla de colisión principal en la que se puede elegir la forma \textit{shape}, lo que ocupa \textit{halfExtents} y se puede desplazar del centro del objeto \textit{offset}. Esto nos permite hacer la malla de colisión más grande o más pequeña que las dimensiones de nuestro objeto. \textit{ Shape\_handle} nos permite añadir una malla de colisión extra independientemente de si dentro de ese  objeto hay otro objeto o no. Esta malla de colisión extra se define respecto a la malla de colisión shape\_ main. Ambas mallas de colisión dependerán de la posición del objeto y se moverán lo mismo que él.
+
+La malla de colisión extra se uso para la parte cúbica que tiene la parte central del modelo de la pinza usando la forma  \textit{ ``shape'' : ``box''} y ajustando  la posición y dimensiones del cubo, mientras que la malla de colisión principal se le asigno a la parte del modelo con forma de octaedro, también con \textit{ ``shape'' : ``box''} pero ajustandolo a las medidas del octaedro. En la Figura  6.6 se puenden ver las 5 mallas de colisión que tiene el Mbot con pinzas.
+
+ \begin{figure}[H]
+  \centering
+ \includegraphics[width=0.6\textwidth, height=0.5\textwidth]{chapters/images/mallas.png}
+  \caption{Mallas de colisión del robot}
+\end{figure}
 
 Los usuarios tienen que programar el Mbot para que este abra y cierre las pinzas cuando la lata esté cerca. Para ello, implementaron las funciones, closeGripper(), openGripper() y getObjectInGripper() en JavaScript para luego poder crear los bloques y funciones respectivas en Scratch y Python para que los usuarios puedan manejar todas las operaciones del robot. 
  
  En Scracth se crearon nuevos bloques en los Motores : Abrir pinza, Cerrar Pinza y Dame objeto en pinza.
- En Python  se crearon las nuevas funciones: HAL.abrir\_pinza(), HAL.cerrar\_pinza() y  HAL.dame\_objeto\_en\_pinza() que en el fondo todas ellas llaman a funciones en JavaScript para mover el robot.
+ En Python  se crearon las nuevas funciones: HAL.abrir\_pinza(), HAL.cerrar\_pinza() y  HAL.dame\_objeto\_en\_pinza() que en el fondo todas ellas llaman las funciones JavaScript  del siguiente código para mover el robot.
  
 \begin{lstlisting}
 export async function closeGripper() {
@@ -153,17 +167,36 @@ export async function openGripper() {
 \end{lstlisting}
 
  
-En este punto la lata colisionaba con las mallas de las pinzas pero no se quedaba atrapada,  por eso se rotaron 8  grados en el eje y se ajustaron las físicas del mundo para que la lata no pudiera escaparse y el robot pudiera arrastrarla sin problema por el escenario.
+En este punto, al cerrar las pinzas,  la lata colisionaba con las mallas de colisión de las pinzas pero no se quedaba atrapada, para solucionar esto  se rotaron las pinzas 8  grados en el eje y. También se ajustaron las físicas del mundo para que el robot pudiera arrastrar la lata sin problemas por el escenario. En la Figura 6.7 podemos ver como eran las pinzas sin rotar y con octaedros y las nuevas pinzas con el modelo de Blender rotado 8 grados que finalmente se utilizó.
 
-Por útimo se hizo un evaluador automático para mostrar el porcenaje del circuito recorrido y unos iconos para indicar que la lata esta cogida o no, también se muestra y se guarda la puntuación total teniendo en cuenta el  porcentaje recorrido  y se suman 14 puntos si el robot lleva la lata y 20 puntos más si recorres todo el cicuito con ella. Esto se hizo en un fichero .js que se importa al ejercicio llamado gripper\_evaluator.js. En la Figura 6.5 se puede ver la rotación de las pinzas y la visualización del evaluador.
+
+\begin{figure}[H]
+  \begin{subfigure}[b]{0.5\textwidth}
+  \centering
+    \includegraphics[width=0.8\textwidth, height=0.5\textwidth]{chapters/images/pinzarecta.png}
+    \caption{Pinzas octaedros rectas}
+    \label{fig:f1}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}[b]{0.5\textwidth}
+  \centering
+    \includegraphics[width=0.8\textwidth, height=0.5\textwidth]{chapters/images/pinzaok.png}
+	\caption{Pinzas rotadas 8 grados}    
+    \label{fig:f2}
+ 
+  \end{subfigure}
+  \caption{Mbot con pinzas}
+\end{figure}
+
+Por útimo se hizo un evaluador automático para mostrar el porcentaje del circuito recorrido y unos iconos para indicar que la lata esta cogida o no. También se muestra y se guarda la puntuación total teniendo en cuenta el porcentaje recorrido, se suman 14 puntos si el robot lleva la lata y 20 puntos más si recorres todo el cicuito con ella. Esto se hizo en un fichero .js que se importa al ejercicio llamado gripper\_evaluator.js. En la Figura 6.8 se muestra la visualización del evaluador.
 
  \begin{figure}[H]
   \centering
  \includegraphics[width=0.8\textwidth, height=0.5\textwidth]{chapters/images/evaluadorpinza.png}
-  \caption{Absorción por posición, el confeti es invisble cuando el robot pasa por encima.}
+  \caption{Evaluador automático del juego del pañeulo}
 \end{figure}
-Finalmente se añadió el nuevo ejercicio a Kibotics en su versión de Python y Scratch y se añadió la teoría relacionada con este ejercicio para facilitar su uso y aumentar los conocimientos de los usuarios.
 
+Finalmente se añadió el nuevo ejercicio a Kibotics en su versión de Python y Scratch y se añadió la teoría relacionada con este ejercicio para facilitar su uso y aumentar los conocimientos de los usuarios (Figuras 6.9, 6.10, 6.11, 6.12, 6.13 y 6.14).
 
 \begin{figure}[H]
     \centering
@@ -198,24 +231,24 @@ Finalmente se añadió el nuevo ejercicio a Kibotics en su versión de Python y 
 \end{figure}
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.8\textwidth, height=0.4\textwidth]{chapters/images/teoriag5.png}
+    \includegraphics[width=1 \textwidth, height=0.3\textwidth]{chapters/images/teoriag5.png}
     \caption{¿Sabías que.. ?}
     \label{fig:my_label}
 \end{figure}
 
 \section{Solución de referencia}
-Este ejercicio se puede resolver de muchas formas, una de ellas es la que se muestra en la Figura 6. **para Python y para Scratch una solución posible es la que se indica en la Figura 6.** . 
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.7\textwidth, height=0.55\textwidth]{chapters/images/solucionpscratch.png}
-    \caption{Solución en Scratch }
-    \label{fig:my_label}
-\end{figure}
+Este ejercicio se puede resolver de muchas formas, una de ellas es la que se muestra en la Figura 6.15 para Python y  en la figura 6.16 para Scratch. 
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.7\textwidth, height=0.55\textwidth]{chapters/images/solucionppython.png}
     \caption{Solución en Python}
+    \label{fig:my_label}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth, height=0.55\textwidth]{chapters/images/solucionpscratch.png}
+    \caption{Solución en Scratch }
     \label{fig:my_label}
 \end{figure}
