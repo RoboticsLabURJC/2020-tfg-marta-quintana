@@ -4,9 +4,9 @@ En este capítulo vamos a profundizar en las tecnologías y herramientas que se 
 \section{Lenguajes de programación y de documentos}
 \subsection{HTML5}
 HTML5 es la última versión de HTML cuyas siglas corresponden a \textit{``HyperText Markup Language''} es el bloque de construcción más básico de la Web\cite{html}. \textit{``HyperText''} significa hipertexto, se refiere a enlaces que conectan páginas web entre sí, ya sea dentro de un único sitio web o entre sitios web. 
-\textit{``Markup''} que significa marca o etiqueta, ya que todas las páginas web están construidas en base a etiquetas. Con ellas se anota texto, imágenes y otros contenidos para mostrar en un navegador web. El formato HTML5 incluye etiquetas como:  \textless head\textgreater, \textless title\textgreater, \textless body\textgreater, \textless header\textgreater, \textless footer\textgreater, \textless article\textgreater, \textless section\textgreater, \textless p\textgreater, \textless div\textgreater, \textless span\textgreater, \textless img\textgreater, \textless aside\textgreater, \textless audio\textgreater, \textless canvas\textgreater, \textless datalist\textgreater, \textless details\textgreater, \textless embed\textgreater, \textless nav\textgreater, \textless output\textgreater, \textless progress\textgreater, \textless video\textgreater, \textless ul\textgreater, \textless ol\textgreater, \textless li\textgreater  y otros. En la Figura 3.1(a) podemos ver como es el uso de las etiquetas para la creación de una página web y en Figura 3.1(b) como se visualizaría en el navegador.
+\textit{``Markup''} significa marca o etiqueta, ya que todas las páginas web están construidas en base a etiquetas. Con ellas se anota texto, imágenes y otros contenidos para mostrar en un navegador web. El formato HTML5 incluye etiquetas como:  \textless head\textgreater, \textless title\textgreater, \textless body\textgreater, \textless header\textgreater, \textless footer\textgreater, \textless article\textgreater, \textless section\textgreater, \textless p\textgreater, \textless div\textgreater, \textless span\textgreater, \textless img\textgreater, \textless aside\textgreater, \textless audio\textgreater, \textless canvas\textgreater, \textless datalist\textgreater, \textless details\textgreater, \textless embed\textgreater, \textless nav\textgreater, \textless output\textgreater, \textless progress\textgreater, \textless video\textgreater, \textless ul\textgreater, \textless ol\textgreater, \textless li\textgreater  y otros. En la Figura 3.1(a) podemos ver cómo es el uso de las etiquetas para la creación de una página web y en la Figura 3.1(b) cómo se visualizaría en el navegador.
 
-\textit{``Language''} porque HTML es un lenguaje, tiene sus normas, tiene su estructura y una serie de convenciones que nos sirven para definir tanto la estructura como el contenido de una web. Esto no quiere decir que sea un lenguaje de programación. HTML no tiene estructuras de lenguaje de programación, como los bucles, las condiciones, las funciones, etcétera. HTML5 es un estándar que sirve para definir la estructura y el contenido de una página Web \cite{html2}. 
+Hablamos de \textit{``Language''} porque HTML es un lenguaje, tiene sus normas, tiene su estructura y una serie de convenciones que nos sirven para definir tanto la estructura como el contenido de una web. Esto no quiere decir que sea un lenguaje de programación. HTML no tiene estructuras de lenguaje de programación, como los bucles, las condiciones, las funciones, etcétera. HTML5 es un estándar que sirve para definir la estructura y el contenido de una página Web \cite{html2}. 
 
 \begin{figure}[H]
     \begin{subfigure}[b]{0.5\textwidth}
@@ -32,7 +32,7 @@ Generalmente junto con HTML se utilizan otras dos tecnologías web: CSS para la 
 Kibotics utiliza plantillas basadas en HTML5 en las páginas web que sirve. En este TFG se va a utilizar HTML5 para modificar y crear las plantillas de las páginas web que mostrarán los nuevos ejercicios que vamos a introducir en la plataforma.
 
 \subsection{JavaScript}
-JavaScript es un lenguaje de programación interpretado, no necesita compilar los programas para ejecutarlos, pero sí un intérprete que en nuestro caso es el navegador. Sigue el estándar ECMAScript que se encarga de regir cómo debe ser interpretado, el buen funcionamiento y operatividad del lenguaje JavaScript. Este lenguaje posee una sintaxis derivada de C y Java pero no tiene nada que ver con ellos.
+JavaScript es un lenguaje de programación interpretado, no necesita compilar los programas para ejecutarlos, pero sí un intérprete que en nuestro caso es el navegador. JavaScript sigue el estándar ECMAScript que se encarga de regir cómo debe ser interpretado, su operatividad y buen funcionamiento. Este lenguaje posee una sintaxis derivada de C y Java pero no tiene nada que ver con ellos.
 
 Se utiliza principalmente para crear páginas web interactivas, que incorporan efectos como texto que aparece y
 desaparece, animaciones, acciones que se activan al pulsar botones y ventanas con
@@ -61,14 +61,14 @@ En este trabajo JavaScript ha sido una pieza clave para su desarrollo y todos lo
  
 \subsection{Python y Scratch}
 
-Python es un lenguaje de programación orientado a objetos, es un lenguaje interpretado o de script, al igual que JavaScript necesita un programa intermedio que haga de ``intérprete''. Es un lenguaje fuertemente tipado y multiplataforma. Su filosofía es que el código sea legible y tenga  una sintaxis muy limpia. Sencillo pero potente, lenguaje muy usado en la universidad y trabajo \cite{python}.
+Python es un lenguaje de programación orientado a objetos, es un lenguaje interpretado o de script, y al igual que JavaScript necesita un programa intermedio que haga de ``intérprete''. Es un lenguaje fuertemente tipado y multiplataforma. Su filosofía es que el código sea legible y tenga  una sintaxis muy limpia. Sencillo pero potente, lenguaje muy usado en la universidad y trabajo \cite{python}.
 
-El servidor de Kibotics está programado en Python (usa la tecnología web Django). Los ejercicios disponibles en la plataforma se pueden resolver también con este lenguaje. Para usar Python las páginas web de los ejercicios contienen el editor ACE. ACE es un editor de código incrustable escrito en JavaScript \cite{aceeditor}, esto permite al usuario escribir el código de la solución del ejercio en Python e internamente este código se traduce a JavaScript para el correcto funcionamiento de los ejercicios. 
+El servidor de Kibotics está programado en Python (usa la tecnología web Django). Los ejercicios disponibles en la plataforma se pueden resolver también con este lenguaje. Para usar Python las páginas web de los ejercicios contienen el editor ACE. ACE es un editor de código incrustable escrito en JavaScript \cite{aceeditor}. Esto permite al usuario escribir el código de la solución del ejercicio en Python e internamente este código se traduce a JavaScript para el correcto funcionamiento de los ejercicios. 
 
-Como hemos comentado en la introducción, Scratch es un lenguaje de programación visual basado en bloques, creado y mantenido por Lifelong Kindergarten group en el MIT Media Lab. Para usar Scratch en Kibotics se usa Blocky, que es una librería de JavaScript desarrollada por Google. Permite usar en una página web un editor de código visual. Es compatible con Chrome, Firefox, Safari, Opera y otros navegadores. Corre por el lado cliente y no tiene dependencia con el servidor \cite{blocky}.
+Como hemos comentado en la introducción, Scratch es un lenguaje de programación visual basado en bloques, creado y mantenido por Lifelong Kindergarten group en el MIT Media Lab. Para usar Scratch en Kibotics se usa Blocky, que es una librería de JavaScript desarrollada por Google. Permite usar en una página web un editor de código visual. Es compatible con Chrome, Firefox, Safari, Opera y otros navegadores. Corresponde a tecnologías del lado cliente y no tiene dependencia con el servidor \cite{blocky}.
 
 
-Los ejercicios planteados en este TFG están resueltos tanto en Python como en Scratch, al ser una plataforma para el ámbito educativo estos dos lenguajes son una buena alternativa para empezar a programar porque son lenguajes sencillos y con una curva de aprendizaje muy suave. En la Figura 3.3 podemos ver unos ejemplos de soluciones.
+Los ejercicios planteados en este TFG están resueltos tanto en Python como en Scratch. Al ser una plataforma para el ámbito educativo estos dos lenguajes son una buena alternativa para empezar a programar porque son lenguajes sencillos y con una curva de aprendizaje muy suave. En la Figura 3.3 podemos ver unos ejemplos de soluciones.
 
 \begin{figure}[H]
   \begin{subfigure}[b]{1\textwidth}
@@ -129,7 +129,7 @@ Entre ellas TensorFlowJS, Web Audio API y Teachable Machine (Figura 3.5) son las
 \\
 TensorFlowJS es una biblioteca de JavaScript para el entrenamiento y la implementación de modelos de aprendizaje automático en navegadores y en Node.js . TensorFlow es una plataforma de código abierto para la creación de modelos de aprendizaje automático \cite{tfjs}.
 
-La API de Audio Web provee un sistema poderoso y versatil para controlar audio en la Web, permitiendo a los desarrolladores escoger fuentes de audio, agregar efectos al audio, crear visualizaciones de audios, aplicar efectos espaciales entre otras cosas \cite{waa}.
+La API de Audio Web provee un sistema poderoso y versatil para controlar audio en la Web, permitiendo a los desarrolladores escoger fuentes de audio, agregar efectos al audio, crear visualizaciones de audios y aplicar efectos espaciales, entre otras cosas \cite{waa}.
 
 Teachable Machine es una herramienta basada en la Web que hace posible crear modelos de aprendizaje automático de manera rápida, sencilla y accesible para todos \cite{tm}.
 
@@ -157,9 +157,9 @@ En el Capítulo 4 se explicará en profundidad cómo se han usado estas tecnolog
 
 \subsection{A-Frame}
 
-A-Frame es un marco web para crear experiencias de realidad virtual (VR). A-Frame utiliza HTML declarativo, lo que facilita bastante la creación de escenas en 3D y es accesible para todos, desde desarrolladores web, artistas, diseñadores, educadores a estudiantes. Su estructura entidad-componente proporciona una infinidad de posibilidades y ofrece compatibilidad con \textit{three.js}, una biblioteca  escrita en JavaScript para crear y mostrar gráficos animados 3D en un navegador Web. 
+A-Frame es un marco web para crear experiencias de realidad virtual (VR). A-Frame utiliza HTML declarativo, lo que facilita bastante la creación de escenas en 3D y es accesible para todos, desde desarrolladores web, artistas y diseñadores, a educadores y estudiantes. Su estructura entidad-componente proporciona una infinidad de posibilidades y ofrece compatibilidad con \textit{three.js}, una biblioteca  escrita en JavaScript para crear y mostrar gráficos animados 3D en un navegador Web. 
 
-Sin instalar nada, A-Frame permite manejar modelos 3D para crear entornos de realidad virtual solamente usando las etiquetas \textless script\textgreater  y \textless a-scene\textgreater. Es compatible con aplicaciones de realidad virtual como GearVR y Windows Mixed Reality entre otras, además funciona perfectamente en ordenadores y teléfonos inteligentes \cite{aframe}. 
+Sin instalar nada, A-Frame permite manejar modelos 3D para crear entornos de realidad virtual solamente usando las etiquetas \textless script\textgreater  y \textless a-scene\textgreater. Es compatible con aplicaciones de realidad virtual como GearVR y Windows Mixed Reality entre otras. Además funciona perfectamente en ordenadores y teléfonos inteligentes \cite{aframe}. 
 
 
 Para crear escenas en una página web solo es necesario importar la librería de A-Frame de esta forma: \begin{lstlisting}
