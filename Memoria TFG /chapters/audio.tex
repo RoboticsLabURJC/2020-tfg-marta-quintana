@@ -92,20 +92,20 @@ Este modelo al ser pre-entrenado y definido por TensorFlow JS no era muy exacto 
 
 En este segundo prototipo cada palabra necesitaba grabar sus muestras, al menos unas 100 muestras por palabra, incluidas las muestras de ruido de fondo para que la detección fuera más precisa. Este modelo funcionaba más o menos bien pero no era lo más adecuado para el ejercicio que se había planteado. A pesar de que funcionaba bien se descartó porque era una tarea muy laboriosa grabar todas las muestras cada vez que entrabas en el ejercicio. 
 En estos videos \footnote{https://www.youtube.com/watch?v=DcwJzCOE4kI}
-\footnote{https://www.youtube.com/watch?v=nPeCAb47jiU}se puede ver  como era el modelo.
+\footnote{https://www.youtube.com/watch?v=nPeCAb47jiU} se puede ver cómo era el modelo.
 
 Investigando el mundo de reconocimiento de audio y JavaScript se descubrió la herramienta Teachable Machine, la tecnología  que finalmente se ha usado en este proyecto.
 
-Teachable Machine es una herramienta basada en la Web para crear modelos de aprendizaje automático destaca por modelos de clasificación de imágenes, sonidos y posturas. Teachable Machine internamente usa TensorFlowJS . 
+Teachable Machine es una herramienta basada en la Web para crear modelos de aprendizaje automático. Destaca por modelos de clasificación de imágenes, sonidos y posturas. Teachable Machine internamente usa TensorFlowJS . 
 
 La creación de un modelo en Teachable Machine tiene 3 fases: recopilación, preparación y exportación del modelo a tu proyecto.
 
 \begin{itemize}
 \item \textit{Recopilación :}
 
-Para hacer el modelo primero hay que recopilar muestras, para ello fue necesaria la participación de 10 personas para que el modelo fuera más completo y pudiera reconocer la palabra independientemente de si la voz del usuarios es más aguda o más grabe.  Se usaron aproximadamente 10 muestras de cada palabra por persona. El modelo cuenta con 105 muestras por cada palabra (10 muestras x 10 personas). Las palabras que queremos reconocer son \textit{go, stop, back, right, left, up, down } y el ruido de fondo. Esto ha supuesto un total de 840 muestras.
+Para hacer el modelo primero hay que recopilar muestras. Para ello fue necesaria la participación de 10 personas para que el modelo fuera más completo y pudiera reconocer la palabra independientemente de si la voz del usuario es más aguda o más grave.  Se usaron aproximadamente 10 muestras de cada palabra por persona. El modelo cuenta con 105 muestras por cada palabra (10 muestras aproximadamente x 10 personas). Las palabras que queremos reconocer son \textit{go, stop, back, right, left, up, down } y el ruido de fondo. Esto ha supuesto un total de 840 muestras.
 
-Las muestras se grabaron una a una en la página de creación de modelos de Teachable Machine en la Figura 4.2 se puede ver el modelo y las muestras grabadas.
+Las muestras se grabaron una a una en la página de creación de modelos de Teachable Machine. En la Figura 4.2 se puede ver el modelo y las muestras grabadas.
 
 
 \begin{figure}[H]
@@ -117,7 +117,7 @@ Las muestras se grabaron una a una en la página de creación de modelos de Teac
 
 \item  \textit{Preparación :}
 
-Una vez conseguidas todas las muestras, hay que preparar el modelo. Teachable Machine permite cambiar las épocas. Gracias a unas tablas de precisión y pérdidas por época puedes guiarte para que en función de tus datos puedas ajustar este parámetro. Para este proyecto se utilizaron los valores predeterminados que nos proporcionaban buenos resultados.
+Una vez conseguidas todas las muestras, hay que preparar el modelo. Teachable Machine permite cambiar las épocas. Gracias a unas tablas de precisión y pérdidas por época puedes guiarte para que en función de tus datos puedas ajustar este parámetro. Para este proyecto se utilizaron los valores predeterminados los cuales nos proporcionaron buenos resultados.
 
 \item  \textit{Exportación del modelo a Websim :}
 
@@ -131,11 +131,11 @@ Una vez preparado, la página muestra una vista previa en el que puedes probar y
  
 
 Una vez ajustado y con las 105 muestras por palabra, se exportó el modelo. 
-Para exportarlo, Teachable Machine lo puede alojar en sus servidores y proporcionarte  un enlace de forma gratuita o puedes descargarlo, se optó por alojarlo en la nube de Teachable Machine para que no ocupara mucho espacio en Kibotics, ya que la forma de importarlo  a JavaScript era similar en ambas opciones.
+Para exportarlo, Teachable Machine lo puede alojar en sus servidores y proporcionarte  un enlace de forma gratuita o puedes descargarlo. Se optó por alojarlo en la nube de Teachable Machine para que no ocupara mucho espacio en Kibotics, ya que la forma de importarlo  a JavaScript era similar en ambas opciones.
 Una vez subido a la nube, Teachable Machine te proporciona una URL de la dirección de tu modelo y  te proporciona el código necesario para importarlo a tu proyecto desde JavaScript.
 \end{itemize}
 
-Con estos 3 pasos ya tenemos creado nuestro modelo en Teachable Machine. Para probar el funcionamiento de este modelo se hizo una prueba de reconocimiento de audio sin fusionarlo con el comportamiento del robot en Websim. En este enlace \footnote{https://martaquintana.github.io/Audio\_Recognition/index.html} se puede probar el funcionamiento de este código basado en HTML5, CSS3, JavaScript y Teachable Machine(TensorFlowJS) (Ver Figura 4.4). Esta página web pide permiso para acceder al micrófono y cuando lo tiene, analiza el audio  y muestra la probabilidad de cada palabra en tiempo real.  
+Con estos 3 pasos ya tenemos creado nuestro modelo en Teachable Machine. Para probar el funcionamiento de este modelo se hizo una prueba de reconocimiento de audio sin fusionarlo con el comportamiento del robot en Websim. En este enlace \footnote{https://martaquintana.github.io/Audio\_Recognition/index.html} se puede probar el funcionamiento de este código basado en HTML5, CSS3, JavaScript y Teachable Machine(TensorFlowJS) (Ver Figura 4.4). Esta página web pide permiso para acceder al micrófono y, cuando lo tiene, analiza el audio  y muestra la probabilidad de cada palabra en tiempo real.  
 
 Este es el código de esa página web de prueba del modelo en el que se incluye el código que nos facilita Teachable Machine a la hora de exportar el modelo:
 
@@ -248,7 +248,7 @@ Este es el código de esa página web de prueba del modelo en el que se incluye 
     \label{fig:my_label}
 \end{figure}
 
-Una vez se comprobó que el modelo funcionaba, se incorporó  el modelo de reconocimiento de audio a Websim, para ello  se creó el siguiente fichero audio.js que se importa en el HTML del ejercicio de la siguiente forma:   
+Una vez se comprobó que el modelo funcionaba, se incorporó  el modelo de reconocimiento de audio a Websim. Para ello  se creó el siguiente fichero audio.js que se importa en el HTML del ejercicio de la siguiente forma:   
 
 \textless script type=``text/javascript" src=``js/audio.js" \textgreater
 
@@ -408,23 +408,23 @@ Con el fichero de configuración, el HTML y este código JavaScript el ejercicio
     \label{fig:my_label}
 \end{figure}
 
-A continuación se explica como funciona este programa.
+A continuación se explica cómo funciona este programa.
 
-Cuando se pulsa al boton Conect\_To\_Robot se llama a la función del mismo nombre que internamente ejecuta  la funcion listen() que es la que inicializa el reconocimiento y analiza el audio cada 10 segundos.
-Este botón se pone en verde cuando esta analizando y en rojo cuando está desconectado, esto quiere decir que el robot no reconoce ninguna palabra mientras el botón esté de ese color.
+Cuando se pulsa el botón Conect\_To\_Robot se llama a la función del mismo nombre que internamente ejecuta  la función listen() que es la que inicializa el reconocimiento y analiza el audio cada 10 segundos.
+Este botón se pone en verde cuando está analizando y en rojo cuando está desconectado, mientras el bóton esté de ese color el robot no reconoce ninguna palabra.
 
-La función listen() inicializa el modelo y crea las etiquetas que necesita, se ha creado un setTimeout para esperar 10 segundos hasta que cargue el modelo. Cuando este carga, se establece un setInterval para que cada 10 segundos se ejecute la función analizar que devuelve la palabra estimada.
+La función listen() inicializa el modelo y crea las etiquetas que necesita. Se ha creado un setTimeout para esperar 10 segundos hasta que cargue el modelo. Cuando éste carga, se establece un setInterval para que cada 10 segundos se ejecute la función analizar que devuelve la palabra estimada.
 
-La función analizar es la que invoca al analizador o \textit{recognizer}, en él se predice la palabra que cree que es más probable que haya dicho el usuario.  \textit{Prediction} es esa palabra que tiene  la probabilidad más alta.
+La función analizar es la que invoca al analizador o \textit{recognizer}: en él se predice la palabra que cree que es más probable que haya dicho el usuario.  \textit{Prediction} es esa palabra que tiene  la probabilidad más alta.
 
-Una vez tenemos la \textit{prediction} se compara esta palabra con las 8 palabras que hemos entrenado el modelo \textit{go, stop, back, right, left, up, down y \_background\_noise\_}
+Una vez tenemos la \textit{prediction} se compara esta palabra con las 8 palabras que hemos entrenado el modelo: \textit{go, stop, back, right, left, up, down y \_background\_noise\_}
 
-Gracias al evento 'robot-loaded' cuando el robot está cargado en el escenario,  obtenemos el objeto localRobot, que en nuestro ejercicio es el dron. En Kibotics poseen una API\footnote{Application Programming Interfaces} llamada HAL API \footnote{Hardware Abstraction Layer} con funciones para controlar el movimiento del robot.  Cuando se predice una de las 8 palabras en los condicionales \textit{if(){} else if() {}}se llama a una de estas funciones de velocidad : localRobot.setV(), para asignar la velocidad lineal, se utiliza para ir hacia delante ``go'', ir hacia atrás ``back '' o parar ``stop'',  localRobot.setW() para la velocidad angular, se usa para girar a la derecha``right'' o a la izquierda``left'' y  localRobot.setL() para asignar la velocidad que va a subir ``up'' o bajar ``down'' el dron. Si se predice que es ruido de fondo no afecta en el comportamiento del dron.
+Gracias al evento \textit{'robot-loaded'}, cuando el robot está cargado en el escenario, obtenemos el objeto localRobot, que en nuestro ejercicio es el dron. En Kibotics poseen una API\footnote{Application Programming Interfaces} llamada HAL API \footnote{Hardware Abstraction Layer} con funciones para controlar el movimiento del robot.  Cuando se predice una de las 8 palabras en los condicionales \textit{if(){} else if() {}}se llama a una de estas funciones de velocidad : localRobot.setV(), para asignar la velocidad lineal, se utiliza para ir hacia delante ``go'', ir hacia atrás ``back '' o parar ``stop'',  localRobot.setW() para la velocidad angular, se usa para girar a la derecha``right'' o a la izquierda``left'' y  localRobot.setL() para asignar la velocidad que va a subir ``up'' o bajar ``down'' el dron. Si se predice que es ruido de fondo no afecta en el comportamiento del dron.
 
 La implementación del ejercicio con Teachable Machine  nos ha aportado sencillez y más precisión que los modelos mencionados anteriormente.
 Una vez realizado el ejercicio se optimizó para que el navegador del usuario no estuviera todo el tiempo analizando el  audio si no tenemos nada que decirle al dron y aprovechar los recursos del ordenador del usuario.
 
-La optimización se realizó añadiendo el contador \textit{(noise\_times)} que aparece en el código anterior, este cuenta las veces que se predice ruido de fondo. Se estableció un máximo de 10 las veces seguidas que la predicción es \textit{\_background\_noise\_}. Como se analiza el audio cada 10 segundos esto quiere decir que si han pasado 100 segundos y siempre ha detectado ruido de fondo, la función analizar para de ejecutarse y no se predice ninguna palabra. Cuando ocurre esto se muestra en el navegador un nuevo botón \textit{(Continue analizing)} que  si lo pulsas desaparece y se reinicia el procesamiento de audio. Ver Figura 4.6.
+La optimización se realizó añadiendo el contador \textit{(noise\_times)} que aparece en el código anterior: éste cuenta las veces que se predice ruido de fondo. Se estableció un máximo de 10 las veces seguidas que la predicción es \textit{\_background\_noise\_}. Como se analiza el audio cada 10 segundos ésto quiere decir que si han pasado 100 segundos y siempre ha detectado ruido de fondo, la función analizar para de ejecutarse y no se predice ninguna palabra. Cuando ésto ocurre, se muestra en el navegador un nuevo botón \textit{(Continue analizing)} que al pulsarlo desaparece y se reinicia el procesamiento de audio. Ver Figura 4.6.
 
 \begin{figure}[H]
   \begin{subfigure}[b]{0.5\textwidth}
@@ -445,7 +445,7 @@ La optimización se realizó añadiendo el contador \textit{(noise\_times)} que 
 \end{figure}
 
 
-Para este ejercicio se crearon dos escenarios uno con portería de rugby y otro con una pared que se añadieron al  fichero de configuración del drone que hemos visto al principio del capítulo. La portería se creó con Blender y la pared con A-Frame en el fichero de configuración de Websim. Ver Figura 4.7 y 4.8.
+Para este ejercicio se crearon dos escenarios: uno con portería de rugby y otro con una pared, que se añadieron al  fichero de configuración del drone que hemos visto al principio del capítulo. La portería se creó con Blender y la pared con A-Frame en el fichero de configuración de Websim. Ver Figura 4.7 y 4.8.
 
  \begin{figure}[H]
   \begin{subfigure}[b]{0.5\textwidth}
@@ -477,7 +477,7 @@ Para este ejercicio se crearon dos escenarios uno con portería de rugby y otro 
 
 \subsection{Solución de referencia}
 
-Este ejercicio es un juego, el objetivo es dirigir al dron con tu voz para cruzar por la portería de rugby o pasar de un lado al otro de la pared sin chocarte con ellas. Se ha realizado un video promocional \footnote{https://youtu.be/sr54MxMw954} y este otro vídeo \footnote{https://www.youtube.com/watch?v=85oTxgQQrck} donde se muestran unas posibles soluciones para guiar al dron en los distintos escenarios.
+Este ejercicio es un juego, el objetivo es dirigir al dron con tu voz para cruzar por la portería de rugby o pasar de un lado al otro de la pared sin chocarte con ellas. Se ha realizado un vídeo promocional \footnote{https://youtu.be/sr54MxMw954} y este otro vídeo \footnote{https://www.youtube.com/watch?v=85oTxgQQrck} donde se muestran unas posibles soluciones para guiar al dron en los distintos escenarios.
 
  \begin{figure}[H]
   \begin{subfigure}[b]{0.5\textwidth}
@@ -500,19 +500,19 @@ Este ejercicio es un juego, el objetivo es dirigir al dron con tu voz para cruza
 
 \section{Banda Sonora}
 
-Para añadir banda sonora a los ejercicios existentes en Kibotics, se estudió como insertar audio desde HTML5 e implementarlo con JavaScript en Websim.
+Para añadir banda sonora a los ejercicios existentes en Kibotics, se estudió cómo insertar audio desde HTML5 e implementarlo con JavaScript en Websim.
 
 El elemento HTML \textless audio\textgreater  se usa para reproducir un fichero de audio en una página web.
 Los atributos que destacan de este elemento son \textit{controls, source, loop y autoplay }.
 El atributo \textit{controls} proporciona controles como reproducir, parar y subir o bajar el volumen.
- \textit{Source} permite especificar la fuente de audio, en este caso un fichero en formato mp3, ogg o wav. \textit{Loop} permite volver a reproducir el audio cuando este se acaba, el audio estará en bucle y \textit{autoplay} se utiliza para que una vez se cargue el fichero de audio, este empiece a reproducirse.
+ \textit{Source} permite especificar la fuente de audio, en este caso un fichero en formato mp3, ogg o wav. \textit{Loop} permite volver a reproducir el audio automáticamente cuando se termine, de esta forma  el audio estará en bucle. Y \textit{autoplay} se utiliza para que una vez se cargue el fichero de audio, éste empiece a reproducirse.
 
-Para hacer esta mejora a Kibotics, en la carpeta assets de Websim se añadió una nueva carpeta llamada ``soundtracks'' con temas musicales para poner en los ejercicios. Las canciones usadas son de Patrick De Artega Royalty Free Music  \footnote{ https://patrickdearteaga.com Credits to Patrick De Artega Royalty Free Music 2020}
+Para hacer esta mejora a Kibotics, en la carpeta \textit{assets} de Websim se añadió una nueva carpeta llamada ``soundtracks'' con temas musicales para poner en los ejercicios. Las canciones usadas son de Patrick De Artega Royalty Free Music  \footnote{ https://patrickdearteaga.com Credits to Patrick De Artega Royalty Free Music 2020}
 y los temas que se han añadido son:
-Chiptronical, Common Fight, Goliath's Foe, Resilience, Spring Village, TheTrueStory of Beelzebub y Vals de su jardín
+Chiptronical, Common Fight, Goliath's Foe, Resilience, Spring Village, TheTrueStory of Beelzebub y Vals de su jardín.
 
 
-La banda sonora de cada ejercicio se define en su fichero de configuración. En ese fichero se ha creado un objeto con una  la etiqueta ``soundtrack'', el identificador ``audio'' y la dirección del fichero fuente del audio (\textit{src}) que se quiere asignar como banda sonora, como se muestra en el siguiente código:
+La banda sonora de cada ejercicio se define en su fichero de configuración. En ese fichero se ha creado un objeto con la etiqueta ``soundtrack'', el identificador ``audio'' y la dirección del fichero fuente del audio (\textit{src}) que se quiere asignar como banda sonora, como se muestra en el siguiente código:
 
 \begin{lstlisting}
  	{"tag":"soundtrack",
@@ -523,7 +523,7 @@ La banda sonora de cada ejercicio se define en su fichero de configuración. En 
         },
    \end{lstlisting}
 
-Websim tiene un analizador de ficheros json llamado config\_parser.js, con este fichero JavaScript se analiza el fichero de configuración (incluyendo el objeto que hemos mencionado anteriormente) y traducirlo a A-Frame.
+Websim tiene un analizador de ficheros json llamado config\_parser.js, con este fichero JavaScript se analiza el fichero de configuración (incluyendo el objeto que hemos mencionado anteriormente) y lo traduce a A-Frame.
 
 Cuando Websim lee el fichero de configuración (formato JSON) se llama a parseSoundtrack() que recibe los objetos de la escena para analizar si hay banda sonora o no en el ejercicio.
 
@@ -532,7 +532,7 @@ Cuando Websim lee el fichero de configuración (formato JSON) se llama a parseSo
 \end{lstlisting}
 
 En el siguiente código se muestra como se analizan todos los objetos de la escena y si alguno tiene la etiqueta ``soundtrack'', la variable soundtrack  que por defecto siempre es \textit{false}, pasa a ser \textit{true} y se asigna a la variable audio el atributo  ``src'' del objeto, en este caso ``../assets/soundtracks/Spring\_Village.ogg".  
-Si soundtrack es \textit{true}, se crea un objeto Audio() de HTML5 desde JavaScript; y se le asigna el \textit{src} del audio configurado y se empieza a reproducir. Como \textit{reproducir.loop} es \textit{true}, el audio estará en bucle todo el tiempo.
+Si soundtrack es \textit{true}, se crea un objeto Audio() de HTML5 desde JavaScript y se le asigna el \textit{src} del audio configurado y se empieza a reproducir. Como \textit{reproducir.loop} es \textit{true}, el audio estará en bucle todo el tiempo.
 
 \begin{lstlisting}
 export function parseSoundtrack(sceneObjects){

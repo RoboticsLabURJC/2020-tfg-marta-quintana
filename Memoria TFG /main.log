@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2021.5.24)  10 JUN 2021 15:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2021.5.24)  12 JUN 2021 18:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3250,32 +3250,32 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language append on input line 501.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language append on input line 501.
-LaTeX Info: Redefining \. on input line 519.
-LaTeX Info: Redefining \% on input line 519.
+LaTeX Info: Redefining \. on input line 517.
+LaTeX Info: Redefining \% on input line 517.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language append on input line 519.
+(babel)             in language append on input line 517.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language append on input line 519.
+(babel)             in language append on input line 517.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language append on input line 519.
+(babel)             in language append on input line 517.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language append on input line 519.
+(babel)             in language append on input line 517.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language append on input line 519.
+(babel)             in language append on input line 517.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language append on input line 519.
+(babel)             in language append on input line 517.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language append on input line 519.
+(babel)             in language append on input line 517.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language append on input line 519.
+(babel)             in language append on input line 517.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language append on input line 519.
+(babel)             in language append on input line 517.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language append on input line 519.
+(babel)             in language append on input line 517.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language append on input line 519.
+(babel)             in language append on input line 517.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language append on input line 519.
+(babel)             in language append on input line 517.
  [46 <./chapters/images/solucionaudio.png> <./chapters/images/solucionaudio2.pn
 g>]
 Package babel Info: Redefining spanish shorthand <<
@@ -4383,25 +4383,25 @@ Package babel Info: Redefining spanish shorthand "?
 (babel)             in language append on input line 1.
 
 Underfull \hbox (badness 10000) in paragraph at lines 8--9
-[]\OT1/ptm/m/n/12 \?`Qui[]en in-vent[]o la pa-la-bra ro-bot?" https://www.muyin
-teresante.es/cultura/arte-
+[]\OT1/ptm/m/n/12 ``?`Qui[]en in-vent[]o la pa-la-bra ro-bot?" https://www.muyi
+nteresante.es/cultura/arte-
  []
 
 
 Underfull \hbox (badness 1577) in paragraph at lines 10--11
-[]\OT1/ptm/m/n/12 \Abex." https://www.abexsl.es/es/sistema-robotico-da-vinci/qu
-e-es (ac-ces-sed Apr. 18,
+[]\OT1/ptm/m/n/12 ``Abex." https://www.abexsl.es/es/sistema-robotico-da-vinci/q
+ue-es (ac-ces-sed Apr. 18,
  []
 
 
 Underfull \hbox (badness 3792) in paragraph at lines 12--13
-[]\OT1/ptm/m/n/12 \Los me-jo-res KITS de ROB[]OTI-CA y RO-BOTS pa-ra NI[]NOS po
-r eda-des en
+[]\OT1/ptm/m/n/12 ``Los me-jo-res KITS de ROB[]OTI-CA y RO-BOTS pa-ra NI[]NOS p
+or eda-des en
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 16--17
-[]\OT1/ptm/m/n/12 \?`Qu[]e es la World Wi-de Web (www) y c[]omo fun-cio-na?"
+[]\OT1/ptm/m/n/12 ``?`Qu[]e es la World Wi-de Web (www) y c[]omo fun-cio-na?"
  []
 
 LaTeX Font Info:    Try loading font information for OMS+ptm on input line 18.
@@ -4412,8 +4412,8 @@ LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 18.
 
 Underfull \hbox (badness 10000) in paragraph at lines 18--19
-[]\OT1/ptm/m/n/12 \Introducci[]on a las tec-no-log[]^^Pas web \OMS/cmsy/m/n/12 
-^^A \OT1/ptm/m/n/12 myTeachingURJC/2018-19-CSAAI Wi-
+[]\OT1/ptm/m/n/12 ``Introducci[]on a las tec-no-log[]^^Pas web \OMS/cmsy/m/n/12
+ ^^A \OT1/ptm/m/n/12 myTeachingURJC/2018-19-CSAAI Wi-
  []
 
 
@@ -4424,8 +4424,8 @@ ducci[]on-a-las-
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 21--22
-[]\OT1/ptm/m/n/12 \Tecnolog[]^^Pas y he-rra-mien-tas pa-ra el desa-rro-llo web.
-"
+[]\OT1/ptm/m/n/12 ``Tecnolog[]^^Pas y he-rra-mien-tas pa-ra el desa-rro-llo web
+."
  []
 
 
@@ -4436,8 +4436,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 21--22
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 24--25
-[]\OT1/ptm/m/n/12 \The Web fra-me-work for per-fec-tio-nists with dead-li-nes |
- Djan-go."
+[]\OT1/ptm/m/n/12 ``The Web fra-me-work for per-fec-tio-nists with dead-li-nes 
+| Djan-go."
  []
 
 Package babel Info: Redefining spanish shorthand <<
@@ -4470,14 +4470,14 @@ Package babel Info: Redefining spanish shorthand "?
 
 ]
 Underfull \hbox (badness 1546) in paragraph at lines 26--27
-[]\OT1/ptm/m/n/12 \Web Ser-vi-ce Ef-fi-ciency at Ins-ta-gram with Pyt-hon | by 
-Ins-ta-gram En-gi-nee-ring
+[]\OT1/ptm/m/n/12 ``Web Ser-vi-ce Ef-fi-ciency at Ins-ta-gram with Pyt-hon | by
+ Ins-ta-gram En-gi-nee-ring
  []
 
 
 Underfull \hbox (badness 5446) in paragraph at lines 30--31
-[]\OT1/ptm/m/n/12 \Top Com-pa-nies That Use No-de.JS in Pro-duc-tion: Net-flix,
- Tre-llo, and Co."
+[]\OT1/ptm/m/n/12 ``Top Com-pa-nies That Use No-de.JS in Pro-duc-tion: Net-flix
+, Tre-llo, and Co."
  []
 
 
@@ -4494,14 +4494,14 @@ potente-lenguaje-de-
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 35--36
-[]\OT1/ptm/m/n/12 \Top 10 web-si-tes built with PHP tech-no-logy - Fa-ce-book, 
-Yahoo..."
+[]\OT1/ptm/m/n/12 ``Top 10 web-si-tes built with PHP tech-no-logy - Fa-ce-book,
+ Yahoo..."
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 38--39
-[]\OT1/ptm/m/n/12 \La im-por-tan-cia del con-te-ni-do mul-ti-me-dia en edu-ca-c
-i[]on."
+[]\OT1/ptm/m/n/12 ``La im-por-tan-cia del con-te-ni-do mul-ti-me-dia en edu-ca-
+ci[]on."
  []
 
 
@@ -4512,14 +4512,14 @@ ido-multimedia-
 
 
 Underfull \hbox (badness 1688) in paragraph at lines 43--44
-[]\OT1/ptm/m/n/12 \El V[]^^Pdeo Edu-ca-ti-vo co-mo re-cur-so di-na-mi-za-dor de
-l Apren-di-za-je - EVir-tual-plus."
+[]\OT1/ptm/m/n/12 ``El V[]^^Pdeo Edu-ca-ti-vo co-mo re-cur-so di-na-mi-za-dor d
+el Apren-di-za-je - EVir-tual-plus."
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 45--46
-[]\OT1/ptm/m/n/12 \La Im-por-tan-cia Del Con-te-ni-do Mul-ti-me-dia En La Edu-c
-a-ci[]on."
+[]\OT1/ptm/m/n/12 ``La Im-por-tan-cia Del Con-te-ni-do Mul-ti-me-dia En La Edu-
+ca-ci[]on."
  []
 
 LaTeX Info: Redefining \. on input line 49.
@@ -4550,31 +4550,31 @@ Package babel Info: Redefining spanish shorthand "?
 (babel)             in language append on input line 49.
 [75]
 Underfull \hbox (badness 10000) in paragraph at lines 49--50
-[]\OT1/ptm/m/n/12 \Rob[]oti-ca edu-ca-ti-va: ?`qu[]e es y cu[]ales son sus ven-
-ta-jas?"
+[]\OT1/ptm/m/n/12 ``Rob[]oti-ca edu-ca-ti-va: ?`qu[]e es y cu[]ales son sus ven
+-ta-jas?"
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 55--56
-[]\OT1/ptm/m/n/12 \LEGO MINDS-TORMS Edu-ca-tion EV3 | LEGO[] Edu-ca-tion."
+[]\OT1/ptm/m/n/12 ``LEGO MINDS-TORMS Edu-ca-tion EV3 | LEGO[] Edu-ca-tion."
  []
 
 
 Underfull \hbox (badness 2189) in paragraph at lines 56--57
-[]\OT1/ptm/m/n/12 \Recursos, Soft-wa-re y Ac-ti-vi-da-des GRA-TIS | LE-GO Edu-c
-a-tion - RO-BO-TIX."
+[]\OT1/ptm/m/n/12 ``Recursos, Soft-wa-re y Ac-ti-vi-da-des GRA-TIS | LE-GO Edu-
+ca-tion - RO-BO-TIX."
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 57--58
-[]\OT1/ptm/m/n/12 \What Is mBlock 5?" https://www.yuque.com/makeblock-help-cent
-er-en/mblock-
+[]\OT1/ptm/m/n/12 ``What Is mBlock 5?" https://www.yuque.com/makeblock-help-cen
+ter-en/mblock-
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 60--61
-[]\OT1/ptm/m/n/12 \Competiciones de rob[]oti-ca edu-ca-ti-va a los que apun-tar
--se."
+[]\OT1/ptm/m/n/12 ``Competiciones de rob[]oti-ca edu-ca-ti-va a los que apun-ta
+r-se."
  []
 
 
@@ -4585,8 +4585,8 @@ va/#robocampeones
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 75--76
-[]\OT1/ptm/m/n/12 \Programaci[]on pa-ra ni[]nos con v[]^^Pdeos de Scratch y Ar-
-duino."
+[]\OT1/ptm/m/n/12 ``Programaci[]on pa-ra ni[]nos con v[]^^Pdeos de Scratch y Ar
+-duino."
  []
 
 
@@ -4623,14 +4623,14 @@ Package babel Info: Redefining spanish shorthand "?
 (babel)             in language append on input line 77.
 [76]
 Underfull \hbox (badness 1721) in paragraph at lines 77--78
-[]\OT1/ptm/m/n/12 \Tecnolog[]^^Pas pa-ra el desa-rro-llo web m[]as ac-tua-les |
- proun Ma-drid - As-tu-rias."
+[]\OT1/ptm/m/n/12 ``Tecnolog[]^^Pas pa-ra el desa-rro-llo web m[]as ac-tua-les 
+| proun Ma-drid - As-tu-rias."
  []
 
 
 Underfull \hbox (badness 4647) in paragraph at lines 78--79
-[]\OT1/ptm/m/n/12 \Conceptos b[]asi-cos so-bre tec-no-log[]^^Pas de desa-rro-ll
-o web - in-ge-nio-vir-tual.com."
+[]\OT1/ptm/m/n/12 ``Conceptos b[]asi-cos so-bre tec-no-log[]^^Pas de desa-rro-l
+lo web - in-ge-nio-vir-tual.com."
  []
 
 
@@ -4641,8 +4641,8 @@ ias-de-desarrollo-
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 79--80
-[]\OT1/ptm/m/n/12 \Competencia do-cen-te de la rob[]oti-ca edu-ca-ti-va: ?`una 
-reali-dad o un nue-
+[]\OT1/ptm/m/n/12 ``Competencia do-cen-te de la rob[]oti-ca edu-ca-ti-va: ?`una
+ reali-dad o un nue-
  []
 
 
@@ -4665,8 +4665,8 @@ orado.html (ac-ces-sed
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 83--84
-[]\OT1/ptm/m/n/12 \As[]^^P se en-se[]na rob[]oti-ca y pro-gra-ma-ci[]on en las 
-au-las es-pa[]nolas."
+[]\OT1/ptm/m/n/12 ``As[]^^P se en-se[]na rob[]oti-ca y pro-gra-ma-ci[]on en las
+ au-las es-pa[]nolas."
  []
 
 
@@ -4677,7 +4677,8 @@ ramacion-espana/
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 85--86
-[]\OT1/ptm/m/n/12 \historia de ro-bo-ti-ca - el mun-do de la ro-bo-ti-ca 604."
+[]\OT1/ptm/m/n/12 ``historia de ro-bo-ti-ca - el mun-do de la ro-bo-ti-ca 604."
+
  []
 
 
@@ -4688,13 +4689,13 @@ e-robotica (ac-ces-sed
 
 
 Overfull \hbox (2.40251pt too wide) in paragraph at lines 87--88
-[]\OT1/ptm/m/n/12 \Modelos de desa-rro-llo de soft-wa-re" https://www.elconspir
-ador.com/2013/08/19/modelos-
+[]\OT1/ptm/m/n/12 ``Modelos de desa-rro-llo de soft-wa-re" https://www.elconspi
+rador.com/2013/08/19/modelos-
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 94--95
-[]\OT1/ptm/m/n/12 "Qu[]e es HTML5: De-fi-ni-ci[]on y fun-cio-na-mien-to |
+[]\OT1/ptm/m/n/12 ``Qu[]e es HTML5: De-fi-ni-ci[]on y fun-cio-na-mien-to |
  []
 
 LaTeX Info: Redefining \. on input line 98.
@@ -4729,100 +4730,100 @@ s been already used, duplicate ignored
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.98 \bibitem{aceeditor}
-                         “Ace - The High Performance Code Editor for the W...
+                         ``Ace - The High Performance Code Editor for the We...
 pdfTeX warning (ext4): destination with the same identifier (name{cite.}) has b
 een already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.98 \bibitem{aceeditor}
-                         “Ace - The High Performance Code Editor for the W...
+                         ``Ace - The High Performance Code Editor for the We...
 pdfTeX warning (ext4): destination with the same identifier (name{cite.}) has b
 een already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.98 \bibitem{aceeditor}
-                         “Ace - The High Performance Code Editor for the W...
+                         ``Ace - The High Performance Code Editor for the We...
 pdfTeX warning (ext4): destination with the same identifier (name{cite.}) has b
 een already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.98 \bibitem{aceeditor}
-                         “Ace - The High Performance Code Editor for the W...
+                         ``Ace - The High Performance Code Editor for the We...
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 104--105
-[]\OT1/ptm/m/n/12 \Trabajando con JSON - Apren-de so-bre desa-rro-llo web | MDN
-."
+Underfull \hbox (badness 10000) in paragraph at lines 102--103
+[]\OT1/ptm/m/n/12 ``Trabajando con JSON - Apren-de so-bre desa-rro-llo web | MD
+N."
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 104--105
+Underfull \hbox (badness 10000) in paragraph at lines 102--103
 \OT1/ptm/m/n/12 https://developer.mozilla.org/es/docs/Learn/JavaScript/Objects/
 JSON (ac-ces-sed May
  []
 
 
-Underfull \hbox (badness 6961) in paragraph at lines 107--108
-[]\OT1/ptm/m/n/12 \TensorFlow Co-re | Apren-di-za-je au-tom[]ati-co pa-ra prin-
-ci-pian-tes y ex-per-tos."
+Underfull \hbox (badness 6961) in paragraph at lines 105--106
+[]\OT1/ptm/m/n/12 ``TensorFlow Co-re | Apren-di-za-je au-tom[]ati-co pa-ra prin
+-ci-pian-tes y ex-per-tos."
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 109--110
-[]\OT1/ptm/m/n/12 \Web Au-dio API - Re-fe-ren-cia de la API Web | MDN."
+Underfull \hbox (badness 10000) in paragraph at lines 107--108
+[]\OT1/ptm/m/n/12 ``Web Au-dio API - Re-fe-ren-cia de la API Web | MDN."
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 109--110
+Underfull \hbox (badness 10000) in paragraph at lines 107--108
 \OT1/ptm/m/n/12 https://developer.mozilla.org/es/docs/Web/API/Web[]-Au-dio[]-AP
 I (ac-ces-sed May 03,
  []
 
 
-Underfull \hbox (badness 2096) in paragraph at lines 110--111
-[]\OT1/ptm/m/n/12 \Teachable Ma-chi-ne." https://teachablemachine.withgoogle.co
-m/ (ac-ces-sed May 03,
+Underfull \hbox (badness 2096) in paragraph at lines 108--109
+[]\OT1/ptm/m/n/12 ``Teachable Ma-chi-ne." https://teachablemachine.withgoogle.c
+om/ (ac-ces-sed May 03,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 120--121
-[]\OT1/ptm/m/n/12 \Web Au-dio API - Re-fe-ren-cia de la API Web | MDN."
+Underfull \hbox (badness 10000) in paragraph at lines 118--119
+[]\OT1/ptm/m/n/12 ``Web Au-dio API - Re-fe-ren-cia de la API Web | MDN."
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 120--121
+Underfull \hbox (badness 10000) in paragraph at lines 118--119
 \OT1/ptm/m/n/12 https://developer.mozilla.org/es/docs/Web/API/Web[]-Au-dio[]-AP
 I (ac-ces-sed May 28,
  []
 
-LaTeX Info: Redefining \. on input line 121.
-LaTeX Info: Redefining \% on input line 121.
+LaTeX Info: Redefining \. on input line 119.
+LaTeX Info: Redefining \% on input line 119.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language append on input line 121.
+(babel)             in language append on input line 119.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language append on input line 121.
+(babel)             in language append on input line 119.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language append on input line 121.
+(babel)             in language append on input line 119.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language append on input line 121.
+(babel)             in language append on input line 119.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language append on input line 121.
+(babel)             in language append on input line 119.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language append on input line 121.
+(babel)             in language append on input line 119.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language append on input line 121.
+(babel)             in language append on input line 119.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language append on input line 121.
+(babel)             in language append on input line 119.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language append on input line 121.
+(babel)             in language append on input line 119.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language append on input line 121.
+(babel)             in language append on input line 119.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language append on input line 121.
+(babel)             in language append on input line 119.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language append on input line 121.
+(babel)             in language append on input line 119.
 [78])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 261.
 LaTeX Info: Redefining \. on input line 261.
@@ -4867,10 +4868,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 12826 strings out of 492649
- 193407 string characters out of 6129622
+ 12825 strings out of 492649
+ 193392 string characters out of 6129622
  427983 words of memory out of 5000000
- 15585 multiletter control sequences out of 15000+600000
+ 15584 multiletter control sequences out of 15000+600000
  43451 words of font info for 95 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  40i,14n,46p,1214b,1949s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -4884,7 +4885,7 @@ dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2018/texmf-dist/fonts
 w/times/utmr8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/times/ut
 mr8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
 
-Output written on main.pdf (87 pages, 80832972 bytes).
+Output written on main.pdf (87 pages, 80833429 bytes).
 PDF statistics:
  1813 PDF objects out of 2073 (max. 8388607)
  1513 compressed objects within 16 object streams
