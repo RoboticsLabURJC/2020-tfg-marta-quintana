@@ -1,13 +1,16 @@
 \chapter{Ejercicio teleoperador acústico y banda sonora}\label{audio}
-En los siguientes capítulos se explican los ejercicios desarrollados en este trabajo fin de grado. El primero de ellos es el teleoperador acústico. En este capítulo se nombran las herramientas utilizadas y cómo se ha realizado este ejercicio. También se muestra cómo se ha añadido la posibilidad de incluir efectos de sonido y bandas sonoras a los ejercicios ya existentes. 
+En este capítulo se nombran las herramientas utilizadas y cómo se ha realizado el ejercicio del teleoperador acústico. También se muestra cómo se ha añadido la posibilidad de incluir efectos de sonido y bandas sonoras a los ejercicios ya existentes y alternativas que se han probado para el reconocimiento de audio.
+
+La entrada y salida de audio desde aplicaciones web es muy interesante para conseguir una mayor interactividad con el usuario. El sonido es muy importante en el mundo real y llevarlo a la Websim nos permite que la simulación sea más inmersiva y la experiencia el usuario sea más agradable.
+ El audio de entrada o \textit{audio in} en este trabajo  lo vamos a utilizar para coger las muestras del micrófono y analizarlo  para reconocer las palabras que entiende nuestro robot y  actué de forma adecuada. El audio de salida o \textit{audio out} se usará para completar los ejercicios con bandas sonoras y el sonido de colisión.
 
 \section{Teleoperador Acústico}
-\subsection{Enunciado}
-En este ejercicio se va a desarrollar un teleoperador acústico. El objetivo es crear un algoritmo de reconocimiento de voz con JavaScript, para poder dirigir un robot de Kibotics con la voz. 
+\subsection{Enunciado}  
+En este ejercicio se va a desarrollar un teleoperador acústico. El objetivo es crear un algoritmo de reconocimiento de voz con JavaScript, para poder dirigir un robot de Kibotics.
 
-El alumno deberá indicarle  al robot órdenes claras para que él reconozca cada orden  y pueda moverse por el escenario. Hay dos escenarios disponibles, un muro de piedra y una portería de rugby, el robot elegido es un dron que deberá moverse por el mundo sin chocar con ellos.
+El alumno deberá indicarle  al robot órdenes claras para que él reconozca cada orden  y pueda moverse por el escenario. Hay dos escenarios disponibles, un muro de piedra y una portería de rugby. El robot elegido es un dron que deberá moverse por el mundo sin chocar con ellos.
 
-\subsection{Desarrollo del ejercicio}
+\subsection{Teleoperador acústico con Techable Machine}
 
 Para empezar con este ejercicio se utilizó un fichero de configuración sencillo en el que sólo aparece un dron y un plano con una textura de césped. Este fichero es necesario para que el simulador Websim construya la escena 3D. El fichero de configuración está escrito en JSON y Websim lo analiza para construir los mundos con A-Frame. 
 Ésta sería una parte de ese fichero donde se muestra la configuración de la escena \textit{(scene)}, los robots \textit {(robots\_config)}, las texturas \textit{(assets)} y los objetos \textit{(objects)}.
@@ -69,32 +72,8 @@ Para empezar con este ejercicio se utilizó un fichero de configuración sencill
 \end{lstlisting}
 
 
-Una vez creada la escena del ejercicio, se han estudiado 3 herramientas de procesamiento de audio: Web Audio API, TensorFlow JS y Teachable Machine. Todo el desarrollo del teleoperador acústico se ha realizado en JavaScript.
 
-Web Audio API permite escoger fuentes de audio, agregar efectos de sonido, crear visualizaciones, efectos espaciales, filtros y grabaciones, entre otras cosas.
-Se estudió la  posibilidad de hacer una red neuronal con esta API. Con esta tecnología se hizo un grabador donde el audio se grababa temporalmente en la memoria del navegador y un analizador en frecuencia en tiempo real \cite{waa2} .  En estos vídeos se puede ver el grabador \footnote{https://www.youtube.com/watch?v=u9aerlWpCdM} y el analizador \footnote{https://www.youtube.com/watch?v=OZk4l7WFTZw} mencionados anteriormente.
-
-Web Audio API es muy útil para visualizado y efectos de sonido pero no nos proporcionaba la suficiente información para poder hacer procesamiento de audio y reconocer palabras, por lo cual se estudiaron otras alternativas para realizar el teleoperador acústico. 
-
-TensorFlow JS es una biblioteca de JavaScript para el aprendizaje automático. Esta herramienta se utiliza para clasificación de imágenes, detección de objetos, segmentación del cuerpo, estimación de pose, detección de rostros y, entre otras, aplicaciones de reconocimiento y clasificación de comandos de voz \cite{tensorflowmodel}.
-
-Para empezar a entender cómo funcionan los modelos, capas y  tensores, en definitiva,  las redes neuronales en esta biblioteca, se realizaron distintos tutoriales de Youtube y de TensorFlow JS tanto de clasificación de imágenes como de reconocimiento de audio. En este video \footnote{https://www.youtube.com/watch?v=x8sUG1CyLdc} se ven las diferentes pruebas que se hicieron. En la Figura 4.1 se puede ver un ejemplo de modelo de detección de objetos.
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.8\textwidth, height=0.4\textwidth]{chapters/images/imagerecognition.png}
-    \caption{TensorFlow JS ejemplo detección de objetos. }
-    \label{fig:my_label}
-\end{figure}
-
-Con TensorFlow JS se hicieron dos prototipos. El primero se realizó con un modelo pre-entrenado que reconocía 10 palabras entre ellas go, stop, right, left y seven (que se utilizó para que el robot fuera hacia atrás).
-Este modelo al ser pre-entrenado y definido por TensorFlow JS no era muy exacto y el ruido de fondo afectaba demasiado a la hora de detectar cada palabra en nuestro ejercicio. Por ello, el segundo prototipo se hizo con un modelo que se entrenaba con la voz del alumno que usara ese ejercicio.
-
-En este segundo prototipo cada palabra necesitaba grabar sus muestras, al menos unas 100 muestras por palabra, incluidas las muestras de ruido de fondo para que la detección fuera más precisa. Este modelo funcionaba más o menos bien pero no era lo más adecuado para el ejercicio que se había planteado. A pesar de que funcionaba bien se descartó porque era una tarea muy laboriosa grabar todas las muestras cada vez que entrabas en el ejercicio. 
-En estos videos \footnote{https://www.youtube.com/watch?v=DcwJzCOE4kI}
-\footnote{https://www.youtube.com/watch?v=nPeCAb47jiU} se puede ver cómo era el modelo.
-
-Investigando el mundo de reconocimiento de audio y JavaScript se descubrió la herramienta Teachable Machine, la tecnología  que finalmente se ha usado en este proyecto.
+El procesamiento de audio es muy complejo y existen muchas herramientas diferentes para poder implementarlo desde JavaScript. En este trabajo se han investigado 3 herramientas y finalmente se ha decidido usar Teachable Machine.
 
 Teachable Machine es una herramienta basada en la Web para crear modelos de aprendizaje automático. Destaca por modelos de clasificación de imágenes, sonidos y posturas. Teachable Machine internamente usa TensorFlowJS . 
 
@@ -105,7 +84,7 @@ La creación de un modelo en Teachable Machine tiene 3 fases: recopilación, pre
 
 Para hacer el modelo primero hay que recopilar muestras. Para ello fue necesaria la participación de 10 personas para que el modelo fuera más completo y pudiera reconocer la palabra independientemente de si la voz del usuario es más aguda o más grave.  Se usaron aproximadamente 10 muestras de cada palabra por persona. El modelo cuenta con 105 muestras por cada palabra (10 muestras aproximadamente x 10 personas). Las palabras que queremos reconocer son \textit{go, stop, back, right, left, up, down } y el ruido de fondo. Esto ha supuesto un total de 840 muestras.
 
-Las muestras se grabaron una a una en la página de creación de modelos de Teachable Machine. En la Figura 4.2 se puede ver el modelo y las muestras grabadas.
+Las muestras se grabaron una a una en la página de creación de modelos de Teachable Machine. En la Figura 6.1 se puede ver el modelo y las muestras grabadas.
 
 
 \begin{figure}[H]
@@ -121,7 +100,7 @@ Una vez conseguidas todas las muestras, hay que preparar el modelo. Teachable Ma
 
 \item  \textit{Exportación del modelo a Websim :}
 
-Una vez preparado, la página muestra una vista previa en el que puedes probar y ver el porcentaje de aciertos de cada palabra y con esto decidir si necesitas añadir más muestras o cambiar los parámetros de tu modelo.  En la Figura 4.3 podemos ver la visualización de prueba.
+Una vez preparado, la página muestra una vista previa en el que puedes probar y ver el porcentaje de aciertos de cada palabra y con esto decidir si necesitas añadir más muestras o cambiar los parámetros de tu modelo.  En la Figura 6.2 podemos ver la visualización de prueba.
 
 \begin{figure}[H]
  \centering
@@ -131,13 +110,13 @@ Una vez preparado, la página muestra una vista previa en el que puedes probar y
  
 
 Una vez ajustado y con las 105 muestras por palabra, se exportó el modelo. 
-Para exportarlo, Teachable Machine lo puede alojar en sus servidores y proporcionarte  un enlace de forma gratuita o puedes descargarlo. Se optó por alojarlo en la nube de Teachable Machine para que no ocupara mucho espacio en Kibotics, ya que la forma de importarlo  a JavaScript era similar en ambas opciones.
-Una vez subido a la nube, Teachable Machine te proporciona una URL de la dirección de tu modelo y  te proporciona el código necesario para importarlo a tu proyecto desde JavaScript.
+Para exportarlo, Teachable Machine puede alojarlo en sus servidores y proporcionarte  un enlace de forma gratuita o puedes descargarlo. Se optó por guardarlo en la nube de Teachable Machine para que no ocupara mucho espacio en Kibotics, ya que la forma de importarlo  a JavaScript era similar en ambas opciones.
+Una vez subido a la nube, Teachable Machine te proporciona una URL de la dirección de tu modelo y el código necesario para importarlo a tu proyecto desde JavaScript.
 \end{itemize}
 
-Con estos 3 pasos ya tenemos creado nuestro modelo en Teachable Machine. Para probar el funcionamiento de este modelo se hizo una prueba de reconocimiento de audio sin fusionarlo con el comportamiento del robot en Websim. En este enlace \footnote{https://martaquintana.github.io/Audio\_Recognition/index.html} se puede probar el funcionamiento de este código basado en HTML5, CSS3, JavaScript y Teachable Machine(TensorFlowJS) (Ver Figura 4.4). Esta página web pide permiso para acceder al micrófono y, cuando lo tiene, analiza el audio  y muestra la probabilidad de cada palabra en tiempo real.  
+Con estos 3 pasos ya tenemos creado nuestro modelo en Teachable Machine. Para probar el funcionamiento de este modelo se hizo una prueba de reconocimiento de audio sin fusionarlo con el comportamiento del robot en Websim. En este enlace \footnote{https://martaquintana.github.io/Audio\_Recognition/index.html} se puede probar el funcionamiento de este código basado en HTML5, CSS3, JavaScript y Teachable Machine(TensorFlowJS) (Ver Figura 6.3). Esta página web pide permiso para acceder al micrófono y, cuando lo tiene, analiza el audio  y muestra la probabilidad de cada palabra en tiempo real.  
 
-Este es el código de esa página web de prueba del modelo en el que se incluye el código que nos facilita Teachable Machine a la hora de exportar el modelo:
+Este es el código de esa página web de prueba del modelo, que incluye el código que nos facilita Teachable Machine a la hora de exportar el modelo:
 
 \begin{lstlisting}
 <html>
@@ -248,7 +227,7 @@ Este es el código de esa página web de prueba del modelo en el que se incluye 
     \label{fig:my_label}
 \end{figure}
 
-Una vez se comprobó que el modelo funcionaba, se incorporó  el modelo de reconocimiento de audio a Websim. Para ello  se creó el siguiente fichero audio.js que se importa en el HTML del ejercicio de la siguiente forma:   
+Una vez se comprobó que el modelo de reconocimiento de audio funcionaba, se incorporó a Websim. Para ello, se creó el siguiente fichero audio.js que se importa en el HTML del ejercicio de la siguiente forma:   
 
 \textless script type=``text/javascript" src=``js/audio.js" \textgreater
 
@@ -399,7 +378,7 @@ async function Connect\_To\_Robot() {
 }
 \end{lstlisting}
 
-Con el fichero de configuración, el HTML y este código JavaScript el ejercicio se visualiza como se muestra en la Figura 4.5.
+Con el fichero de configuración, el HTML y este código JavaScript el ejercicio se visualiza como se muestra en la Figura 6.4.
 
 \begin{figure}[H]
     \centering
@@ -410,21 +389,21 @@ Con el fichero de configuración, el HTML y este código JavaScript el ejercicio
 
 A continuación se explica cómo funciona este programa.
 
-Cuando se pulsa el botón Conect\_To\_Robot se llama a la función del mismo nombre que internamente ejecuta  la función listen() que es la que inicializa el reconocimiento y analiza el audio cada 10 segundos.
+Cuando se pulsa el botón Conect\_To\_Robot se llama a la función del mismo nombre que internamente ejecuta  la función listen()  inicializa el reconocimiento y analiza el audio cada 10 segundos.
 Este botón se pone en verde cuando está analizando y en rojo cuando está desconectado, mientras el bóton esté de ese color el robot no reconoce ninguna palabra.
 
-La función listen() inicializa el modelo y crea las etiquetas que necesita. Se ha creado un setTimeout para esperar 10 segundos hasta que cargue el modelo. Cuando éste carga, se establece un setInterval para que cada 10 segundos se ejecute la función analizar que devuelve la palabra estimada.
+La función listen() inicializa el modelo y crea las etiquetas que necesita. Se ha creado un setTimeout para esperar 10 segundos hasta que cargue el modelo. Cuando éste carga, se establece un setInterval para que cada 10 segundos se ejecute la función analizar() que devuelve la palabra estimada.
 
-La función analizar es la que invoca al analizador o \textit{recognizer}: en él se predice la palabra que cree que es más probable que haya dicho el usuario.  \textit{Prediction} es esa palabra que tiene  la probabilidad más alta.
+La función analizar() es la que invoca al analizador o \textit{recognizer}: en él se predice la palabra que cree que es más probable que haya dicho el usuario.  \textit{Prediction} es esa palabra que tiene  la probabilidad más alta.
 
 Una vez tenemos la \textit{prediction} se compara esta palabra con las 8 palabras que hemos entrenado el modelo: \textit{go, stop, back, right, left, up, down y \_background\_noise\_}
 
-Gracias al evento \textit{'robot-loaded'}, cuando el robot está cargado en el escenario, obtenemos el objeto localRobot, que en nuestro ejercicio es el dron. En Kibotics poseen una API\footnote{Application Programming Interfaces} llamada HAL API \footnote{Hardware Abstraction Layer} con funciones para controlar el movimiento del robot.  Cuando se predice una de las 8 palabras en los condicionales \textit{if(){} else if() {}}se llama a una de estas funciones de velocidad : localRobot.setV(), para asignar la velocidad lineal, se utiliza para ir hacia delante ``go'', ir hacia atrás ``back '' o parar ``stop'',  localRobot.setW() para la velocidad angular, se usa para girar a la derecha``right'' o a la izquierda``left'' y  localRobot.setL() para asignar la velocidad que va a subir ``up'' o bajar ``down'' el dron. Si se predice que es ruido de fondo no afecta en el comportamiento del dron.
+Gracias al evento \textit{'robot-loaded'}, cuando el robot está cargado en el escenario, obtenemos el objeto localRobot, que en nuestro ejercicio es el dron. En Kibotics poseen una API\footnote{Application Programming Interfaces} llamada HAL API \footnote{Hardware Abstraction Layer} con funciones para controlar el movimiento del robot.  Cuando se predice una de las 8 palabras, en los condicionales \textit{if(){} else if() {}} se llama a una de estas funciones de velocidad : localRobot.setV(), para asignar la velocidad lineal: se utiliza para ir hacia delante ``go'', ir hacia atrás ``back '' o parar ``stop''.  LocalRobot.setW() para la velocidad angular: se usa para girar a la derecha``right'' o a la izquierda``left''. Y localRobot.setL() para asignar la velocidad de subida y bajada: subir ``up'' o bajar ``down''. Si se predice que es ruido de fondo no afecta en el comportamiento del dron.
 
-La implementación del ejercicio con Teachable Machine  nos ha aportado sencillez y más precisión que los modelos mencionados anteriormente.
-Una vez realizado el ejercicio se optimizó para que el navegador del usuario no estuviera todo el tiempo analizando el  audio si no tenemos nada que decirle al dron y aprovechar los recursos del ordenador del usuario.
+La implementación del ejercicio con Teachable Machine  nos ha aportado sencillez y más precisión que otros modelos que se estudiaron.
+Una vez realizado el ejercicio se optimizó para que el navegador del usuario no estuviera todo el tiempo analizando el  audio, si no tenemos nada que decirle al dron y aprovechar los recursos del ordenador del usuario.
 
-La optimización se realizó añadiendo el contador \textit{(noise\_times)} que aparece en el código anterior: éste cuenta las veces que se predice ruido de fondo. Se estableció un máximo de 10 las veces seguidas que la predicción es \textit{\_background\_noise\_}. Como se analiza el audio cada 10 segundos ésto quiere decir que si han pasado 100 segundos y siempre ha detectado ruido de fondo, la función analizar para de ejecutarse y no se predice ninguna palabra. Cuando ésto ocurre, se muestra en el navegador un nuevo botón \textit{(Continue analizing)} que al pulsarlo desaparece y se reinicia el procesamiento de audio. Ver Figura 4.6.
+La optimización se realizó añadiendo el contador \textit{(noise\_times)} que aparece en el código anterior: éste cuenta las veces que se predice ruido de fondo. Se estableció un máximo de 10 las veces seguidas que la predicción es \textit{\_background\_noise\_}. Como se analiza el audio cada 10 segundos, ésto quiere decir que si han pasado 100 segundos y siempre ha detectado ruido de fondo, la función analizar() para de ejecutarse y no se predice ninguna palabra. Cuando ésto ocurre, se muestra en el navegador un nuevo botón \textit{(Continue analizing)} que al pulsarlo desaparece y se reinicia el procesamiento de audio. Ver Figura 6.5.
 
 \begin{figure}[H]
   \begin{subfigure}[b]{0.5\textwidth}
@@ -445,7 +424,7 @@ La optimización se realizó añadiendo el contador \textit{(noise\_times)} que 
 \end{figure}
 
 
-Para este ejercicio se crearon dos escenarios: uno con portería de rugby y otro con una pared, que se añadieron al  fichero de configuración del drone que hemos visto al principio del capítulo. La portería se creó con Blender y la pared con A-Frame en el fichero de configuración de Websim. Ver Figura 4.7 y 4.8.
+Para este ejercicio se crearon dos escenarios: uno con portería de rugby y otro con una pared, que se añadieron al  fichero de configuración del drone que hemos visto al principio del capítulo. La portería se creó con Blender y la pared con A-Frame en el fichero de configuración de Websim. Ver Figura 6.6 y 6.7.
 
  \begin{figure}[H]
   \begin{subfigure}[b]{0.5\textwidth}
@@ -473,11 +452,60 @@ Para este ejercicio se crearon dos escenarios: uno con portería de rugby y otro
     \label{fig:f1}
   \end{figure}
 
+Estos modelos se han añadido al fichero de configuración de la siguiente forma:
+\begin{lstlisting}
+...
+    "assets": [
+
+        {
+            "tag": "a-asset-item",
+            "attr": {
+                "id": "porteria_rugby"
+		},
+		
+		{
+            "tag": "img",
+            "attr": {
+                "id": "wall",
+                "alt": "Texture for the scene wall",
+                "src": "../../assets/textures/wall.jpg"}
+        }
+		...
+    ],
+    "objects":[ 
+        {
+            "tag": "a-entity",
+            "attr": {
+              "id":"porteria_rugby",
+              "gltf-model":"../../assets/models/porteria_rugby.glb",
+              "position": { "x":0, "y":0, "z":-15},
+              "scale": { "x":3, "y":3, "z":3}
+
+            }
+        }
+               {
+            "tag":"a-box",
+            "attr": {
+                "id": "wall",
+                "width": "30",
+                "height": "20",
+                "depth":"2",
+                "position": { "x":0, "y":0, "z":-15},
+                "src":"#wall",
+                "static-body": {
+                    "mass": 1
+                }
+            }
+        },
+...
+  
+\end{lstlisting}
+
 
 
 \subsection{Solución de referencia}
 
-Este ejercicio es un juego, el objetivo es dirigir al dron con tu voz para cruzar por la portería de rugby o pasar de un lado al otro de la pared sin chocarte con ellas. Se ha realizado un vídeo promocional \footnote{https://youtu.be/sr54MxMw954} y este otro vídeo \footnote{https://www.youtube.com/watch?v=85oTxgQQrck} donde se muestran unas posibles soluciones para guiar al dron en los distintos escenarios.
+Este ejercicio es un juego, el objetivo es dirigir al dron con tu voz para cruzar por la portería de rugby o pasar de un lado al otro de la pared sin chocarte con ellas. Se ha realizado un vídeo promocional \footnote{https://youtu.be/sr54MxMw954} y este otro vídeo \footnote{https://www.youtube.com/watch?v=85oTxgQQrck} donde se muestran unas posibles soluciones para guiar al dron en los distintos escenarios. Ver Figura 6.8.
 
  \begin{figure}[H]
   \begin{subfigure}[b]{0.5\textwidth}
@@ -496,6 +524,36 @@ Este ejercicio es un juego, el objetivo es dirigir al dron con tu voz para cruza
   \end{subfigure}
   \caption{Ejemplo solución teleoperador acústico}
 \end{figure}
+
+
+\subsection{Alternativas probadas}
+
+Para llevar a cabo este ejercicio se estudiaron 3 herramientas de procesamiento de audio: Web Audio API, TensorFlow JS y Teachable Machine. Todo el desarrollo del teleoperador acústico se realizó en JavaScript.
+
+Web Audio API permite escoger fuentes de audio, agregar efectos de sonido, crear visualizaciones, efectos espaciales, filtros y grabaciones, entre otras cosas.
+Se ha estudiado la  posibilidad de hacer una red neuronal con esta API. Con esta tecnología se hizo un grabador donde el audio se grababa temporalmente en la memoria del navegador y un analizador en frecuencia en tiempo real \cite{waa} .  En estos vídeos se puede ver el grabador \footnote{https://www.youtube.com/watch?v=u9aerlWpCdM} y el analizador \footnote{https://www.youtube.com/watch?v=OZk4l7WFTZw} mencionados anteriormente.
+
+Web Audio API es muy útil para visualizado y efectos de sonido pero no nos proporcionaba la suficiente información para poder hacer procesamiento de audio y reconocer palabras, por lo cual se estudiaron otras alternativas para realizar el teleoperador acústico. 
+
+TensorFlow JS es una biblioteca de JavaScript para el aprendizaje automático. Esta herramienta se utiliza para clasificación de imágenes, detección de objetos, segmentación del cuerpo, estimación de pose, detección de rostros y, entre otras, aplicaciones de reconocimiento y clasificación de comandos de voz \cite{tensorflowmodel}.
+
+Para empezar a entender cómo funcionan los modelos, capas y  tensores, en definitiva,  las redes neuronales en esta biblioteca, se realizaron distintos tutoriales de Youtube y de TensorFlow JS tanto de clasificación de imágenes como de reconocimiento de audio. En este video \footnote{https://www.youtube.com/watch?v=x8sUG1CyLdc} se ven las diferentes pruebas que se hicieron. En la Figura 6.9 se puede ver un ejemplo de modelo de detección de objetos.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth, height=0.4\textwidth]{chapters/images/imagerecognition.png}
+    \caption{TensorFlow JS ejemplo detección de objetos. }
+    \label{fig:my_label}
+\end{figure}
+
+Con TensorFlow JS se hicieron dos prototipos. El primero se realizó con un modelo pre-entrenado que reconocía 10 palabras entre ellas go, stop, right, left y seven (que se utilizó para que el robot fuera hacia atrás).
+Este modelo al ser pre-entrenado y definido por TensorFlow JS no era muy exacto y el ruido de fondo afectaba demasiado a la hora de detectar cada palabra en nuestro ejercicio. Por ello, el segundo prototipo se hizo con un modelo que se entrenaba con la voz del alumno que usara ese ejercicio.
+
+En este segundo prototipo cada palabra necesitaba grabar sus muestras, al menos unas 100 muestras por palabra, incluidas las muestras de ruido de fondo para que la detección fuera más precisa. Este modelo funcionaba más o menos bien pero no era lo más adecuado para el ejercicio que se había planteado. A pesar de que funcionaba bien se descartó porque era una tarea muy laboriosa grabar todas las muestras cada vez que entrabas en el ejercicio. 
+En estos videos \footnote{https://www.youtube.com/watch?v=DcwJzCOE4kI}
+\footnote{https://www.youtube.com/watch?v=nPeCAb47jiU} se puede ver cómo era el modelo.
+
+Investigando el mundo de reconocimiento de audio y JavaScript se descubrió Teachable Machine, la tecnología que finalmente se ha usado en este proyecto.
 
 
 \section{Banda Sonora}
@@ -518,7 +576,7 @@ La banda sonora de cada ejercicio se define en su fichero de configuración. En 
  	{"tag":"soundtrack",
         "attr": {
             "id":"audio",
-            "src": "../assets/soundtracks/Spring\_Village.ogg"
+            "src": "../assets/soundtracks/Spring_Village.ogg"
           }
         },
    \end{lstlisting}
@@ -531,8 +589,8 @@ Cuando Websim lee el fichero de configuración (formato JSON) se llama a parseSo
  	await parseSoundtrack(sceneObjects);
 \end{lstlisting}
 
-En el siguiente código se muestra como se analizan todos los objetos de la escena y si alguno tiene la etiqueta ``soundtrack'', la variable soundtrack  que por defecto siempre es \textit{false}, pasa a ser \textit{true} y se asigna a la variable audio el atributo  ``src'' del objeto, en este caso ``../assets/soundtracks/Spring\_Village.ogg".  
-Si soundtrack es \textit{true}, se crea un objeto Audio() de HTML5 desde JavaScript y se le asigna el \textit{src} del audio configurado y se empieza a reproducir. Como \textit{reproducir.loop} es \textit{true}, el audio estará en bucle todo el tiempo.
+En el siguiente código se muestra como se analizan todos los objetos de la escena. Si algún objeto tiene la etiqueta ``soundtrack'', una variable también llamada \textit{soundtrack}, que por defecto siempre es \textit{false}, pasa a ser \textit{true} y se asigna a la variable \textit{audio} el atributo  ``src'' del objeto,  que en este caso es  ``../assets/soundtracks/Spring\_Village.ogg".  
+Si soundtrack es \textit{true}, se crea un objeto Audio() de HTML5 desde JavaScript y se le asigna el \textit{src} del la variable \textit{audio} y se empieza a reproducir. Como \textit{reproducir.loop} es \textit{true}, el audio estará en bucle todo el tiempo.
 
 \begin{lstlisting}
 export function parseSoundtrack(sceneObjects){
@@ -553,7 +611,7 @@ export function parseSoundtrack(sceneObjects){
 }
 \end{lstlisting}
 
-En este video \footnote{https://www.youtube.com/watch?v=c\_\_BayBCSX4} se puede escuchar la banda sonora que se ha asignado en un ejercicio de ejemplo.
+En este video \footnote{https://www.youtube.com/watch?v=c\_\_BayBCSX4} se puede escuchar la banda sonora que se ha asignado a un ejercicio de ejemplo.
 
 \subsection{Efecto de sonido por colisión }
 

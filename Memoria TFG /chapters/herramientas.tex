@@ -1,6 +1,6 @@
 \chapter{Infraestructura utilizada}
 \label{infraestructura}
-En este capítulo vamos a profundizar en las tecnologías y herramientas que se han empleado a lo largo de este trabajo. Por un lado se explican los lenguajes de programación (JavaScript, Python y Scratch) y los lenguajes de documentos (HTML5 y JSON)  utilizados. Por otro lado, hablaremos de TensorFlowJS, Web Audio API y Teachable Machine, tecnologías que nos ofrecen procesamiento de audio en aplicaciones web. Otras aplicaciones como Blender y A-Frame han sido fundamentales para el  modelado 3D y realidad virtual. Finalmente, hablaremos de la plataforma Kibotics, su estructura y las tecnologías web que la componen.
+En este capítulo vamos a profundizar en las tecnologías y herramientas que se han empleado a lo largo de este trabajo. Por un lado se explican los lenguajes de programación (JavaScript, Python y Scratch) y los lenguajes de documentos (HTML5 y JSON) utilizados. Por otro lado, hablaremos de TensorFlowJS, Web Audio API y Teachable Machine, tecnologías que nos ofrecen procesamiento de audio en aplicaciones web. Otras aplicaciones como Blender y A-Frame han sido fundamentales para el  modelado 3D y realidad virtual. Finalmente, hablaremos de la plataforma Kibotics, su estructura y las tecnologías web que la componen.
 \section{Lenguajes de programación y de documentos}
 \subsection{HTML5}
 HTML5 es la última versión de HTML cuyas siglas corresponden a \textit{``HyperText Markup Language''} es el bloque de construcción más básico de la Web\cite{html}. \textit{``HyperText''} significa hipertexto, se refiere a enlaces que conectan páginas web entre sí, ya sea dentro de un único sitio web o entre sitios web. 
@@ -152,7 +152,7 @@ Teachable Machine es una herramienta basada en la Web que hace posible crear mod
 \end{figure}
 
 
-En el Capítulo 4 se explicará en profundidad cómo se han usado estas tecnologías y por qué después de probar con cada una de estas tres herramientas, hemos elegido Teachable Machine para el desarrollo final del Teleoperador Acústico.
+En el Capítulo 6 se explicará en profundidad cómo se han usado estas tecnologías y por qué después de probar con cada una de estas tres herramientas, hemos elegido Teachable Machine para el desarrollo final del Teleoperador Acústico.
 
 
 \subsection{A-Frame}
@@ -221,12 +221,11 @@ Este programa se ha utilizado en este proyecto para crear los nuevos robots, esc
 
 \subsection{Plataforma Kibotics}
 
-Kibotics es una plataforma web para docencia en robótica y programación. Esta plataforma se basa en tecnologías web como Django para la parte servidor y utiliza un simulador llamado Websim que se apoya en A-Frame para representar los escenarios de los ejercicios en el navegador del usuario.
+Kibotics es una plataforma web para docencia en robótica y programación. Esta plataforma se basa en tecnologías web como Django, para la parte servidor. Utiliza un simulador llamado Websim que se apoya en A-Frame para representar los escenarios de los ejercicios en el navegador del usuario.
 
-Esta plataforma en línea ofrece contenidos educativos para facilitar el aprendizaje en programación a alumnos de primaria, secundaria y bachillerato. Ofrece cursos en lenguajes Scratch y Python. Los ejercicios están disponibles tanto para robots físicos como simulados. Destacan Mbot, Dron Tello y Pibot entre otros.
-También ofrece interacción social gracias a un foro.
+Esta plataforma en línea ofrece contenidos educativos para facilitar el aprendizaje en programación a alumnos de primaria, secundaria y bachillerato. Ofrece cursos en los lenguajes Scratch y Python. Los ejercicios están disponibles tanto para robots físicos como simulados. Destacan Mbot, Dron Tello y Pibot entre otros.
 
-La simulación de robots reales permite  depurar el software al máximo antes de ejecutarlo en un robot físico y así reducir los costes, ya que no necesitas tener un robot para cada alumno y evitar  posibles daños de los robots y accidentes.
+La simulación de robots reales permite depurar el software al máximo antes de ejecutarlo en un robot físico y así reducir los costes, ya que no necesitas tener un robot para cada alumno y evitar  posibles daños de los robots y accidentes.
 
 Para usar esta plataforma no es necesario instalar nada, solo tener acceso a Internet. Al ser una aplicación web tenemos la ventaja de que es multiplataforma y podemos usarla en distintos dispositivos.
 
@@ -265,6 +264,16 @@ Kibotics tiene la filosofía \textit{Learn by doing}, aprender haciendo. Las lec
 \label{fig:partes robot}
 \end{figure}
 
+Como hemos mencionado anteriormente, la aplicación web Kibotics utiliza la tecnología Django por el lado servidor. En las plantillas o \textit{templates} creadas para los ejercicios se incrusta el simulador Websim. De esta manera  las páginas web de los ejercicios se crean de forma dinámica y la misma plantilla (ajustándola con variables de Python) podemos hacer que cada ejercicio tenga una página de teoría, un escenario y robot diferente.
+
+Los robots en Kibotics tienen dos partes: cuerpo y cerebro. El cuerpo se crea con Websim que analiza un fichero JSON (fichero de configuración) y lo materializa gracias a A-Frame. El cerebro lo programa el usuario en su editor en Python o Scratch, donde están implementados los sensores y actuadores gracias a HALRobotAPI. HALRobotAPI\footnote{HAL: Hardware Abstraction Layer} es una capa de abstracción hardware  en la interfaz de programación del robot, ésta proporciona funciones sencillas para manejar los sensores y actuadores del robot . Al ejecutar el ejercicio, dando al botón play que aparece en la página web, el código del cerebro se envía al servidor por Websockets, lo traduce a JavaScript y renderiza el mundo. En la Figura 3.10 podemos ver cómo es la arquitectura de esta aplicación desde una visión general. 
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\textwidth, height=0.5\textwidth]{chapters/images/kibotics_arq.png}
+    \caption{Arquitectura de la aplicación web Kibotics}
+    \label{fig:my_label}
+\end{figure}
 
 Kibotics en los últimos años ha ofrecido cursos para la escuela de pensamiento computacional INTEF, el ayuntamiento de Fuenlabrada, la empresa Logix5, Universidad Rey Juan Carlos, IES Martinez Uribarri (Salamanca) y la Comunidad de Madrid \cite{kiboticspdf}.
 
