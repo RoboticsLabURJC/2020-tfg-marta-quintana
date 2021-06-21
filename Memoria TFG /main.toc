@@ -26,30 +26,29 @@
 \contentsline {subsection}{\numberline {3.2.3}Blender}{28}{subsection.3.2.3}
 \contentsline {subsection}{\numberline {3.2.4}Plataforma Kibotics}{29}{subsection.3.2.4}
 \contentsline {subsection}{\numberline {3.2.5}Navegadores web utilizados}{31}{subsection.3.2.5}
-\contentsline {chapter}{\numberline {4}Ejercicio aspiadora rob\IeC {\'o}tica atrapa confeti}{32}{chapter.4}
+\contentsline {chapter}{\numberline {4}Ejercicio aspiradora rob\IeC {\'o}tica atrapa confeti}{32}{chapter.4}
 \contentsline {section}{\numberline {4.1}Enunciado}{32}{section.4.1}
-\contentsline {section}{\numberline {4.2}Modelo aspiradora}{34}{section.4.2}
-\contentsline {section}{\numberline {4.3}Confeti y absorcci\IeC {\'o}n}{36}{section.4.3}
-\contentsline {section}{\numberline {4.4}Modelos del mundo}{39}{section.4.4}
-\contentsline {section}{\numberline {4.5}Evaluador autom\IeC {\'a}tico}{41}{section.4.5}
-\contentsline {section}{\numberline {4.6}Soluci\IeC {\'o}n de referencia}{42}{section.4.6}
+\contentsline {section}{\numberline {4.2}Modelos del mundo}{34}{section.4.2}
+\contentsline {section}{\numberline {4.3}Modelo aspiradora}{39}{section.4.3}
+\contentsline {section}{\numberline {4.4}Evaluador autom\IeC {\'a}tico}{41}{section.4.4}
+\contentsline {section}{\numberline {4.5}Soluci\IeC {\'o}n de referencia}{43}{section.4.5}
 \contentsline {chapter}{\numberline {5}Ejercicio juego del pa\IeC {\~n}uelo}{44}{chapter.5}
 \contentsline {section}{\numberline {5.1}Enunciado}{44}{section.5.1}
-\contentsline {section}{\numberline {5.2}Modelos del mundo}{48}{section.5.2}
+\contentsline {section}{\numberline {5.2}Modelos del mundo}{49}{section.5.2}
 \contentsline {section}{\numberline {5.3}Modelo robot con pinza}{51}{section.5.3}
 \contentsline {subsection}{\numberline {5.3.1}Antecedentes}{51}{subsection.5.3.1}
 \contentsline {subsection}{\numberline {5.3.2}Modelo Mbot con pinzas}{52}{subsection.5.3.2}
 \contentsline {section}{\numberline {5.4}Evaluador autom\IeC {\'a}tico}{57}{section.5.4}
-\contentsline {section}{\numberline {5.5}Soluci\IeC {\'o}n de referencia}{59}{section.5.5}
-\contentsline {chapter}{\numberline {6}Ejercicio teleoperador ac\IeC {\'u}stico y banda sonora}{61}{chapter.6}
-\contentsline {section}{\numberline {6.1}Teleoperador Ac\IeC {\'u}stico}{61}{section.6.1}
-\contentsline {subsection}{\numberline {6.1.1}Enunciado}{61}{subsection.6.1.1}
-\contentsline {subsection}{\numberline {6.1.2}Teleoperador ac\IeC {\'u}stico con Techable Machine}{62}{subsection.6.1.2}
-\contentsline {subsection}{\numberline {6.1.3}Soluci\IeC {\'o}n de referencia}{75}{subsection.6.1.3}
-\contentsline {subsection}{\numberline {6.1.4}Alternativas probadas}{76}{subsection.6.1.4}
-\contentsline {section}{\numberline {6.2}Banda Sonora}{78}{section.6.2}
-\contentsline {subsection}{\numberline {6.2.1}Efecto de sonido por colisi\IeC {\'o}n }{79}{subsection.6.2.1}
-\contentsline {chapter}{\numberline {7}Conclusiones y trabajos futuros}{81}{chapter.7}
-\contentsline {section}{\numberline {7.1}Conclusiones}{81}{section.7.1}
-\contentsline {section}{\numberline {7.2}Trabajos futuros}{83}{section.7.2}
-\contentsline {chapter}{Bibliograf\'{\i }a}{84}{chapter*.66}
+\contentsline {section}{\numberline {5.5}Soluci\IeC {\'o}n de referencia}{60}{section.5.5}
+\contentsline {chapter}{\numberline {6}Ejercicio teleoperador ac\IeC {\'u}stico y banda sonora}{62}{chapter.6}
+\contentsline {section}{\numberline {6.1}Enunciado}{62}{section.6.1}
+\contentsline {section}{\numberline {6.2}Modelos del mundo }{63}{section.6.2}
+\contentsline {section}{\numberline {6.3}Procesamiento de audio con Teachable Machine}{66}{section.6.3}
+\contentsline {section}{\numberline {6.4}Soluci\IeC {\'o}n de referencia}{76}{section.6.4}
+\contentsline {section}{\numberline {6.5}Alternativas probadas}{77}{section.6.5}
+\contentsline {section}{\numberline {6.6}Banda Sonora}{79}{section.6.6}
+\contentsline {subsection}{\numberline {6.6.1}Efecto de sonido por colisi\IeC {\'o}n }{80}{subsection.6.6.1}
+\contentsline {chapter}{\numberline {7}Conclusiones y trabajos futuros}{82}{chapter.7}
+\contentsline {section}{\numberline {7.1}Conclusiones}{82}{section.7.1}
+\contentsline {section}{\numberline {7.2}Trabajos futuros}{84}{section.7.2}
+\contentsline {chapter}{Bibliograf\'{\i }a}{85}{chapter*.66}
