@@ -10,8 +10,9 @@ El alumno deberá programar en Scratch o en Python un algoritmo de planificació
 
 Para la visualización de este ejercicio y que los usuarios de Kibotics puedan acceder a él, se ha creado una página web. Gracias a esta página web, los usuarios tienen acceso a la teoría del ejercicio y  disponen de un editor y el simulador Websim necesarios para hacer el ejercicio. 
 
-Se creó la teoría del ejercicio en HTML5 y se modificaron las plantillas que utiliza el servidor Django de Kibotics. El objetivo del usuario  es hacer un algoritmo de planificación de ruta utilizando los sensores y actuadores del robot para que cuando detecte un objeto próximo, por ejemplo una pared o una mesa, se mueva en ángulos aleatorios. 
-En las siguientes figuras podemos ver la página de teoría donde se explica el objetivo del ejercicio, los requisitos (Figura 4.1), para explicar al alumno los diferentes algoritmos de cobertura que puede utilizar los aspiradores robóticos se ha añadido un poco de teoría (Figura  4.2), unas pequeñas pistas y un ``¿Sabías que... ? '' (Figura 4.3) hablando de las primeras aspiradoras y cómo funcionaban. 
+La teoría del ejercicio se creó en HTML5 y se modificaron las plantillas que utiliza el servidor Django de Kibotics. El objetivo del usuario  es hacer un algoritmo de planificación de ruta utilizando los sensores y actuadores del robot para que cuando detecte un objeto próximo, por ejemplo una pared o una mesa, se mueva en ángulos aleatorios. 
+\\
+En las siguientes figuras podemos ver la página de teoría donde se explica el objetivo del ejercicio y los requisitos (Figura 4.1). Para explicar al alumno los diferentes algoritmos de cobertura que pueden utilizar los aspiradores robóticos, se ha añadido un poco de teoría sobre esos algoritmos (Figura  4.2), unas pequeñas pistas y un ``¿Sabías que... ? '' (Figura 4.3) hablando de las primeras aspiradoras y cómo funcionaban. 
 \\
 
 \begin{figure}[H]
@@ -65,7 +66,7 @@ Para este ejercicio se crearon nuevos muebles con Blender (ver Figuras 4.4 y 4.5
 \caption{Habitación amueblada}
 \end{figure}
 
-Estos objetos se añadieron en el fichero de configuración json del ejercicio definiendo su identificador, modelo 3d gltf, la posición y la escala. El código que se muestra a continuación pertenece a la creación de la mesa pero  la estructura  de todos los elementos añadidos es la misma: 
+Estos objetos se añadieron en el fichero de configuración JSON del ejercicio definiendo su identificador, modelo 3D gltf, la posición y la escala. El código que se muestra a continuación pertenece a la creación de la mesa pero  la estructura  de todos los elementos añadidos es la misma: 
 \begin{lstlisting}
 {
           "tag": "a-entity",
@@ -79,12 +80,12 @@ Estos objetos se añadieron en el fichero de configuración json del ejercicio d
       },
 \end{lstlisting}
 
-También añadieron a ese fichero de configuración de una forma muy similar, las paredes, una puerta y un cuadro ajustando la posición, dimensiones y texturas correspondientes a cada uno.
+También se añadieron a ese fichero de configuración de una forma muy similar, las paredes, una puerta y un cuadro ajustando la posición, dimensiones y texturas correspondientes a cada uno.
 
-Para que el ejercicio tenga mayor dificultad se introdujeron 2 pelotas con movimiento. Para conseguir este movimiento había dos posibilidades: animación desde Blender o Animación desde A-Frame. 
+Para que el ejercicio tuviera mayor dificultad se introdujeron 2 pelotas con movimiento. Para conseguir este movimiento se consideraron estas dos posibilidades: animación desde Blender o Animación desde A-Frame. 
 En el vídeo \footnote{https://www.youtube.com/watch?v=1JPb3Mw8638}  se puede ver cómo hacer una animación no lineal sencilla en Blender. Para poder usar animaciones de Blender en Websim es necesario que sean animaciones no lineales. Estudiando ambas opciones, se optó por la animación en A-Frame desde el fichero de configuración, que era el método ideal para Websim. De esta forma dejamos toda la creación de las pelotas, asignación de texturas, posición y  animación definido en la configuración.
 
-Para animar un objeto desde A-Frame añadimos el atributo \textit{``animation"} y completamos los valores que sean necesarios como desde dónde a dónde quieres que se mueva  el objeto o el tiempo que quieres que tarde en hacer esa animación. Las dos pelotas tienen estos atributos con sus respectivos valores. Por ejemplo en el siguiente código se puede ver cómo se define la animación en diagonal de la pelota de baloncesto: 
+Para animar un objeto desde A-Frame añadimos el atributo \textit{``animation"} y completamos los valores necesarios como desde dónde a dónde quieres que se mueva  el objeto o el tiempo que quieres que tarde en hacer esa animación. Las dos pelotas tienen estos atributos con sus respectivos valores. Por ejemplo en el siguiente código se puede ver cómo se define la animación en diagonal de la pelota de baloncesto: 
 \begin{lstlisting}
   {
             "tag": "a-sphere",
@@ -105,7 +106,7 @@ Para animar un objeto desde A-Frame añadimos el atributo \textit{``animation"} 
 
 \end{lstlisting}
 
-En el escenario de este ejercicio habrá un conjunto de 100 trozos de papel, confeti, repartidos por el suelo. El modelo de confeti se va a crear con la etiqueta \textit{a-cylinder} de A-Frame. 
+En el escenario de este ejercicio se crearon un conjunto de 100 trozos de papel, confeti, repartidos por el suelo. Estos modelos se hicieron con la etiqueta \textit{a-cylinder} de A-Frame.  
 
 El confeti no se crea desde el fichero de configuración dado que se tendrían que crear uno a uno  todos los confetis y se extendería demasiado el fichero. Lo que se ha hecho es que, una vez esta cargado el mundo en el navegador del usuario, usando JavaScript, creamos dinámicamente todos los confetis.
 
@@ -133,11 +134,10 @@ Para leer el fichero \textit{data.json} se utiliza esté código en la plantilla
  \end{lstlisting}
 
 
-En el siguiente código podemos ver cómo se crea el confeti con la función \textit{document.createElement(`a\- cylinder')}. Una vez creado se le asignan los atributos con la función  \textit{setAttribute}.  El identificador es confeti más un número  n, n es un número de 0-99 que se le asigna para crear 100 confetis diferentes (ejemplo de id del confeti número 50   id=``confeti50"). Además se le asigna los atributos posición, con la posición correspondiente que se lee del \textit{data.json}, el color que es  aleatorio, como es un cilindro, se define la altura y radio del confeti.
+En el siguiente código podemos ver cómo se crea el confeti con la función \textit{document .createElement(`a\- cylinder')}. Una vez creado se le asignan los atributos con la función  \textit{setAttribute}.  El identificador es confeti más un número  n, n es un número de 0-99 que se le asigna para crear 100 confetis diferentes (ejemplo de id del confeti número 50   id=``confeti50"). Además se le asigna los atributos posición, con la posición correspondiente que se lee del \textit{data.json}, el color que es  aleatorio, como es un cilindro, se define la altura y radio del confeti.
 Los confetis no cuentan con malla de colisión para que el aspirador pueda pasar por encima de ellos y absorberlos de una forma más natural.
 Estas son las funciones necesarias para la creación de las piezas de confeti: 
 \begin{lstlisting}
-
 function getRandomColor() {
     var letters = '0123456789ABCDEF';
     var color = '#';
@@ -198,11 +198,10 @@ El robot  propuesto en este ejercicio es una aspiradora robótica. Se crearon va
 \end{figure}
 
 Los robots en A-Frame está definidos por una apariencia 3D (geometría más texturas) y una malla de colisión.
-El simulador Websim analiza ficheros JSON para formar mundos con la tecnología A-Frame. De esta forma es sencillo crear los objetos con pares \textit{``atributo": ``valor''}. A continuación podemos ver cómo se define el identificador robot del nuevo robot, se importa el modelo 3D (en formato gltf) que hemos creado en Blender de la aspiradora y se le asignan otros atributos como la posición, escala y rotación del robot. El \textit{dynamic-body} de A-Frame nos facilita el movimiento del robot y el atributo \textit{collide} asigna una malla de colisión cilíndirca para que la aspiradora pueda chocarse con los demás elementos del mundo usando físicas de A-Frame y todo sea mucho más realista.
+El simulador Websim analiza ficheros JSON para formar mundos con la tecnología A-Frame. De esta forma es sencillo crear los objetos con pares \textit{``atributo": ``valor''}. A continuación podemos ver cómo se define el identificador robot del nuevo robot, se importa el modelo 3D (en formato gltf) que hemos creado en Blender de la aspiradora y se le asignan otros atributos como la posición, escala y rotación del robot. El \textit{dynamic-body} de A-Frame nos facilita el movimiento del robot y el atributo \textit{collide} asigna una malla de colisión cilíndrica para que la aspiradora pueda chocarse con los demás elementos del mundo usando físicas de A-Frame y todo sea mucho más realista.
 
 
 \begin{lstlisting}
- 
            "tag": "a-robot",
             "attr": {
                 "id": "a-pibot",
@@ -222,13 +221,12 @@ El simulador Websim analiza ficheros JSON para formar mundos con la tecnología 
 \end{lstlisting}
 
 El robot que acabamos de describir es un objeto de A-Frame inanimado, la capacidad de movimiento autónomo se la proporciona el código del alumno. Al guardar el código del ejercicio, éste se envía al servidor por websockets a un software que lo traduce a JavaScript y le asigna al cerebro del robot el código que le ha llegado. Gracias a este software el robot está sujeto a las físicas realistas de Aframe.
-El robot  también debe ser capaz de aspirar trozos de papel de la escena, por ello, se ha tenido que implementar un actuador ficticio, cuando robot pasa encima de una pieza de confeti, ésta debe desaparecer de la escena.
+El robot  también debe ser capaz de aspirar trozos de papel de la escena, por ello, se ha tenido que implementar un actuador ficticio, cuando el robot pasa encima de una pieza de confeti, ésta debe desaparecer de la escena.
 
-La absorción se implementó con JavaScript. Se utilizó la función \textit{setInterval}. Esta función ejecuta las funciones que estén definidas dentro, cada un cierto periodo de tiempo indefinidamente.
+La absorción se implementó en JavaScript utilizando la función \textit{setInterval}. Esta función ejecuta las funciones que estén definidas dentro, cada un cierto periodo de tiempo indefinidamente.
 Se ha establecido que cada 25ms este programa comprueba la distancia entre la aspiradora robótica y cada uno de los confetis. La posición del robot es su centro de masas, por eso se  utilizó la distancia euclídea para calcular la distancia entre el centro del robot y el centro del confeti n, si esta distancia d es menor o igual a 2, el confeti n cambia su atributo 'visible' a false. 
 
 \begin{lstlisting}
-
 roomba=sceneEl.querySelector('#a-pibot')
 
  setInterval(function(){
@@ -264,23 +262,21 @@ Las pruebas de absorción se estudiaron tanto en función de la posición como p
     \label{fig:f2}
  
   \end{subfigure}
-  \caption{Absorción por posición, el confeti es invisble cuando el robot pasa por encima.}
+  \caption{Absorción por posición}
 \end{figure}
 
 
 \section{Evaluador automático}
-Para contar el número de confetis que es capaz de recoger un usuario en un periodo de tiempo, se creó un evaluador automático. Este evaluador automático se introdujo dentro de la absorción, como en esa parte se calcula la distancia euclídea, ahora cada vez que d es menor o igual a 2 se suma un punto e indica que el confeti n ha sido  ``absorbido'' por el aspirador. La puntuación máxima es de 100, dado que depende del número de confetis 0-99. También se establece una cuenta atrás de 5:00 minutos. Una vez acabado el tiempo (Tiempo 00:00), aunque la aspiradora pase por encima de otros confetis visibles, éstos no serán absorbidos ni se aumentará el contador del evaluador.
-
+Para contar el número de confetis que es capaz de recoger un usuario en un periodo de tiempo, se creó un evaluador automático. Este evaluador automático se introdujo dentro de la absorción, como en esa parte se calcula la distancia euclídea, ahora cada vez que d es menor o igual a 2 se suma un punto e indica que el confeti n ha sido  ``absorbido'' por el aspirador. La puntuación máxima es de 100, dado que depende del número de confetis (0-99). También se establece una cuenta atrás de 5:00 minutos. Una vez acabado el tiempo (Tiempo 00:00), aunque la aspiradora pase por encima de otros confetis visibles, éstos no serán absorbidos ni se aumentará el contador del evaluador.
+\\
 
 En el siguiente código podemos ver todo lo necesario para la comprobación de las posiciones del confeti para la absorción y  la puntuación del evaluador. En la Figura 4.9 se muestra cómo se visualiza en la página web del ejercicio.
 
 \begin{lstlisting}
-
 startEvaluator = () => {
   started = true;
 }
 roomba=sceneEl.querySelector('#a-pibot')
-
  setInterval(function(){
        //console.log("Roomba",roomba.getAttribute('position').z);
       // console.log("Confeti",confeti.getAttribute('position'));
@@ -292,20 +288,18 @@ roomba=sceneEl.querySelector('#a-pibot')
          num_conf="#confeti"+ String(n)
          confeti=sceneEl.querySelector(num_conf)
          if (confeti.getAttribute('visible') == true) {
-	      
-	      var counter= document.getElementById('time').innerHTML;
-		// Tiempo: 00:00	
-	      if((counter[8] =='0') && (counter[9]=='0') && (counter[11]=='0') && (counter[12]== '0')){      
-		score = score;
-		}else{
-		score+=1;
-		document.getElementById('confeti_recogido').innerHTML = "Confetti recogido: "+ score;
-		}
+	         var counter= document.getElementById('time').innerHTML;
+		     // Tiempo: 00:00	
+	         if((counter[8] =='0') && (counter[9]=='0') && (counter[11]=='0') && (counter[12]== '0')){      
+	 	        score = score;
+		    }else{
+	 	        score+=1;
+		       document.getElementById('confeti_recogido').innerHTML = "Confetti recogido: "+ score;
+		    }
          }
          confeti.setAttribute('visible', false);
         }
       }
-	
     }, 25);
  });
 \end{lstlisting}

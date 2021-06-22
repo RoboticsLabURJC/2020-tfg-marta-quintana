@@ -1,13 +1,13 @@
 \chapter{Ejercicio juego del pañuelo} \label{gripper}
 En este capítulo se expone cómo ha sido el desarrollo del juego del pañuelo. Primero hablaremos del enunciado, seguidamente hablaremos de los modelos desarrollados, junto con las herramientas que se han utilizado. Para terminar, se ofrecen dos soluciones de referencia en Python y Scratch.
 
-Para que nuestro ejercicio sea acorde con el juego del pañuelo que conocemos todos y con las competiciones actuales, necesitamos hacer un robot con pinzas, una lata  y un circuito. Las principales tecnologías que se han utilizado en este ejercicio son Blender, JavaScript, A-Frame y Websim .
+Para que nuestro ejercicio sea acorde con el juego del pañuelo que conocemos todos y con las competiciones actuales, se creará un robot con pinzas, una lata, que representa el pañuelo y un circuito. Las principales tecnologías que se han utilizado en este ejercicio son Blender, JavaScript, A-Frame y Websim .
 
 
 \section{Enunciado}
 El propósito es crear un ejercicio con un nuevo robot que sea capaz de coger objetos y moverlos por el escenario. El nuevo robot debe tener pinzas móviles para atrapar otros objetos. 
 
-El juego del pañuelo es muy popular entre los más pequeños y también en el mundo de la robótica. En las competiciones de robots este juego incluye programar un sigue líneas. El robot debe recorrer un circuito, ser capaz de coger una lata que obstaculiza el camino y volver con ella a la posición de salida. En la Figura 5.1 a y 5.1 b podemos ver cómo es este juego en competiciones de robótica como Robocampeones.
+El juego del pañuelo es muy popular entre los más pequeños y también en el mundo de la robótica. En las competiciones de robots este juego incluye programar un sigue líneas. El robot debe recorrer un circuito, ser capaz de coger una lata que obstaculiza el camino y volver con ella a la posición de salida. En la Figura 5.1 (a) y 5.1 (b) podemos ver cómo es este juego en competiciones de robótica como Robocampeones.
 
 \begin{figure}[H]
   \begin{subfigure}[b]{0.5\textwidth}
@@ -32,7 +32,10 @@ En este trabajo fin de grado hemos hecho nuestra versión del juego del pañuelo
 En este ejercicio el alumno deberá programar en Python o en Scratch, un algoritmo que permita que el Mbot con pinzas avance siguiendo la línea negra del circuito hasta que se encuentre a poca distancia de la lata. Una vez se encuentre enfrente de la lata, el robot debe cerrar las pinzas y dar media vuelta para volver a la casilla de salida, llevando consigo la lata en todo momento. Gracias a un evaluador automático vamos a obtener la puntuación, ésta va a depender del porcentaje de circuito recorrido y si lleva o no la lata entre las pinzas.
 
 
-Se creó la página web de teoría con HTML5  y se añadió a las plantillas de Django en Kibotics en su versión de Python y Scratch. La teoría relacionada con este ejercicio se muestra en las Figuras 5.2, 5.3, 5.4, 5.5, 5.6 y 5.7. Esta información ayuda a  los alumnos a entender mejor cómo funcionan los sensores y actuadores y sea más sencilla la realización del ejercicio.
+Se creó la página web de teoría con HTML5  y se añadió a las plantillas de Django en Kibotics en su versión de Python y Scratch. La teoría relacionada con este ejercicio se muestra en las Figuras 5.2, 5.3, 5.4, 5.5, 5.6 y 5.7. Esta información ayuda a  los alumnos a entender mejor cómo funcionan los sensores y actuadores.
+
+La teoría se divide en 5 apartados, primero se hace una breve introducción del ejercicio y los objetivos que tiene que cumplir el alumno. En el primer punto se comenta qué se va a aprender en esta unidad. En el segundo punto se explica la teoría de los sensores que se van a utilizar, en este caso, son necesarios el sensor infrarrojos y el sensor dame objeto en pinza que se ha desarrollado en este trabajo. En el tercer punto se nombran los actuadores de movimiento, junto con  el abrir y cerrar de las pinzas necesarios para hacer el ejercicio y se indican las funciones y los bloques para poder utilizarlos en Python y en Scratch. Finalmente, el punto 4 trata de un ``¿Sabías que...?''  que cuenta datos curiosos sobre este antiguo juego.
+
 
 \begin{figure}[H]
     \centering
@@ -72,11 +75,9 @@ Se creó la página web de teoría con HTML5  y se añadió a las plantillas de 
     \label{fig:my_label}
 \end{figure}
 
-La teoría se divide en 5 apartados, primero se hace una breve introducción del ejercicio y los objetivos que tiene que cumplir el alumno. En el primer punto se comenta qué se va a aprender en esta unidad. En el segundo punto se explica la teoría de los sensores que se van a utilizar, en este caso, son necesarios el sensor infrarrojos y el sensor dame objeto en pinza que se ha desarrollado en este trabajo. En el tercer punto se nombran los actuadores de movimiento, junto con  el abrir y cerrar de las pinzas necesarios para hacer el ejercicio y se indican las funciones y los bloques para poder utilizarlos en Python y en Scratch. Finalmente, el punto 4 trata de un ``¿Sabías que...?''  que cuenta datos curiosos sobre este antiguo juego.
-
 \section{Modelos del mundo}
 En este apartado se explica cómo se han creado los modelos de la lata y el circuito de este ejercicio.
-El modelo 3D de la lata se creó con Blender (Figura 5.8 a). Para hacer el circuito se utilizó  GIMP, que es un programa de edición de imágenes gratuito y multiplataforma (versión 2.10), con él se diseñó la imagen .png del circuito (Figura 5.8 b) .
+El modelo 3D de la lata se creó con Blender (Figura 5.8 (a)). Para hacer el circuito  se utilizó  GIMP, un programa de edición de imágenes gratuito y multiplataforma (versión 2.10), con él se diseñó la imagen .png del circuito (Figura 5.8 (b)) .
  
 \begin{figure}[H]
   \begin{subfigure}[b]{0.5\textwidth}
@@ -352,7 +353,7 @@ export async function openGripper() {
 Una vez creado el robot y las funciones necesarias, se estudió la posibilidad de que ajustando  las mallas de colisión de las pinzas se pudiera atrapar una lata con la fuerza que ejercieran al cerrarse. 
 Las mallas de colisión son las líneas rojas que delimitan el entorno de un objeto y permiten definir una forma física alrededor de modelos personalizados. Esto hace que funcionen mejor y se comporten con mayor realismo.
 
-El cerrar las pinzas de esta forma,  la lata colisionaba con las mallas de colisión de las pinzas pero no se quedaba atrapada. Para solucionar ésto, se rotaron las pinzas 8 grados en el eje y. También se ajustaron las físicas del mundo para que el robot pudiera arrastrar la lata sin problemas por el escenario. En la Figura 5.13 podemos ver cómo eran las pinzas sin rotar y con ortoedros y las nuevas pinzas con el modelo de Blender rotado 8 grados que finalmente se utilizó.
+El cerrar las pinzas de esta forma,  la lata colisionaba con las mallas de colisión de las pinzas pero no se quedaba atrapada. Para solucionar ésto, se rotaron las pinzas 8 grados en el eje y. También se ajustaron las físicas del mundo para que el robot pudiera arrastrar la lata sin problemas por el escenario. En la Figura 5.13 (a) podemos ver cómo eran las pinzas sin rotar y con ortoedros y en la Figura 5.13 (b), las nuevas pinzas con el modelo de Blender rotado 8 grados que finalmente se utilizó.
 
 
 \begin{figure}[H]
@@ -460,19 +461,23 @@ En la Figura 5.14, podemos ver que el robot a recorrido una parte del circuito b
 
 
 \section{Solución de referencia}
-Este ejercicio se puede resolver de muchas formas, unas posibles soluciones son las que se muestran en la Figura 5.15 para Python y  en la Figura 5.16 para Scratch. 
-En estas soluciones reflejan el código necesario para hacer un sigue líneas con el sensor de infrarrojos que dependiendo de su valor, el robot avanzará, girará a la izquierda o a la derecha hasta llegar a la lata. Con el sensor \textit{Dame objeto en pinza o HAL.dame\_objeto\_en\_pinza)} se obtiene un 1 cuando la lata está entre las pinzas o un 0 si no lo está. Cuando el sensor detecta que la lata está entre las pinzas (devuelve un 1), el robot se para, cierra las pinzas, espera un segundo para que le de tiempo a cerrar bien las pinzas y gira 180 grados. En este momento se vuelve a usar el sensor infrarrojos para detectar la línea y el robot vuelve por donde ha venido llevando la lata consigo.
+Este ejercicio se puede resolver de muchas formas, unas posibles soluciones son las que se muestran en la Figura 5.15(a) para Python y  en la Figura 5.15 (b) para Scratch. 
+En estas soluciones reflejan el código necesario para hacer un sigue líneas con el sensor de infrarrojos que dependiendo de su valor, el robot avanzará, girará a la izquierda o a la derecha hasta llegar a la lata. Con el sensor \textit{Dame objeto en pinza o HAL.dame\_objeto\_en\_pinza()} se obtiene un 1 cuando la lata está entre las pinzas o un 0 si no lo está. Cuando el sensor detecta que la lata está entre las pinzas (devuelve un 1), el robot se para, cierra las pinzas, espera un segundo para que le de tiempo a cerrar bien las pinzas y gira 180 grados. En este momento se vuelve a usar el sensor infrarrojos para detectar la línea y el robot vuelve por donde ha venido llevando la lata consigo.
 
 \begin{figure}[H]
-    \centering
-    \includegraphics[width=0.65\textwidth, height=0.45\textwidth]{chapters/images/solucionppython.png}
+  \begin{subfigure}[b]{0.5\textwidth}
+  \centering
+    \includegraphics[width=1\textwidth]{chapters/images/solucionppython.png}
     \caption{Solución en Python}
-    \label{fig:my_label}
-\end{figure}
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.65\textwidth, height=0.45\textwidth]{chapters/images/solucionpscratch.png}
-    \caption{Solución en Scratch}
-    \label{fig:my_label}
+    \label{fig:f1}
+  \end{subfigure}
+  \hfill
+  \begin{subfigure}[b]{0.5\textwidth}
+  \centering
+    \includegraphics[width=1\textwidth]{chapters/images/solucionpscratch.png}
+	\caption{Solución en Scratch}    
+    \label{fig:f2}
+ 
+  \end{subfigure}
+  \caption{Soluciones de referencia}
 \end{figure}
