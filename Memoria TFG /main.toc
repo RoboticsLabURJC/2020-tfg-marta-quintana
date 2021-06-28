@@ -44,7 +44,7 @@
 \contentsline {section}{\numberline {6.1}Enunciado}{64}{section.6.1}
 \contentsline {section}{\numberline {6.2}Modelos del mundo }{65}{section.6.2}
 \contentsline {section}{\numberline {6.3}Procesamiento de audio con \textit {Teachable Machine}}{67}{section.6.3}
-\contentsline {section}{\numberline {6.4}Soluci\IeC {\'o}n de referencia}{77}{section.6.4}
+\contentsline {section}{\numberline {6.4}Soluci\IeC {\'o}n de referencia}{78}{section.6.4}
 \contentsline {section}{\numberline {6.5}Alternativas probadas}{78}{section.6.5}
 \contentsline {section}{\numberline {6.6}Banda Sonora}{80}{section.6.6}
 \contentsline {subsection}{\numberline {6.6.1}Efecto de sonido por colisi\IeC {\'o}n }{82}{subsection.6.6.1}

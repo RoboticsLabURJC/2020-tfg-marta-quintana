@@ -1,5 +1,5 @@
 \chapter{Ejercicio teleoperador acústico y banda sonora}\label{audio}
-En este capítulo describe cómo se ha realizado el ejercicio del teleoperador acústico, que aborda el análisis de audio de entrada y se nombran las herramientas utilizadas . También se muestra cómo se ha añadido la posibilidad de incluir efectos de sonido y bandas sonoras (audio de salida) a los ejercicios ya existentes.
+En este capítulo describe cómo se ha realizado el ejercicio del teleoperador acústico, que aborda el análisis de audio de entrada y se nombran las herramientas utilizadas. También se muestra cómo se ha añadido la posibilidad de incluir efectos de sonido y bandas sonoras (audio de salida) a los ejercicios ya existentes.
 
 La entrada y salida de audio desde aplicaciones web es muy interesante para conseguir una mayor interactividad con el usuario. El sonido es muy importante en el mundo real y llevarlo a Websim permite que la simulación sea más inmersiva y la experiencia del usuario sea más agradable.
  El audio de entrada o \textit{audio in} en este trabajo  lo vamos a utilizar para obtener las muestras del micrófono y analizarlo  para reconocer las palabras que entiende nuestro robot y  actúe de forma adecuada. El audio de salida o \textit{audio out} se usará para completar los ejercicios con bandas sonoras y el sonido de colisión.
@@ -134,7 +134,7 @@ Estos modelos se han añadido a los respectivos ficheros de configuración de la
 
 El procesamiento de audio es muy complejo y existen muchas herramientas diferentes para implementarlo desde JavaScript. En este trabajo se han investigado tres herramientas y finalmente se ha decidido usar Teachable Machine, que es una herramienta basada en la Web para crear modelos de aprendizaje automático. Destaca por usar modelos de clasificación de imágenes, sonidos y posturas. Teachable Machine internamente usa TensorFlowJS . 
 
-La creación de un modelo en Teachable Machine tiene 3 fases: recopilación, entrenamiento y exportación del modelo a tu proyecto.
+La creación de un modelo en Teachable Machine tiene tres fases: recopilación, entrenamiento y exportación del modelo a tu proyecto.
 
 \begin{itemize}
 \item \textit{Recopilación :}
@@ -423,17 +423,23 @@ async function Connect\_To\_Robot() {
 Cuando se pulsa el botón \textit{Conect\_To\_Robot} se llama a la función del mismo nombre que internamente ejecuta  la función \texttt{listen()},  inicializa el reconocimiento y analiza el audio cada 10 segundos.
 Este botón se pone en verde cuando está analizando, cuando se vuelve a pulsar, el botón se pone en color rojo y se desconecta del análisis de audio. Mientras el botón esté de ese color el robot no reconoce ninguna palabra.
 
-La función \texttt{listen()} inicializa el modelo y crea las etiquetas que necesita. Se ha creado un \texttt{setTimeout} para esperar 10 segundos hasta que cargue el modelo. Cuando éste carga, se establece un \textit{setInterval} para que cada 10 segundos se ejecute la función \texttt{analizar()} que devuelve la palabra estimada.
+La función \texttt{listen()} inicializa el modelo y crea las etiquetas que necesita. Se ha creado un \texttt{setTimeout()} para esperar 10 segundos hasta que cargue el modelo. Cuando éste carga, se establece un \texttt{setInterval()} para que cada 10 segundos se ejecute la función \texttt{analizar()} que devuelve la palabra estimada.
 
 La función \texttt{analizar()} es la que invoca al analizador/\textit{recognizer}, que predice la palabra que es más probable que haya dicho el usuario.  \textit{Prediction} es la palabra que tiene la probabilidad más alta. Una vez tenemos la \textit{prediction} se compara esta palabra con las 8 palabras que hemos entrenado el modelo: \textit{go, stop, back, right, left, up, down y \_background\_noise\_}
 
-Gracias al evento \texttt{robot-loaded}, cuando el robot está cargado en el escenario, obtenemos el objeto \texttt{localRobot}, que en nuestro ejercicio es el dron. Kibotics ofrece una API\footnote{Application Programming Interfaces} llamada HAL API \footnote{Hardware Abstraction Layer} con funciones para controlar el movimiento del robot simulado. Cuando se predice una de las 8 palabras posibles, en los condicionales \texttt{if(){} else if() {}} se llama a una de estas funciones de velocidad : \texttt{localRobot.setV()}, para asignar la velocidad lineal: se utiliza para ir hacia delante \textit{go}, ir hacia atrás \textit{back} o parar \textit{stop}.  \texttt{LocalRobot.setW()} para la velocidad angular: se usa para girar a la derecha \textit{right} o a la izquierda \textit{left}. Y \texttt{localRobot.setL()} para asignar la velocidad de subida y bajada: subir \textit{up} o bajar \textit{down}. Si se predice que es ruido de fondo no afecta en el comportamiento del dron.
+Gracias al evento \texttt{robot-loaded}, cuando el robot está cargado en el escenario, obtenemos el objeto \texttt{localRobot}, que en nuestro ejercicio es el dron. Kibotics ofrece una API\footnote{Application Programming Interfaces} llamada HAL API \footnote{Hardware Abstraction Layer} con funciones para controlar el movimiento del robot simulado. Cuando se predice una de las 8 palabras posibles, en los condicionales \texttt{if(){} else if() {}} se llama a una de estas funciones de velocidad :
+\begin{itemize}
+\item \texttt{LocalRobot.setV()}, para asignar la velocidad lineal: se utiliza para ir hacia delante \textit{go}, ir hacia atrás \textit{back} o parar \textit{stop}.
+\item \texttt{LocalRobot.setW()} para la velocidad angular: se usa para girar a la derecha \textit{right} o a la izquierda \textit{left}.
+\item \texttt{LocalRobot.setL()} para asignar la velocidad de subida y bajada: subir \textit{up} o bajar \textit{down}. 
+\item Si se predice que es ruido de fondo no afecta en el comportamiento del dron.
+\end{itemize}
 
 Con el fichero de configuración, el HTML y este código JavaScript el ejercicio se visualiza como se muestra en la Figura 6.7.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.7\textwidth, height=0.4\textwidth]{chapters/images/audio.png}
+    \includegraphics[width=0.65\textwidth, height=0.35\textwidth]{chapters/images/audio.png}
     \caption{Ejercicio teleoperador acústico}
     \label{fig:my_label}
 \end{figure}
@@ -446,14 +452,14 @@ La optimización se realizó añadiendo el contador \textit{(noise\_times)} que 
 \begin{figure}[H]
   \begin{subfigure}[b]{0.5\textwidth}
   \centering
-    \includegraphics[width=0.95\textwidth, height=0.7\textwidth]{chapters/images/optimizacionaudio.png}
+    \includegraphics[width=0.9\textwidth, height=0.65\textwidth]{chapters/images/optimizacionaudio.png}
     \caption{Botón Continue analizing }
     \label{fig:f1}
   \end{subfigure}
   \hfill
   \begin{subfigure}[b]{0.5\textwidth}
   \centering
-    \includegraphics[width=0.95\textwidth, height=0.7\textwidth]{chapters/images/optimizacionaudio2.png}
+    \includegraphics[width=0.9\textwidth, height=0.65\textwidth]{chapters/images/optimizacionaudio2.png}
 	\caption{Se reinicia el procesamiento de audio.}    
     \label{fig:f2}
  
@@ -498,7 +504,7 @@ TensorFlow JS es una biblioteca de JavaScript para el aprendizaje automático. E
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.75\textwidth, height=0.45\textwidth]{chapters/images/imagerecognition.png}
+    \includegraphics[width=0.85\textwidth, height=0.5\textwidth]{chapters/images/imagerecognition.png}
     \caption{TensorFlow JS ejemplo detección de objetos. }
     \label{fig:my_label}
 \end{figure}
@@ -528,7 +534,7 @@ Chiptronical, Common Fight, Goliath's Foe, Resilience, Spring Village, TheTrueSt
 
 
 La banda sonora de cada ejercicio se define en su fichero de configuración. En ese fichero se crea un objeto con la etiqueta \textit{``soundtrack''}, el identificador \textit{``audio''} y la dirección del fichero fuente del audio (\textit{``src''}) que se quiere asignar como banda sonora, como se muestra en el siguiente código:
-
+\\
 \begin{lstlisting}
 {  "tag":"soundtrack",
     "attr": {

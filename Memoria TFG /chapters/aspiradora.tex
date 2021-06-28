@@ -1,5 +1,5 @@
 \chapter{Ejercicio aspiradora robótica atrapa confeti}\label{chap:aspiradora}
-En los siguientes capítulos se explica el proceso de desarrollo de los tres ejercicios realizados en este trabajo fin de grado. Este capítulo está dedicado al primero de ellos, que consiste en una aspiradora robótica que atrapa piezas de confeti que están dispersas por el suelo de una casa. En primer lugar se expone el enunciado y los objetivos. En segundo lugar cómo se ha implementado y creado los modelos de robot aspiradora y escenario para la plataforma Kibotics. Finalmente, se muestran las soluciones de referencia creadas en Python y Scratch que satisfacen el objetivo del ejercicio.
+En los siguientes capítulos se explica el proceso de desarrollo de los tres ejercicios realizados en este trabajo fin de grado. Este capítulo está dedicado al primero de ellos, que consiste en una aspiradora robótica que atrapa piezas de confeti que están dispersas por el suelo de una habitación. En primer lugar se expone el enunciado y los objetivos. En segundo lugar cómo se ha implementado y creado los modelos de robot aspiradora y escenario para la plataforma Kibotics. Finalmente, se muestran las soluciones de referencia creadas en Python y Scratch que satisfacen el objetivo del ejercicio.
 
 Para hacer el ejercicio descrito a continuación, se utilizaron las herramientas Blender, el simulador Websim de Kibotics que contiene la tecnología A-Frame y los lenguajes JavaScript, HTML5 y JSON.
 
@@ -216,8 +216,8 @@ El robot que acabamos de describir es un objeto de A-Frame inanimado, la capacid
 
 El robot también debe ser capaz de aspirar trozos de papel de la escena, por ello se ha tenido que implementar un actuador ficticio, el actuador de absorción. Este actuador debe hacer que cuando el robot pase encima de una pieza de confeti, la pieza en concreto desaparezca de la escena.
 
-La absorción se implementó en JavaScript utilizando la función \textit{setInterval}. Esta función ejecuta las funciones que estén definidas dentro, cada un cierto periodo de tiempo indefinidamente.
-Se ha establecido que cada 25ms este programa comprueba la distancia entre la aspiradora robótica y cada uno de los confetis. La posición del robot es su centro de masas, por eso se  utilizó la distancia euclídea para calcular la distancia entre el centro del robot y el centro del confeti n, si esta distancia d es menor o igual a 2, el confeti n cambia su atributo 'visible' a false. 
+La absorción se implementó en JavaScript utilizando la función \textit{setInterval()}. Esta función ejecuta las funciones que estén definidas dentro, cada un cierto periodo de tiempo indefinidamente.
+Se ha establecido que cada 25ms este programa comprueba la distancia entre la aspiradora robótica y cada uno de los confetis. La posición del robot es su centro de masas, por eso se  utilizó la distancia euclídea para calcular la distancia entre el centro del robot y el centro del confeti n, si esta distancia \textit{d} es menor o igual a 2, el confeti n cambia su atributo \textit{`visible'} a \textit{false}. 
 
 \begin{lstlisting}
 roomba=sceneEl.querySelector('#a-pibot')

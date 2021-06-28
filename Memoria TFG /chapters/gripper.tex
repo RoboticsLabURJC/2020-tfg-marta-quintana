@@ -68,7 +68,7 @@ Se creó la página web de teoría con HTML5  y se añadió a las plantillas de 
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.85\textwidth, height=0.45\textwidth]{chapters/images/teoriag5python.png}
+    \includegraphics[width=0.95\textwidth, height=0.45\textwidth]{chapters/images/teoriag5python.png}
     \caption{Sensor \texttt{dame objeto en pinza} en Python}
     \label{fig:my_label}
 \end{figure}
@@ -303,7 +303,7 @@ Los cuerpos estáticos son objetos animados o de posición fija. Otros objetos p
 El robot se definió como un cuerpo dinámico mientras que las palas de las pinzas eran cuerpos estáticos, de esta forma, las palas pueden estar elevadas del suelo y no les afecta  radicalmente las colisiones que pueda tener con la lata a la hora de cerrarse. La lata en cambio es un objeto dinámico.
 
 La malla de colisión se define por \textit{shape\_main y shape\_handle}. En el atributo \textit{body} se pone ``shape: none'' para poder ajustar la malla de colisión que viene por defecto con \textit{shape\_main y shape\_handle} .
-\texttt{Shape\_main} es la malla de colisión principal en la que se puede elegir la forma, \textit{shape}, lo que ocupa \texttt{halfExtents} y se puede desplazar del centro del objeto con \texttt{offset}. Esto permite hacer la malla de colisión más grande o más pequeña que las dimensiones de nuestro objeto. \texttt{ Shape\_handle} permite añadir una malla de colisión extra independientemente de si dentro de ese  objeto hay otro objeto o no. Esta malla de colisión extra se define respecto a la malla de colisión \texttt{shape\_ main}. Ambas mallas de colisión dependerán de la posición del objeto y se moverán lo mismo que él.
+\texttt{Shape\_main} es la malla de colisión principal en la que se puede elegir la forma, \textit{shape}, lo que ocupa \texttt{halfExtents} y se puede desplazar del centro del objeto con \texttt{offset}. Esto permite hacer la malla de colisión más grande o más pequeña que las dimensiones de nuestro objeto. \texttt{ Shape\_handle} permite añadir una malla de colisión extra independientemente de si dentro de ese  objeto hay otro objeto o no. Esta malla de colisión extra se define respecto a la malla de colisión \texttt{shape\_main}. Ambas mallas de colisión dependerán de la posición del objeto y se moverán lo mismo que él.
 
 La malla de colisión extra se usó para la parte cúbica que tiene la parte central del modelo de la pinza usando la forma  \texttt{ ``shape'' : ``box''},  ajustando  la posición y dimensiones del cubo, mientras que la malla de colisión principal se asignó a la parte del modelo con forma de ortoedro, también con \texttt{ ``shape'' : ``box''} pero ajustándolo a las medidas del ortoedro.
 
