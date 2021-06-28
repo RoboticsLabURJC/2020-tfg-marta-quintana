@@ -5,7 +5,7 @@
 \contentsline {figure}{\numberline {1.3}{\ignorespaces Servomotores\relax }}{2}{figure.caption.5}
 \contentsline {figure}{\numberline {1.4}{\ignorespaces Pantalla\relax }}{2}{figure.caption.5}
 \contentsline {figure}{\numberline {1.5}{\ignorespaces Ejemplos de Robots\relax }}{3}{figure.caption.6}
-\contentsline {figure}{\numberline {1.6}{\ignorespaces Ejemplos de Robots educativos\relax }}{4}{figure.caption.7}
+\contentsline {figure}{\numberline {1.6}{\ignorespaces Ejemplos de robots educativos\relax }}{4}{figure.caption.7}
 \contentsline {figure}{\numberline {1.7}{\ignorespaces Ejemplos aplicaciones web\relax }}{5}{figure.caption.8}
 \contentsline {figure}{\numberline {1.8}{\ignorespaces Comunicaci\IeC {\'o}n cliente/servidor a trav\IeC {\'e}s de HTTP\relax }}{6}{figure.caption.9}
 \contentsline {figure}{\numberline {1.9}{\ignorespaces Ejemplo petici\IeC {\'o}n HTTP Cliente a Servidor\relax }}{6}{figure.caption.10}
@@ -32,43 +32,49 @@
 \contentsline {figure}{\numberline {3.9}{\ignorespaces Ejercicios Kibotics\relax }}{30}{figure.caption.28}
 \contentsline {figure}{\numberline {3.10}{\ignorespaces Arquitectura de la aplicaci\IeC {\'o}n web Kibotics\relax }}{31}{figure.caption.29}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces P\IeC {\'a}gina de teor\IeC {\'\i }a enunciado y requisitos\relax }}{33}{figure.caption.30}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Teor\IeC {\'\i }a\relax }}{34}{figure.caption.31}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Pistas y \IeC {\textquestiondown }sab\IeC {\'\i }as que.. ?\relax }}{34}{figure.caption.32}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Modelos en Blender\relax }}{35}{figure.caption.33}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Modelo sof\IeC {\'a} en Blender\relax }}{35}{figure.caption.34}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Habitaci\IeC {\'o}n amueblada\relax }}{35}{figure.caption.35}
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Modelo de la aspiradora rob\IeC {\'o}tica realizado en Blender.\relax }}{39}{figure.caption.36}
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Absorci\IeC {\'o}n por posici\IeC {\'o}n\relax }}{41}{figure.caption.37}
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Evaluador autom\IeC {\'a}tico para el ejercicio aspiradora rob\IeC {\'o}tica\relax }}{42}{figure.caption.38}
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Soluci\IeC {\'o}n en Scratch \relax }}{43}{figure.caption.39}
-\contentsline {figure}{\numberline {4.11}{\ignorespaces Soluci\IeC {\'o}n en Python\relax }}{43}{figure.caption.40}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces P\IeC {\'a}gina de teor\IeC {\'\i }a objetivos\relax }}{33}{figure.caption.30}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces P\IeC {\'a}gina de teor\IeC {\'\i }a requisitos\relax }}{34}{figure.caption.31}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Teor\IeC {\'\i }a\relax }}{34}{figure.caption.32}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Pistas\relax }}{34}{figure.caption.33}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces \IeC {\textquestiondown }Sab\IeC {\'\i }as que ...?\relax }}{35}{figure.caption.34}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Modelos en Blender\relax }}{35}{figure.caption.35}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Modelo sof\IeC {\'a} en Blender\relax }}{36}{figure.caption.36}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Habitaci\IeC {\'o}n amueblada\relax }}{36}{figure.caption.37}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Modelo de la aspiradora rob\IeC {\'o}tica realizado en Blender.\relax }}{39}{figure.caption.38}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Absorci\IeC {\'o}n por posici\IeC {\'o}n\relax }}{41}{figure.caption.39}
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Evaluador autom\IeC {\'a}tico para el ejercicio aspiradora rob\IeC {\'o}tica\relax }}{43}{figure.caption.40}
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Soluci\IeC {\'o}n en Scratch \relax }}{43}{figure.caption.41}
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Soluci\IeC {\'o}n en Python\relax }}{43}{figure.caption.42}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Juego del Pa\IeC {\~n}uelo en competiciones rob\IeC {\'o}ticas\relax }}{45}{figure.caption.41}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces P\IeC {\'a}gina de teor\IeC {\'\i }a enunciado y requisitos\relax }}{46}{figure.caption.42}
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Teor\IeC {\'\i }a infrarrojos\relax }}{46}{figure.caption.43}
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Teor\IeC {\'\i }a sensor infrarrojos\relax }}{47}{figure.caption.44}
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Teror\IeC {\'\i }a sensores y actuadores en Python\relax }}{47}{figure.caption.45}
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Teror\IeC {\'\i }a sensores y actuadores en Python\relax }}{48}{figure.caption.46}
-\contentsline {figure}{\numberline {5.7}{\ignorespaces \IeC {\textquestiondown }Sab\IeC {\'\i }as que.. ?\relax }}{48}{figure.caption.47}
-\contentsline {figure}{\numberline {5.8}{\ignorespaces Modelos en Blender\relax }}{49}{figure.caption.48}
-\contentsline {figure}{\numberline {5.9}{\ignorespaces Prototipo robot con pinza en A-Frame nativo.\relax }}{51}{figure.caption.49}
-\contentsline {figure}{\numberline {5.10}{\ignorespaces Modelo Mbot cambiado de color\relax }}{52}{figure.caption.50}
-\contentsline {figure}{\numberline {5.11}{\ignorespaces Modelo Pinza\relax }}{53}{figure.caption.51}
-\contentsline {figure}{\numberline {5.12}{\ignorespaces Mallas de colisi\IeC {\'o}n del robot\relax }}{55}{figure.caption.52}
-\contentsline {figure}{\numberline {5.13}{\ignorespaces Robot Mbot con pinzas\relax }}{57}{figure.caption.53}
-\contentsline {figure}{\numberline {5.14}{\ignorespaces Evaluador autom\IeC {\'a}tico del juego del pa\IeC {\~n}uelo\relax }}{59}{figure.caption.54}
-\contentsline {figure}{\numberline {5.15}{\ignorespaces Soluciones de referencia\relax }}{60}{figure.caption.55}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Juego del Pa\IeC {\~n}uelo en competiciones rob\IeC {\'o}ticas\relax }}{46}{figure.caption.43}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces P\IeC {\'a}gina de teor\IeC {\'\i }a enunciado y requisitos\relax }}{47}{figure.caption.44}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Qu\IeC {\'e} vas a aprender y teor\IeC {\'\i }a infrarrojos\relax }}{47}{figure.caption.45}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Teor\IeC {\'\i }a infrarrojos\relax }}{48}{figure.caption.46}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Teror\IeC {\'\i }a sensor infrarrojos en Python\relax }}{48}{figure.caption.47}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Teror\IeC {\'\i }a sensor infrarrojos en Scratch\relax }}{49}{figure.caption.48}
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Sensor \texttt {dame objeto en pinza} en Python\relax }}{49}{figure.caption.49}
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Sensor \texttt {dame objeto en pinza} en Scratch\relax }}{50}{figure.caption.50}
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Teror\IeC {\'\i }a actuadores en Python\relax }}{50}{figure.caption.51}
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Teror\IeC {\'\i }a actuadores en Scratch\relax }}{51}{figure.caption.52}
+\contentsline {figure}{\numberline {5.11}{\ignorespaces \IeC {\textquestiondown }Sab\IeC {\'\i }as que.. ?\relax }}{51}{figure.caption.53}
+\contentsline {figure}{\numberline {5.12}{\ignorespaces Modelos en Blender\relax }}{52}{figure.caption.54}
+\contentsline {figure}{\numberline {5.13}{\ignorespaces Prototipo robot con pinza en A-Frame nativo.\relax }}{54}{figure.caption.55}
+\contentsline {figure}{\numberline {5.14}{\ignorespaces Modelo Mbot cambiado de color\relax }}{55}{figure.caption.56}
+\contentsline {figure}{\numberline {5.15}{\ignorespaces Modelo Pinza\relax }}{56}{figure.caption.57}
+\contentsline {figure}{\numberline {5.16}{\ignorespaces Mallas de colisi\IeC {\'o}n del robot\relax }}{58}{figure.caption.58}
+\contentsline {figure}{\numberline {5.17}{\ignorespaces Robot Mbot con pinzas\relax }}{60}{figure.caption.59}
+\contentsline {figure}{\numberline {5.18}{\ignorespaces Evaluador autom\IeC {\'a}tico del juego del pa\IeC {\~n}uelo\relax }}{62}{figure.caption.60}
+\contentsline {figure}{\numberline {5.19}{\ignorespaces Soluciones de referencia\relax }}{63}{figure.caption.61}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Modelos porter\IeC {\'\i }a en Blender y en Websim \relax }}{63}{figure.caption.56}
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Pared de piedra en Websim\relax }}{64}{figure.caption.57}
-\contentsline {figure}{\numberline {6.3}{\ignorespaces Modelo realizado en Teachable Machine\relax }}{66}{figure.caption.58}
-\contentsline {figure}{\numberline {6.4}{\ignorespaces Vista previa del modelo\relax }}{67}{figure.caption.59}
-\contentsline {figure}{\numberline {6.5}{\ignorespaces P\IeC {\'a}gina web de prueba de reconocimiento de audio\relax }}{70}{figure.caption.60}
-\contentsline {figure}{\numberline {6.6}{\ignorespaces An\IeC {\'a}lisis audio de entrada con Teachable Machine\relax }}{70}{figure.caption.61}
-\contentsline {figure}{\numberline {6.7}{\ignorespaces Ejercicio teleoperador ac\IeC {\'u}stico\relax }}{74}{figure.caption.62}
-\contentsline {figure}{\numberline {6.8}{\ignorespaces Optimizaci\IeC {\'o}n del modelo \relax }}{75}{figure.caption.63}
-\contentsline {figure}{\numberline {6.9}{\ignorespaces Ejemplo soluci\IeC {\'o}n teleoperador ac\IeC {\'u}stico\relax }}{76}{figure.caption.64}
-\contentsline {figure}{\numberline {6.10}{\ignorespaces TensorFlow JS ejemplo detecci\IeC {\'o}n de objetos. \relax }}{77}{figure.caption.65}
-\contentsline {figure}{\numberline {6.11}{\ignorespaces Diagrama audio de salida\relax }}{79}{figure.caption.66}
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Modelos porter\IeC {\'\i }a en Blender y en Websim \relax }}{66}{figure.caption.62}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Pared de piedra en Websim\relax }}{66}{figure.caption.63}
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Modelo realizado en Teachable Machine\relax }}{68}{figure.caption.64}
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Vista previa del modelo\relax }}{69}{figure.caption.65}
+\contentsline {figure}{\numberline {6.5}{\ignorespaces P\IeC {\'a}gina web de prueba de reconocimiento de audio\relax }}{72}{figure.caption.66}
+\contentsline {figure}{\numberline {6.6}{\ignorespaces An\IeC {\'a}lisis audio de entrada con Teachable Machine\relax }}{72}{figure.caption.67}
+\contentsline {figure}{\numberline {6.7}{\ignorespaces Ejercicio teleoperador ac\IeC {\'u}stico\relax }}{76}{figure.caption.68}
+\contentsline {figure}{\numberline {6.8}{\ignorespaces Optimizaci\IeC {\'o}n del modelo \relax }}{77}{figure.caption.69}
+\contentsline {figure}{\numberline {6.9}{\ignorespaces Ejemplo soluci\IeC {\'o}n teleoperador ac\IeC {\'u}stico\relax }}{78}{figure.caption.70}
+\contentsline {figure}{\numberline {6.10}{\ignorespaces TensorFlow JS ejemplo detecci\IeC {\'o}n de objetos. \relax }}{79}{figure.caption.71}
+\contentsline {figure}{\numberline {6.11}{\ignorespaces Diagrama audio de salida\relax }}{81}{figure.caption.72}
 \addvspace {10\p@ }

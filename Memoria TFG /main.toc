@@ -13,7 +13,7 @@
 \contentsline {section}{\numberline {2.1}Objetivos}{16}{section.2.1}
 \contentsline {section}{\numberline {2.2}Requisitos}{17}{section.2.2}
 \contentsline {section}{\numberline {2.3}Metodolog\IeC {\'\i }a}{17}{section.2.3}
-\contentsline {section}{\numberline {2.4}Plan de Trabajo}{18}{section.2.4}
+\contentsline {section}{\numberline {2.4}Plan de Trabajo}{19}{section.2.4}
 \contentsline {chapter}{\numberline {3}Infraestructura utilizada}{20}{chapter.3}
 \contentsline {section}{\numberline {3.1}Lenguajes de programaci\IeC {\'o}n y de documentos}{20}{section.3.1}
 \contentsline {subsection}{\numberline {3.1.1}HTML5}{20}{subsection.3.1.1}
@@ -28,27 +28,27 @@
 \contentsline {subsection}{\numberline {3.2.5}Navegadores web utilizados}{31}{subsection.3.2.5}
 \contentsline {chapter}{\numberline {4}Ejercicio aspiradora rob\IeC {\'o}tica atrapa confeti}{32}{chapter.4}
 \contentsline {section}{\numberline {4.1}Enunciado}{32}{section.4.1}
-\contentsline {section}{\numberline {4.2}Modelos del mundo}{34}{section.4.2}
+\contentsline {section}{\numberline {4.2}Modelos del mundo}{35}{section.4.2}
 \contentsline {section}{\numberline {4.3}Modelo aspiradora}{39}{section.4.3}
-\contentsline {section}{\numberline {4.4}Evaluador autom\IeC {\'a}tico}{41}{section.4.4}
+\contentsline {section}{\numberline {4.4}Evaluador autom\IeC {\'a}tico}{42}{section.4.4}
 \contentsline {section}{\numberline {4.5}Soluci\IeC {\'o}n de referencia}{43}{section.4.5}
-\contentsline {chapter}{\numberline {5}Ejercicio juego del pa\IeC {\~n}uelo}{44}{chapter.5}
-\contentsline {section}{\numberline {5.1}Enunciado}{44}{section.5.1}
-\contentsline {section}{\numberline {5.2}Modelos del mundo}{48}{section.5.2}
-\contentsline {section}{\numberline {5.3}Modelo robot con pinza}{50}{section.5.3}
-\contentsline {subsection}{\numberline {5.3.1}Antecedentes}{51}{subsection.5.3.1}
-\contentsline {subsection}{\numberline {5.3.2}Modelo Mbot con pinzas}{52}{subsection.5.3.2}
-\contentsline {section}{\numberline {5.4}Evaluador autom\IeC {\'a}tico}{57}{section.5.4}
-\contentsline {section}{\numberline {5.5}Soluci\IeC {\'o}n de referencia}{60}{section.5.5}
-\contentsline {chapter}{\numberline {6}Ejercicio teleoperador ac\IeC {\'u}stico y banda sonora}{61}{chapter.6}
-\contentsline {section}{\numberline {6.1}Enunciado}{61}{section.6.1}
-\contentsline {section}{\numberline {6.2}Modelos del mundo }{62}{section.6.2}
-\contentsline {section}{\numberline {6.3}Procesamiento de audio con Teachable Machine}{65}{section.6.3}
-\contentsline {section}{\numberline {6.4}Soluci\IeC {\'o}n de referencia}{75}{section.6.4}
-\contentsline {section}{\numberline {6.5}Alternativas probadas}{76}{section.6.5}
-\contentsline {section}{\numberline {6.6}Banda Sonora}{78}{section.6.6}
-\contentsline {subsection}{\numberline {6.6.1}Efecto de sonido por colisi\IeC {\'o}n }{80}{subsection.6.6.1}
-\contentsline {chapter}{\numberline {7}Conclusiones y trabajos futuros}{81}{chapter.7}
-\contentsline {section}{\numberline {7.1}Conclusiones}{81}{section.7.1}
-\contentsline {section}{\numberline {7.2}Trabajos futuros}{83}{section.7.2}
-\contentsline {chapter}{Bibliograf\'{\i }a}{84}{chapter*.67}
+\contentsline {chapter}{\numberline {5}Ejercicio juego del pa\IeC {\~n}uelo}{45}{chapter.5}
+\contentsline {section}{\numberline {5.1}Enunciado}{45}{section.5.1}
+\contentsline {section}{\numberline {5.2}Modelos del mundo}{51}{section.5.2}
+\contentsline {section}{\numberline {5.3}Modelo robot con pinza}{53}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}Antecedentes}{54}{subsection.5.3.1}
+\contentsline {subsection}{\numberline {5.3.2}Modelo Mbot con pinzas}{55}{subsection.5.3.2}
+\contentsline {section}{\numberline {5.4}Evaluador autom\IeC {\'a}tico}{60}{section.5.4}
+\contentsline {section}{\numberline {5.5}Soluci\IeC {\'o}n de referencia}{62}{section.5.5}
+\contentsline {chapter}{\numberline {6}Ejercicio teleoperador ac\IeC {\'u}stico y banda sonora}{64}{chapter.6}
+\contentsline {section}{\numberline {6.1}Enunciado}{64}{section.6.1}
+\contentsline {section}{\numberline {6.2}Modelos del mundo }{65}{section.6.2}
+\contentsline {section}{\numberline {6.3}Procesamiento de audio con \textit {Teachable Machine}}{67}{section.6.3}
+\contentsline {section}{\numberline {6.4}Soluci\IeC {\'o}n de referencia}{77}{section.6.4}
+\contentsline {section}{\numberline {6.5}Alternativas probadas}{78}{section.6.5}
+\contentsline {section}{\numberline {6.6}Banda Sonora}{80}{section.6.6}
+\contentsline {subsection}{\numberline {6.6.1}Efecto de sonido por colisi\IeC {\'o}n }{82}{subsection.6.6.1}
+\contentsline {chapter}{\numberline {7}Conclusiones y trabajos futuros}{83}{chapter.7}
+\contentsline {section}{\numberline {7.1}Conclusiones}{83}{section.7.1}
+\contentsline {section}{\numberline {7.2}Trabajos futuros}{85}{section.7.2}
+\contentsline {chapter}{Bibliograf\'{\i }a}{86}{chapter*.73}
