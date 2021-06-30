@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2021.5.24)  28 JUN 2021 17:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2021.5.24)  29 JUN 2021 11:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1258,18 +1258,18 @@ File: chapters/images/us.jpg Graphic file (type jpg)
 <use chapters/images/us.jpg>
 Package pdftex.def Info: chapters/images/us.jpg  used on input line 27.
 (pdftex.def)             Requested size: 147.95294pt x 95.9581pt.
-<chapters/images/procesador.png, id=463, 393.47pt x 320.19624pt>
+<chapters/images/procesador.png, id=463, 786.94pt x 640.3925pt>
 File: chapters/images/procesador.png Graphic file (type png)
 <use chapters/images/procesador.png>
 Package pdftex.def Info: chapters/images/procesador.png  used on input line 32.
 
 (pdftex.def)             Requested size: 147.95294pt x 120.39575pt.
-<chapters/images/motor.png, id=465, 522.95375pt x 254.9525pt>
+<chapters/images/motor.png, id=464, 1045.9075pt x 509.905pt>
 File: chapters/images/motor.png Graphic file (type png)
 <use chapters/images/motor.png>
 Package pdftex.def Info: chapters/images/motor.png  used on input line 37.
-(pdftex.def)             Requested size: 147.95294pt x 72.12924pt.
-<chapters/images/pantalla.jpeg, id=466, 2258.4375pt x 1505.625pt>
+(pdftex.def)             Requested size: 147.95294pt x 72.12535pt.
+<chapters/images/pantalla.jpeg, id=465, 2258.4375pt x 1505.625pt>
 File: chapters/images/pantalla.jpeg Graphic file (type jpg)
 <use chapters/images/pantalla.jpeg>
 Package pdftex.def Info: chapters/images/pantalla.jpeg  used on input line 42.
@@ -1307,36 +1307,36 @@ been already used, duplicate ignored
 l.51 \end{itemize}
                    [2 <./chapters/images/us.jpg> <./chapters/images/procesador.
 png> <./chapters/images/motor.png> <./chapters/images/pantalla.jpeg>]
-<chapters/images/drone.jpeg, id=473, 1927.2pt x 1429.34pt>
+<chapters/images/drone.jpeg, id=472, 1927.2pt x 1429.34pt>
 File: chapters/images/drone.jpeg Graphic file (type jpg)
 <use chapters/images/drone.jpeg>
 Package pdftex.def Info: chapters/images/drone.jpeg  used on input line 57.
 (pdftex.def)             Requested size: 136.56456pt x 136.57387pt.
-<chapters/images/mars.jpg, id=474, 1927.2pt x 1541.76pt>
+<chapters/images/mars.jpg, id=473, 1927.2pt x 1541.76pt>
 File: chapters/images/mars.jpg Graphic file (type jpg)
 <use chapters/images/mars.jpg>
 Package pdftex.def Info: chapters/images/mars.jpg  used on input line 63.
 (pdftex.def)             Requested size: 136.56456pt x 136.56454pt.
-<chapters/images/nao.png, id=475, 547.04375pt x 532.99126pt>
+<chapters/images/nao.png, id=474, 1094.0875pt x 1065.9825pt>
 File: chapters/images/nao.png Graphic file (type png)
 <use chapters/images/nao.png>
 Package pdftex.def Info: chapters/images/nao.png  used on input line 69.
-(pdftex.def)             Requested size: 136.57695pt x 136.57379pt.
-<chapters/images/brazo.png, id=476, 321.2pt x 388.45125pt>
+(pdftex.def)             Requested size: 136.56026pt x 136.56566pt.
+<chapters/images/brazo.png, id=475, 642.4pt x 776.9025pt>
 File: chapters/images/brazo.png Graphic file (type png)
 <use chapters/images/brazo.png>
 Package pdftex.def Info: chapters/images/brazo.png  used on input line 75.
-(pdftex.def)             Requested size: 136.57925pt x 136.5764pt.
-<chapters/images/davinci.png, id=477, 583.17876pt x 364.36125pt>
+(pdftex.def)             Requested size: 136.57436pt x 136.56454pt.
+<chapters/images/davinci.png, id=476, 1166.3575pt x 728.7225pt>
 File: chapters/images/davinci.png Graphic file (type png)
 <use chapters/images/davinci.png>
 Package pdftex.def Info: chapters/images/davinci.png  used on input line 81.
-(pdftex.def)             Requested size: 136.5754pt x 136.57397pt.
-<chapters/images/roomba.png, id=480, 671.50874pt x 542.025pt>
+(pdftex.def)             Requested size: 136.5754pt x 136.5684pt.
+<chapters/images/roomba.png, id=479, 1343.0175pt x 1084.05pt>
 File: chapters/images/roomba.png Graphic file (type png)
 <use chapters/images/roomba.png>
 Package pdftex.def Info: chapters/images/roomba.png  used on input line 87.
-(pdftex.def)             Requested size: 136.57407pt x 136.57281pt.
+(pdftex.def)             Requested size: 136.56381pt x 136.56456pt.
 LaTeX Info: Redefining \. on input line 100.
 LaTeX Info: Redefining \% on input line 100.
 Package babel Info: Redefining spanish shorthand <<
@@ -1372,17 +1372,17 @@ l.100 L
 [3 <./chapters/images/drone.jpeg> <./chapters/images/mars.jpg> <./chapters/imag
 es/nao.png> <./chapters/images/brazo.png> <./chapters/images/davinci.png> <./ch
 apters/images/roomba.png>]
-<chapters/images/beebot.png, id=490, 510.90875pt x 456.70625pt>
+<chapters/images/beebot.png, id=489, 1021.8175pt x 913.4125pt>
 File: chapters/images/beebot.png Graphic file (type png)
 <use chapters/images/beebot.png>
 Package pdftex.def Info: chapters/images/beebot.png  used on input line 111.
 (pdftex.def)             Requested size: 136.57462pt x 122.07886pt.
-<chapters/images/mbot.png, id=491, 614.295pt x 526.96875pt>
+<chapters/images/mbot.png, id=490, 1228.59pt x 1053.9375pt>
 File: chapters/images/mbot.png Graphic file (type png)
 <use chapters/images/mbot.png>
 Package pdftex.def Info: chapters/images/mbot.png  used on input line 116.
-(pdftex.def)             Requested size: 136.57462pt x 117.15569pt.
-<chapters/images/lego.png, id=492, 556.0775pt x 560.0925pt>
+(pdftex.def)             Requested size: 136.57462pt x 117.1557pt.
+<chapters/images/lego.png, id=491, 1112.155pt x 1120.185pt>
 File: chapters/images/lego.png Graphic file (type png)
 <use chapters/images/lego.png>
 Package pdftex.def Info: chapters/images/lego.png  used on input line 120.
@@ -1432,27 +1432,27 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language append on input line 129.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language append on input line 129.
-<chapters/images/amazon.png, id=503, 1263.72125pt x 553.06625pt>
+<chapters/images/amazon.png, id=502, 2527.4425pt x 1106.1325pt>
 File: chapters/images/amazon.png Graphic file (type png)
 <use chapters/images/amazon.png>
 Package pdftex.def Info: chapters/images/amazon.png  used on input line 137.
-(pdftex.def)             Requested size: 182.09833pt x 79.69041pt.
-<chapters/images/whatsappweb.png, id=504, 1275.76625pt x 720.6925pt>
+(pdftex.def)             Requested size: 182.09833pt x 79.68198pt.
+<chapters/images/whatsappweb.png, id=503, 2551.5325pt x 1441.385pt>
 File: chapters/images/whatsappweb.png Graphic file (type png)
 <use chapters/images/whatsappweb.png>
 Package pdftex.def Info: chapters/images/whatsappweb.png  used on input line 14
 4.
 (pdftex.def)             Requested size: 182.09833pt x 102.8647pt.
-<chapters/images/disney.jpeg, id=505, 658.1388pt x 370.0224pt>
+<chapters/images/disney.jpeg, id=504, 1371.1225pt x 770.88pt>
 File: chapters/images/disney.jpeg Graphic file (type jpg)
 <use chapters/images/disney.jpeg>
 Package pdftex.def Info: chapters/images/disney.jpeg  used on input line 151.
-(pdftex.def)             Requested size: 182.09833pt x 102.38036pt.
-<chapters/images/urjcweb.png, id=506, 1279.78125pt x 699.61375pt>
+(pdftex.def)             Requested size: 182.09833pt x 102.37048pt.
+<chapters/images/urjcweb.png, id=505, 2559.5625pt x 1399.2275pt>
 File: chapters/images/urjcweb.png Graphic file (type png)
 <use chapters/images/urjcweb.png>
 Package pdftex.def Info: chapters/images/urjcweb.png  used on input line 158.
-(pdftex.def)             Requested size: 182.09833pt x 99.54654pt.
+(pdftex.def)             Requested size: 182.09833pt x 99.53586pt.
 
 Overfull \hbox (2.28003pt too wide) in paragraph at lines 134--162
 []$[]$ $[]$
@@ -1463,7 +1463,7 @@ Overfull \hbox (2.28003pt too wide) in paragraph at lines 134--162
 []$ $[]$ 
  []
 
-<chapters/images/web.png, id=509, 577.15625pt x 824.07875pt>
+<chapters/images/web.png, id=508, 577.15625pt x 824.07875pt>
 File: chapters/images/web.png Graphic file (type png)
 <use chapters/images/web.png>
 Package pdftex.def Info: chapters/images/web.png  used on input line 169.
@@ -1502,13 +1502,13 @@ l.173 H
        TTP es un protocolo entre navegadores y servidores web para transferi...
 [5 <./chapters/images/amazon.png> <./chapters/images/whatsappweb.png> <./chapte
 rs/images/disney.jpeg> <./chapters/images/urjcweb.png>]
-<chapters/images/peticionhttp.png, id=521, 420.57124pt x 188.705pt>
+<chapters/images/peticionhttp.png, id=520, 841.1425pt x 377.41pt>
 File: chapters/images/peticionhttp.png Graphic file (type png)
 <use chapters/images/peticionhttp.png>
 Package pdftex.def Info: chapters/images/peticionhttp.png  used on input line 1
 79.
-(pdftex.def)             Requested size: 204.85846pt x 91.91628pt.
-<chapters/images/respuestahttp.png, id=522, 475.7775pt x 278.03876pt>
+(pdftex.def)             Requested size: 204.85846pt x 91.91629pt.
+<chapters/images/respuestahttp.png, id=521, 951.555pt x 556.0775pt>
 File: chapters/images/respuestahttp.png Graphic file (type png)
 <use chapters/images/respuestahttp.png>
 Package pdftex.def Info: chapters/images/respuestahttp.png  used on input line 
@@ -1605,12 +1605,12 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language append on input line 208.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language append on input line 208.
-<chapters/images/mysql.png, id=547, 430.60875pt x 176.66pt>
+<chapters/images/mysql.png, id=546, 861.2175pt x 353.32pt>
 File: chapters/images/mysql.png Graphic file (type png)
 <use chapters/images/mysql.png>
 Package pdftex.def Info: chapters/images/mysql.png  used on input line 224.
-(pdftex.def)             Requested size: 216.24342pt x 147.954pt.
-<chapters/images/mongodb.png, id=548, 470.75874pt x 328.22626pt>
+(pdftex.def)             Requested size: 216.23686pt x 147.95131pt.
+<chapters/images/mongodb.png, id=547, 941.5175pt x 656.4525pt>
 File: chapters/images/mongodb.png Graphic file (type png)
 <use chapters/images/mongodb.png>
 Package pdftex.def Info: chapters/images/mongodb.png  used on input line 231.
@@ -1665,7 +1665,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language append on input line 242.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language append on input line 242.
-<chapters/images/scratch.png, id=562, 1282.7925pt x 644.4075pt>
+<chapters/images/scratch.png, id=561, 2565.585pt x 1288.815pt>
 File: chapters/images/scratch.png Graphic file (type png)
 <use chapters/images/scratch.png>
 Package pdftex.def Info: chapters/images/scratch.png  used on input line 251.
@@ -1697,22 +1697,22 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language append on input line 257.
  [9 <./chapters/images/scratch.png>]
-<chapters/images/openrobert.png, id=572, 1283.79625pt x 721.69624pt>
+<chapters/images/openrobert.png, id=571, 2567.5925pt x 1443.3925pt>
 File: chapters/images/openrobert.png Graphic file (type png)
 <use chapters/images/openrobert.png>
 Package pdftex.def Info: chapters/images/openrobert.png  used on input line 265
 .
-(pdftex.def)             Requested size: 318.66948pt x 179.1352pt.
-<chapters/images/legoo.png, id=575, 752.8125pt x 518.93875pt>
+(pdftex.def)             Requested size: 318.66948pt x 179.12418pt.
+<chapters/images/legoo.png, id=574, 1505.625pt x 1037.8775pt>
 File: chapters/images/legoo.png Graphic file (type png)
 <use chapters/images/legoo.png>
 Package pdftex.def Info: chapters/images/legoo.png  used on input line 274.
-(pdftex.def)             Requested size: 204.85878pt x 113.81055pt.
-<chapters/images/wedo.png, id=576, 637.38126pt x 573.14125pt>
+(pdftex.def)             Requested size: 204.85878pt x 113.80263pt.
+<chapters/images/wedo.png, id=575, 1274.7625pt x 1146.2825pt>
 File: chapters/images/wedo.png Graphic file (type png)
 <use chapters/images/wedo.png>
 Package pdftex.def Info: chapters/images/wedo.png  used on input line 281.
-(pdftex.def)             Requested size: 204.8512pt x 113.80414pt.
+(pdftex.def)             Requested size: 204.84148pt x 113.7954pt.
 
 Overfull \hbox (2.28003pt too wide) in paragraph at lines 272--285
 [][]  [] 
@@ -1745,12 +1745,12 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language append on input line 287.
 [10 <./chapters/images/openrobert.png>]
-<chapters/images/makeblock.png, id=590, 1284.8pt x 720.6925pt>
+<chapters/images/makeblock.png, id=589, 2569.6pt x 1441.385pt>
 File: chapters/images/makeblock.png Graphic file (type png)
 <use chapters/images/makeblock.png>
 Package pdftex.def Info: chapters/images/makeblock.png  used on input line 291.
 
-(pdftex.def)             Requested size: 318.66948pt x 178.75409pt.
+(pdftex.def)             Requested size: 318.66948pt x 178.74309pt.
 LaTeX Info: Redefining \. on input line 303.
 LaTeX Info: Redefining \% on input line 303.
 Package babel Info: Redefining spanish shorthand <<
@@ -1779,13 +1779,13 @@ Package babel Info: Redefining spanish shorthand "?
 (babel)             in language append on input line 303.
  [11 <./chapters/images/legoo.png> <./chapters/images/wedo.png> <./chapters/ima
 ges/makeblock.png>]
-<chapters/images/kiboticsorg.png, id=611, 1258.7025pt x 718.685pt>
+<chapters/images/kiboticsorg.png, id=610, 2517.405pt x 1437.37pt>
 File: chapters/images/kiboticsorg.png Graphic file (type png)
 <use chapters/images/kiboticsorg.png>
 Package pdftex.def Info: chapters/images/kiboticsorg.png  used on input line 30
 7.
 (pdftex.def)             Requested size: 204.85364pt x 136.5735pt.
-<chapters/images/kibotics.png, id=612, 1199.48125pt x 649.42625pt>
+<chapters/images/kibotics.png, id=611, 2398.9625pt x 1298.8525pt>
 File: chapters/images/kibotics.png Graphic file (type png)
 <use chapters/images/kibotics.png>
 Package pdftex.def Info: chapters/images/kibotics.png  used on input line 314.
@@ -1888,16 +1888,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 351--354
 
  []
 
-<chapters/images/robocam.png, id=648, 444.66125pt x 250.9375pt>
+<chapters/images/robocam.png, id=647, 889.3225pt x 501.875pt>
 File: chapters/images/robocam.png Graphic file (type png)
 <use chapters/images/robocam.png>
 Package pdftex.def Info: chapters/images/robocam.png  used on input line 358.
-(pdftex.def)             Requested size: 216.23717pt x 159.34354pt.
-<chapters/images/robocup.jpeg, id=649, 154.176pt x 86.724pt>
+(pdftex.def)             Requested size: 216.23717pt x 159.33205pt.
+<chapters/images/robocup.jpeg, id=648, 642.4pt x 361.35pt>
 File: chapters/images/robocup.jpeg Graphic file (type jpg)
 <use chapters/images/robocup.jpeg>
 Package pdftex.def Info: chapters/images/robocup.jpeg  used on input line 365.
-(pdftex.def)             Requested size: 216.24481pt x 159.34381pt.
+(pdftex.def)             Requested size: 216.23701pt x 159.33633pt.
 
 Overfull \hbox (2.28003pt too wide) in paragraph at lines 356--369
 [][]  [] 
@@ -2047,12 +2047,12 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language append on input line 31.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language append on input line 31.
-<chapters/images/metodologiaiterativa.png, id=672, 401.8212pt x 227.6505pt>
+<chapters/images/metodologiaiterativa.png, id=671, 2232.34pt x 1264.725pt>
 File: chapters/images/metodologiaiterativa.png Graphic file (type png)
 <use chapters/images/metodologiaiterativa.png>
 Package pdftex.def Info: chapters/images/metodologiaiterativa.png  used on inpu
 t line 38.
-(pdftex.def)             Requested size: 409.71692pt x 232.12747pt.
+(pdftex.def)             Requested size: 409.71692pt x 232.11784pt.
 LaTeX Info: Redefining \. on input line 45.
 LaTeX Info: Redefining \% on input line 45.
 Package babel Info: Redefining spanish shorthand <<
@@ -2080,7 +2080,7 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language append on input line 45.
  [17 <./chapters/images/metodologiaiterativa.png>]
-<chapters/images/webtfg.png, id=683, 1263.72125pt x 697.60625pt>
+<chapters/images/webtfg.png, id=681, 2527.4425pt x 1395.2125pt>
 File: chapters/images/webtfg.png Graphic file (type png)
 <use chapters/images/webtfg.png>
 Package pdftex.def Info: chapters/images/webtfg.png  used on input line 54.
@@ -2222,18 +2222,18 @@ Package babel Info: Redefining spanish shorthand "?
  [20
 
 ]
-<chapters/images/simplehtmlpage.png, id=704, 320.19624pt x 201.75375pt>
+<chapters/images/simplehtmlpage.png, id=703, 640.3925pt x 403.5075pt>
 File: chapters/images/simplehtmlpage.png Graphic file (type png)
 <use chapters/images/simplehtmlpage.png>
 Package pdftex.def Info: chapters/images/simplehtmlpage.png  used on input line
  14.
-(pdftex.def)             Requested size: 204.86137pt x 113.81252pt.
-<chapters/images/simplehtml.png, id=705, 1284.8pt x 657.45625pt>
+(pdftex.def)             Requested size: 204.85161pt x 113.81252pt.
+<chapters/images/simplehtml.png, id=704, 2569.6pt x 1314.9125pt>
 File: chapters/images/simplehtml.png Graphic file (type png)
 <use chapters/images/simplehtml.png>
 Package pdftex.def Info: chapters/images/simplehtml.png  used on input line 20.
 
-(pdftex.def)             Requested size: 204.84683pt x 113.80257pt.
+(pdftex.def)             Requested size: 204.82722pt x 113.80257pt.
 
 Overfull \hbox (2.28003pt too wide) in paragraph at lines 12--25
 [][] []
@@ -2288,16 +2288,16 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language append on input line 41.
 [21 <./chapters/images/simplehtmlpage.png> <./chapters/images/simplehtml.png>]
-<chapters/images/pong.png, id=715, 998.73125pt x 668.4975pt>
+<chapters/images/pong.png, id=714, 1997.4625pt x 1336.995pt>
 File: chapters/images/pong.png Graphic file (type png)
 <use chapters/images/pong.png>
 Package pdftex.def Info: chapters/images/pong.png  used on input line 46.
-(pdftex.def)             Requested size: 227.61555pt x 136.57365pt.
-<chapters/images/codigojs.png, id=716, 624.3325pt x 585.18625pt>
+(pdftex.def)             Requested size: 227.61555pt x 136.56345pt.
+<chapters/images/codigojs.png, id=715, 1248.665pt x 1170.3725pt>
 File: chapters/images/codigojs.png Graphic file (type png)
 <use chapters/images/codigojs.png>
 Package pdftex.def Info: chapters/images/codigojs.png  used on input line 53.
-(pdftex.def)             Requested size: 227.6175pt x 136.57228pt.
+(pdftex.def)             Requested size: 227.60796pt x 136.56335pt.
 
 Overfull \hbox (2.28003pt too wide) in paragraph at lines 44--57
 [][]  [] 
@@ -2342,16 +2342,16 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language append on input line 69.
 [22 <./chapters/images/pong.png> <./chapters/images/codigojs.png>]
-<chapters/images/python.png, id=731, 1258.7025pt x 708.6475pt>
+<chapters/images/python.png, id=730, 2517.405pt x 1417.295pt>
 File: chapters/images/python.png Graphic file (type png)
 <use chapters/images/python.png>
 Package pdftex.def Info: chapters/images/python.png  used on input line 76.
-(pdftex.def)             Requested size: 432.46666pt x 182.0922pt.
-<chapters/images/scratch2.png, id=732, 1283.79625pt x 663.47874pt>
+(pdftex.def)             Requested size: 432.44745pt x 182.0922pt.
+<chapters/images/scratch2.png, id=731, 2567.5925pt x 1326.9575pt>
 File: chapters/images/scratch2.png Graphic file (type png)
 <use chapters/images/scratch2.png>
 Package pdftex.def Info: chapters/images/scratch2.png  used on input line 83.
-(pdftex.def)             Requested size: 432.46918pt x 182.08769pt.
+(pdftex.def)             Requested size: 432.4496pt x 182.08769pt.
 Package babel Info: Redefining spanish shorthand <<
 (babel)             in language append on input line 91.
 Package babel Info: Redefining spanish shorthand >>
@@ -2391,11 +2391,11 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language append on input line 92.
  [23 <./chapters/images/python.png> <./chapters/images/scratch2.png>]
-<chapters/images/json.png, id=742, 727.71875pt x 540.0175pt>
+<chapters/images/json.png, id=741, 1455.4375pt x 1080.035pt>
 File: chapters/images/json.png Graphic file (type png)
 <use chapters/images/json.png>
 Package pdftex.def Info: chapters/images/json.png  used on input line 120.
-(pdftex.def)             Requested size: 273.14925pt x 182.08736pt.
+(pdftex.def)             Requested size: 273.13815pt x 182.08736pt.
 LaTeX Info: Redefining \. on input line 124.
 LaTeX Info: Redefining \% on input line 124.
 Package babel Info: Redefining spanish shorthand <<
@@ -2447,17 +2447,17 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language append on input line 126.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language append on input line 126.
-<chapters/images/tfjs.png, id=761, 234.8775pt x 185.69376pt>
+<chapters/images/tfjs.png, id=760, 469.755pt x 371.3875pt>
 File: chapters/images/tfjs.png Graphic file (type png)
 <use chapters/images/tfjs.png>
 Package pdftex.def Info: chapters/images/tfjs.png  used on input line 139.
-(pdftex.def)             Requested size: 136.57462pt x 107.97446pt.
-<chapters/images/waa.png, id=762, 337.26pt x 254.9525pt>
+(pdftex.def)             Requested size: 136.57462pt x 107.97162pt.
+<chapters/images/waa.png, id=761, 674.52pt x 509.905pt>
 File: chapters/images/waa.png Graphic file (type png)
 <use chapters/images/waa.png>
 Package pdftex.def Info: chapters/images/waa.png  used on input line 144.
-(pdftex.def)             Requested size: 136.57462pt x 103.24352pt.
-<chapters/images/tm.png, id=763, 1251.67625pt x 669.50125pt>
+(pdftex.def)             Requested size: 136.57462pt x 103.23962pt.
+<chapters/images/tm.png, id=762, 2503.3525pt x 1339.0025pt>
 File: chapters/images/tm.png Graphic file (type png)
 <use chapters/images/tm.png>
 Package pdftex.def Info: chapters/images/tm.png  used on input line 148.
@@ -2536,17 +2536,17 @@ Package babel Info: Redefining spanish shorthand "?
 (babel)             in language append on input line 173.
 [26 <./chapters/images/tfjs.png> <./chapters/images/waa.png> <./chapters/images
 /tm.png>]
-<chapters/images/aframe.png, id=784, 1191.45125pt x 583.17876pt>
+<chapters/images/aframe.png, id=783, 2382.9025pt x 1166.3575pt>
 File: chapters/images/aframe.png Graphic file (type png)
 <use chapters/images/aframe.png>
 Package pdftex.def Info: chapters/images/aframe.png  used on input line 190.
-(pdftex.def)             Requested size: 455.24686pt x 227.61678pt.
-<chapters/images/inspectoraframe.png, id=785, 1263.72125pt x 711.65875pt>
+(pdftex.def)             Requested size: 455.22867pt x 227.60786pt.
+<chapters/images/inspectoraframe.png, id=784, 2527.4425pt x 1423.3175pt>
 File: chapters/images/inspectoraframe.png Graphic file (type png)
 <use chapters/images/inspectoraframe.png>
 Package pdftex.def Info: chapters/images/inspectoraframe.png  used on input lin
 e 199.
-(pdftex.def)             Requested size: 364.19441pt x 227.616pt.
+(pdftex.def)             Requested size: 364.17513pt x 227.60515pt.
 LaTeX Info: Redefining \. on input line 203.
 LaTeX Info: Redefining \% on input line 203.
 Package babel Info: Redefining spanish shorthand <<
@@ -2586,11 +2586,11 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language append on input line 207.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language append on input line 207.
-<chapters/images/blender.png, id=807, 1284.8pt x 803.0pt>
+<chapters/images/blender.png, id=806, 2569.6pt x 1606.0pt>
 File: chapters/images/blender.png Graphic file (type png)
 <use chapters/images/blender.png>
 Package pdftex.def Info: chapters/images/blender.png  used on input line 216.
-(pdftex.def)             Requested size: 318.67024pt x 182.08852pt.
+(pdftex.def)             Requested size: 318.65063pt x 182.07628pt.
 LaTeX Info: Redefining \. on input line 220.
 LaTeX Info: Redefining \% on input line 220.
 Package babel Info: Redefining spanish shorthand <<
@@ -2630,25 +2630,25 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language append on input line 221.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language append on input line 221.
-<chapters/images/chocagira.png, id=816, 1284.8pt x 727.71875pt>
+<chapters/images/chocagira.png, id=814, 2569.6pt x 1455.4375pt>
 File: chapters/images/chocagira.png Graphic file (type png)
 <use chapters/images/chocagira.png>
 Package pdftex.def Info: chapters/images/chocagira.png  used on input line 237.
 
 (pdftex.def)             Requested size: 216.24025pt x 122.478pt.
-<chapters/images/siguelineasir.png, id=817, 1283.79625pt x 724.7075pt>
+<chapters/images/siguelineasir.png, id=815, 2567.5925pt x 1449.415pt>
 File: chapters/images/siguelineasir.png Graphic file (type png)
 <use chapters/images/siguelineasir.png>
 Package pdftex.def Info: chapters/images/siguelineasir.png  used on input line 
 244.
 (pdftex.def)             Requested size: 216.24025pt x 122.05965pt.
-<chapters/images/atraviesabosque.png, id=818, 1284.8pt x 722.7pt>
+<chapters/images/atraviesabosque.png, id=816, 2569.6pt x 1445.4pt>
 File: chapters/images/atraviesabosque.png Graphic file (type png)
 <use chapters/images/atraviesabosque.png>
 Package pdftex.def Info: chapters/images/atraviesabosque.png  used on input lin
 e 251.
 (pdftex.def)             Requested size: 216.24025pt x 121.63332pt.
-<chapters/images/colores.png, id=819, 1280.785pt x 724.7075pt>
+<chapters/images/colores.png, id=817, 2561.57pt x 1449.415pt>
 File: chapters/images/colores.png Graphic file (type png)
 <use chapters/images/colores.png>
 Package pdftex.def Info: chapters/images/colores.png  used on input line 258.
@@ -2690,12 +2690,12 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language append on input line 265.
 [29 <./chapters/images/blender.png>]
-<chapters/images/kibotics_arq2.png, id=826, 997.7275pt x 492.84125pt>
+<chapters/images/kibotics_arq2.png, id=825, 1995.455pt x 985.6825pt>
 File: chapters/images/kibotics_arq2.png Graphic file (type png)
 <use chapters/images/kibotics_arq2.png>
 Package pdftex.def Info: chapters/images/kibotics_arq2.png  used on input line 
 274.
-(pdftex.def)             Requested size: 455.24554pt x 227.62717pt.
+(pdftex.def)             Requested size: 455.23033pt x 227.61966pt.
 LaTeX Info: Redefining \. on input line 278.
 LaTeX Info: Redefining \% on input line 278.
 Package babel Info: Redefining spanish shorthand <<
@@ -2820,21 +2820,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 13--16
 
  []
 
-<chapters/images/teoria1.png, id=847, 1243.64626pt x 724.7075pt>
+<chapters/images/teoria1.png, id=846, 2487.2925pt x 1449.415pt>
 File: chapters/images/teoria1.png Graphic file (type png)
 <use chapters/images/teoria1.png>
 Package pdftex.def Info: chapters/images/teoria1.png  used on input line 19.
-(pdftex.def)             Requested size: 409.72137pt x 227.62057pt.
-<chapters/images/teoria2.png, id=848, 1170.3725pt x 276.03125pt>
+(pdftex.def)             Requested size: 409.70241pt x 227.62057pt.
+<chapters/images/teoria2.png, id=847, 2340.745pt x 552.0625pt>
 File: chapters/images/teoria2.png Graphic file (type png)
 <use chapters/images/teoria2.png>
 Package pdftex.def Info: chapters/images/teoria2.png  used on input line 25.
-(pdftex.def)             Requested size: 409.7258pt x 91.04846pt.
-<chapters/images/teoria2_2.png, id=849, 1216.545pt x 609.27625pt>
+(pdftex.def)             Requested size: 409.70795pt x 91.04425pt.
+<chapters/images/teoria2_2.png, id=848, 2433.09pt x 1218.5525pt>
 File: chapters/images/teoria2_2.png Graphic file (type png)
 <use chapters/images/teoria2_2.png>
 Package pdftex.def Info: chapters/images/teoria2_2.png  used on input line 31.
-(pdftex.def)             Requested size: 409.70305pt x 227.62271pt.
+(pdftex.def)             Requested size: 409.68448pt x 227.60413pt.
 LaTeX Info: Redefining \. on input line 34.
 LaTeX Info: Redefining \% on input line 34.
 Package babel Info: Redefining spanish shorthand <<
@@ -2862,16 +2862,16 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language append on input line 34.
 [33 <./chapters/images/teoria1.png>]
-<chapters/images/teoria3.png, id=855, 1171.37625pt x 533.995pt>
+<chapters/images/teoria3.png, id=854, 2342.7525pt x 1067.99pt>
 File: chapters/images/teoria3.png Graphic file (type png)
 <use chapters/images/teoria3.png>
 Package pdftex.def Info: chapters/images/teoria3.png  used on input line 37.
-(pdftex.def)             Requested size: 409.71973pt x 204.85945pt.
-<chapters/images/teoria4.png, id=856, 1143.27126pt x 580.1675pt>
+(pdftex.def)             Requested size: 409.70186pt x 204.84315pt.
+<chapters/images/teoria4.png, id=855, 2286.5425pt x 1160.335pt>
 File: chapters/images/teoria4.png Graphic file (type png)
 <use chapters/images/teoria4.png>
 Package pdftex.def Info: chapters/images/teoria4.png  used on input line 43.
-(pdftex.def)             Requested size: 409.71074pt x 204.85873pt.
+(pdftex.def)             Requested size: 409.71074pt x 204.8499pt.
 LaTeX Info: Redefining \. on input line 47.
 LaTeX Info: Redefining \% on input line 47.
 Package babel Info: Redefining spanish shorthand <<
@@ -2912,12 +2912,12 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language append on input line 49.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language append on input line 49.
-<chapters/images/silla.png, id=865, 1861.95625pt x 1050.92625pt>
+<chapters/images/silla.png, id=864, 1861.95625pt x 1050.92625pt>
 File: chapters/images/silla.png Graphic file (type png)
 <use chapters/images/silla.png>
 Package pdftex.def Info: chapters/images/silla.png  used on input line 54.
 (pdftex.def)             Requested size: 216.23709pt x 136.56107pt.
-<chapters/images/mesa.png, id=866, 1849.91125pt x 1051.93pt>
+<chapters/images/mesa.png, id=865, 1849.91125pt x 1051.93pt>
 File: chapters/images/mesa.png Graphic file (type png)
 <use chapters/images/mesa.png>
 Package pdftex.def Info: chapters/images/mesa.png  used on input line 61.
@@ -2927,7 +2927,7 @@ Overfull \hbox (2.28003pt too wide) in paragraph at lines 52--66
 [][]  [] 
  []
 
-<chapters/images/sofa.png, id=867, 1858.945pt x 1052.93375pt>
+<chapters/images/sofa.png, id=866, 1858.945pt x 1052.93375pt>
 File: chapters/images/sofa.png Graphic file (type png)
 <use chapters/images/sofa.png>
 Package pdftex.def Info: chapters/images/sofa.png  used on input line 71.
@@ -2960,12 +2960,12 @@ Package babel Info: Redefining spanish shorthand "?
 (babel)             in language append on input line 74.
 [35 <./chapters/images/teoria4.png> <./chapters/images/silla.png> <./chapters/i
 mages/mesa.png>]
-<chapters/images/habitacioncon.png, id=875, 1131.22626pt x 559.08875pt>
+<chapters/images/habitacioncon.png, id=874, 2262.4525pt x 1118.1775pt>
 File: chapters/images/habitacioncon.png Graphic file (type png)
 <use chapters/images/habitacioncon.png>
 Package pdftex.def Info: chapters/images/habitacioncon.png  used on input line 
 77.
-(pdftex.def)             Requested size: 364.19196pt x 182.0941pt.
+(pdftex.def)             Requested size: 364.1747pt x 182.08559pt.
 LaTeX Info: Redefining \. on input line 94.
 LaTeX Info: Redefining \% on input line 94.
 Package babel Info: Redefining spanish shorthand <<
@@ -3061,13 +3061,13 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language append on input line 170.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language append on input line 170.
-<chapters/images/roombablender.png, id=940, 1856.9375pt x 1053.9375pt>
+<chapters/images/roombablender.png, id=939, 1856.9375pt x 1053.9375pt>
 File: chapters/images/roombablender.png Graphic file (type png)
 <use chapters/images/roombablender.png>
 Package pdftex.def Info: chapters/images/roombablender.png  used on input line 
 177.
 (pdftex.def)             Requested size: 204.85878pt x 159.3221pt.
-<chapters/images/roombablender2.png, id=941, 1859.94875pt x 1054.94125pt>
+<chapters/images/roombablender2.png, id=940, 1859.94875pt x 1054.94125pt>
 File: chapters/images/roombablender2.png Graphic file (type png)
 <use chapters/images/roombablender2.png>
 Package pdftex.def Info: chapters/images/roombablender2.png  used on input line
@@ -3133,13 +3133,13 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language append on input line 221.
  [40]
-<chapters/images/prototiporoomba.png, id=986, 1000.73875pt x 546.04pt>
+<chapters/images/prototiporoomba.png, id=985, 1000.73875pt x 546.04pt>
 File: chapters/images/prototiporoomba.png Graphic file (type png)
 <use chapters/images/prototiporoomba.png>
 Package pdftex.def Info: chapters/images/prototiporoomba.png  used on input lin
 e 243.
 (pdftex.def)             Requested size: 182.09503pt x 113.80527pt.
-<chapters/images/prototiporoomba2.png, id=987, 988.69376pt x 531.9875pt>
+<chapters/images/prototiporoomba2.png, id=986, 988.69376pt x 531.9875pt>
 File: chapters/images/prototiporoomba2.png Graphic file (type png)
 <use chapters/images/prototiporoomba2.png>
 Package pdftex.def Info: chapters/images/prototiporoomba2.png  used on input li
@@ -3190,7 +3190,7 @@ Package babel Info: Redefining spanish shorthand "?
 (babel)             in language append on input line 261.
 [41 <./chapters/images/prototiporoomba.png> <./chapters/images/prototiporoomba2
 .png>]
-<chapters/images/evaluadoraspiradora.png, id=1010, 126.4725pt x 27.10126pt>
+<chapters/images/evaluadoraspiradora.png, id=1009, 252.945pt x 54.2025pt>
 File: chapters/images/evaluadoraspiradora.png Graphic file (type png)
 <use chapters/images/evaluadoraspiradora.png>
 Package pdftex.def Info: chapters/images/evaluadoraspiradora.png  used on input
@@ -3235,13 +3235,13 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language append on input line 294.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language append on input line 294.
-<chapters/images/solucionroombascratch.png, id=1038, 559.08875pt x 222.8325pt>
+<chapters/images/solucionroombascratch.png, id=1037, 559.08875pt x 222.8325pt>
 File: chapters/images/solucionroombascratch.png Graphic file (type png)
 <use chapters/images/solucionroombascratch.png>
 Package pdftex.def Info: chapters/images/solucionroombascratch.png  used on inp
 ut line 300.
 (pdftex.def)             Requested size: 386.97452pt x 136.57365pt.
-<chapters/images/solucionroombapython.png, id=1039, 552.0625pt x 306.14375pt>
+<chapters/images/solucionroombapython.png, id=1038, 552.0625pt x 306.14375pt>
 File: chapters/images/solucionroombapython.png Graphic file (type png)
 <use chapters/images/solucionroombapython.png>
 Package pdftex.def Info: chapters/images/solucionroombapython.png  used on inpu
@@ -3328,16 +3328,16 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language append on input line 7.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language append on input line 7.
-<chapters/images/jp.png, id=1055, 1203.49625pt x 520.94624pt>
+<chapters/images/jp.png, id=1054, 2406.9925pt x 1041.8925pt>
 File: chapters/images/jp.png Graphic file (type png)
 <use chapters/images/jp.png>
 Package pdftex.def Info: chapters/images/jp.png  used on input line 15.
-(pdftex.def)             Requested size: 216.23433pt x 113.80568pt.
-<chapters/images/jp2.png, id=1058, 501.875pt x 330.23375pt>
+(pdftex.def)             Requested size: 216.21597pt x 113.79773pt.
+<chapters/images/jp2.png, id=1057, 1003.75pt x 660.4675pt>
 File: chapters/images/jp2.png Graphic file (type png)
 <use chapters/images/jp2.png>
 Package pdftex.def Info: chapters/images/jp2.png  used on input line 22.
-(pdftex.def)             Requested size: 216.2462pt x 113.80981pt.
+(pdftex.def)             Requested size: 216.2309pt x 113.80983pt.
 
 Overfull \hbox (2.28003pt too wide) in paragraph at lines 13--26
 [][]  [] 
@@ -3370,16 +3370,16 @@ Package babel Info: Redefining spanish shorthand "?
 [45
 
 ]
-<chapters/images/teoriag1.png, id=1066, 1245.65375pt x 619.31375pt>
+<chapters/images/teoriag1.png, id=1065, 2491.3075pt x 1238.6275pt>
 File: chapters/images/teoriag1.png Graphic file (type png)
 <use chapters/images/teoriag1.png>
 Package pdftex.def Info: chapters/images/teoriag1.png  used on input line 40.
-(pdftex.def)             Requested size: 455.23956pt x 227.62105pt.
-<chapters/images/teoriag2.png, id=1067, 1177.39874pt x 524.96124pt>
+(pdftex.def)             Requested size: 455.22055pt x 227.6116pt.
+<chapters/images/teoriag2.png, id=1066, 2354.7975pt x 1049.9225pt>
 File: chapters/images/teoriag2.png Graphic file (type png)
 <use chapters/images/teoriag2.png>
 Package pdftex.def Info: chapters/images/teoriag2.png  used on input line 46.
-(pdftex.def)             Requested size: 455.24919pt x 182.09708pt.
+(pdftex.def)             Requested size: 455.21327pt x 182.08908pt.
 LaTeX Info: Redefining \. on input line 49.
 LaTeX Info: Redefining \% on input line 49.
 Package babel Info: Redefining spanish shorthand <<
@@ -3407,18 +3407,18 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language append on input line 49.
  [46 <./chapters/images/jp.png> <./chapters/images/jp2.png>]
-<chapters/images/teoriag2_2.png, id=1077, 1202.4925pt x 545.03625pt>
+<chapters/images/teoriag2_2.png, id=1076, 2404.985pt x 1090.0725pt>
 File: chapters/images/teoriag2_2.png Graphic file (type png)
 <use chapters/images/teoriag2_2.png>
 Package pdftex.def Info: chapters/images/teoriag2_2.png  used on input line 52.
 
-(pdftex.def)             Requested size: 455.24548pt x 182.09135pt.
-<chapters/images/teoriag4python.png, id=1078, 1195.46625pt x 473.77pt>
+(pdftex.def)             Requested size: 455.22714pt x 182.08304pt.
+<chapters/images/teoriag4python.png, id=1077, 2390.9325pt x 947.54pt>
 File: chapters/images/teoriag4python.png Graphic file (type png)
 <use chapters/images/teoriag4python.png>
 Package pdftex.def Info: chapters/images/teoriag4python.png  used on input line
  58.
-(pdftex.def)             Requested size: 455.24869pt x 182.09477pt.
+(pdftex.def)             Requested size: 455.23045pt x 182.08754pt.
 LaTeX Info: Redefining \. on input line 61.
 LaTeX Info: Redefining \% on input line 61.
 Package babel Info: Redefining spanish shorthand <<
@@ -3446,12 +3446,12 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language append on input line 61.
  [47 <./chapters/images/teoriag1.png> <./chapters/images/teoriag2.png>]
-<chapters/images/teoriag4scratch.png, id=1085, 626.34pt x 455.7025pt>
+<chapters/images/teoriag4scratch.png, id=1084, 1252.68pt x 911.405pt>
 File: chapters/images/teoriag4scratch.png Graphic file (type png)
 <use chapters/images/teoriag4scratch.png>
 Package pdftex.def Info: chapters/images/teoriag4scratch.png  used on input lin
 e 64.
-(pdftex.def)             Requested size: 386.96967pt x 204.86256pt.
+(pdftex.def)             Requested size: 386.95055pt x 204.84866pt.
 LaTeX Info: Redefining \. on input line 68.
 LaTeX Info: Redefining \% on input line 68.
 Package babel Info: Redefining spanish shorthand <<
@@ -3479,18 +3479,18 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language append on input line 68.
  [48 <./chapters/images/teoriag2_2.png> <./chapters/images/teoriag4python.png>]
-<chapters/images/teoriag5python.png, id=1092, 1165.35374pt x 456.70625pt>
+<chapters/images/teoriag5python.png, id=1091, 2330.7075pt x 913.4125pt>
 File: chapters/images/teoriag5python.png Graphic file (type png)
 <use chapters/images/teoriag5python.png>
 Package pdftex.def Info: chapters/images/teoriag5python.png  used on input line
  71.
-(pdftex.def)             Requested size: 432.47221pt x 204.85387pt.
-<chapters/images/teoriag5scratch.png, id=1093, 1126.2075pt x 537.00626pt>
+(pdftex.def)             Requested size: 432.45444pt x 204.85388pt.
+<chapters/images/teoriag5scratch.png, id=1092, 2252.415pt x 1074.0125pt>
 File: chapters/images/teoriag5scratch.png Graphic file (type png)
 <use chapters/images/teoriag5scratch.png>
 Package pdftex.def Info: chapters/images/teoriag5scratch.png  used on input lin
 e 77.
-(pdftex.def)             Requested size: 432.48283pt x 204.85931pt.
+(pdftex.def)             Requested size: 432.46565pt x 204.85112pt.
 LaTeX Info: Redefining \. on input line 81.
 LaTeX Info: Redefining \% on input line 81.
 Package babel Info: Redefining spanish shorthand <<
@@ -3519,23 +3519,23 @@ Package babel Info: Redefining spanish shorthand "?
 (babel)             in language append on input line 81.
  [49 <./chapters/images/teoriag4scratch.png> <./chapters/images/teoriag5python.
 png>]
-<chapters/images/teoriag51python.png, id=1100, 1187.43625pt x 470.75874pt>
+<chapters/images/teoriag51python.png, id=1099, 2374.8725pt x 941.5175pt>
 File: chapters/images/teoriag51python.png Graphic file (type png)
 <use chapters/images/teoriag51python.png>
 Package pdftex.def Info: chapters/images/teoriag51python.png  used on input lin
 e 84.
-(pdftex.def)             Requested size: 409.7203pt x 182.09389pt.
-<chapters/images/teoriag51scratch.png, id=1101, 1106.1325pt x 515.9275pt>
+(pdftex.def)             Requested size: 409.7022pt x 182.09389pt.
+<chapters/images/teoriag51scratch.png, id=1100, 2212.265pt x 1031.855pt>
 File: chapters/images/teoriag51scratch.png Graphic file (type png)
 <use chapters/images/teoriag51scratch.png>
 Package pdftex.def Info: chapters/images/teoriag51scratch.png  used on input li
 ne 90.
-(pdftex.def)             Requested size: 409.71834pt x 182.08882pt.
-<chapters/images/teoriag5.png, id=1102, 1171.37625pt x 526.96875pt>
+(pdftex.def)             Requested size: 409.70146pt x 182.08882pt.
+<chapters/images/teoriag5.png, id=1101, 2342.7525pt x 1053.9375pt>
 File: chapters/images/teoriag5.png Graphic file (type png)
 <use chapters/images/teoriag5.png>
 Package pdftex.def Info: chapters/images/teoriag5.png  used on input line 96.
-(pdftex.def)             Requested size: 409.71973pt x 182.09387pt.
+(pdftex.def)             Requested size: 409.70186pt x 182.09389pt.
 LaTeX Info: Redefining \. on input line 99.
 LaTeX Info: Redefining \% on input line 99.
 Package babel Info: Redefining spanish shorthand <<
@@ -3576,12 +3576,12 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language append on input line 101.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language append on input line 101.
-<chapters/images/lata.png, id=1109, 1858.945pt x 1057.9525pt>
+<chapters/images/lata.png, id=1108, 1858.945pt x 1057.9525pt>
 File: chapters/images/lata.png Graphic file (type png)
 <use chapters/images/lata.png>
 Package pdftex.def Info: chapters/images/lata.png  used on input line 108.
 (pdftex.def)             Requested size: 227.6022pt x 136.57007pt.
-<chapters/images/handkerchief.png, id=1110, 4797.925pt x 3003.22pt>
+<chapters/images/handkerchief.png, id=1109, 4797.925pt x 3003.22pt>
 File: chapters/images/handkerchief.png Graphic file (type png)
 <use chapters/images/handkerchief.png>
 Package pdftex.def Info: chapters/images/handkerchief.png  used on input line 1
@@ -3701,12 +3701,12 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language append on input line 196.
  [53]
-<chapters/images/prototipo.png, id=1189, 136.51pt x 120.45pt>
+<chapters/images/prototipo.png, id=1188, 273.02pt x 240.9pt>
 File: chapters/images/prototipo.png Graphic file (type png)
 <use chapters/images/prototipo.png>
 Package pdftex.def Info: chapters/images/prototipo.png  used on input line 202.
 
-(pdftex.def)             Requested size: 182.09486pt x 160.68167pt.
+(pdftex.def)             Requested size: 182.09486pt x 160.67065pt.
 Package babel Info: Redefining spanish shorthand <<
 (babel)             in language append on input line 209.
 Package babel Info: Redefining spanish shorthand >>
@@ -3747,12 +3747,12 @@ Package babel Info: Redefining spanish shorthand "?
 (babel)             in language append on input line 212.
 
 [54 <./chapters/images/prototipo.png>]
-<chapters/images/mbotbase.png, id=1199, 1860.9525pt x 1057.9525pt>
+<chapters/images/mbotbase.png, id=1198, 1860.9525pt x 1057.9525pt>
 File: chapters/images/mbotbase.png Graphic file (type png)
 <use chapters/images/mbotbase.png>
 Package pdftex.def Info: chapters/images/mbotbase.png  used on input line 231.
 (pdftex.def)             Requested size: 273.14923pt x 155.27985pt.
-<chapters/images/pinza.png, id=1200, 1855.93375pt x 1046.91125pt>
+<chapters/images/pinza.png, id=1199, 1855.93375pt x 1046.91125pt>
 File: chapters/images/pinza.png Graphic file (type png)
 <use chapters/images/pinza.png>
 Package pdftex.def Info: chapters/images/pinza.png  used on input line 240.
@@ -3839,11 +3839,11 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language append on input line 307.
  [57]
-<chapters/images/mallas.png, id=1279, 479.7925pt x 428.60126pt>
+<chapters/images/mallas.png, id=1278, 959.585pt x 857.2025pt>
 File: chapters/images/mallas.png Graphic file (type png)
 <use chapters/images/mallas.png>
 Package pdftex.def Info: chapters/images/mallas.png  used on input line 314.
-(pdftex.def)             Requested size: 227.6256pt x 182.09753pt.
+(pdftex.def)             Requested size: 227.61096pt x 182.09753pt.
 
 Overfull \hbox (10.8808pt too wide) in paragraph at lines 318--319
 \OT1/ptm/m/n/12 la-ta est[]e cer-ca. Pa-ra ello, im-ple-men-ta-ron las fun-cio-
@@ -3910,17 +3910,17 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language append on input line 362.
  [59]
-<chapters/images/pinzarecta.png, id=1323, 266.9975pt x 173.64874pt>
+<chapters/images/pinzarecta.png, id=1322, 533.995pt x 347.2975pt>
 File: chapters/images/pinzarecta.png Graphic file (type png)
 <use chapters/images/pinzarecta.png>
 Package pdftex.def Info: chapters/images/pinzarecta.png  used on input line 367
 .
-(pdftex.def)             Requested size: 216.2464pt x 136.57953pt.
-<chapters/images/pinzaok.png, id=1324, 290.08376pt x 242.9075pt>
+(pdftex.def)             Requested size: 216.24234pt x 136.57953pt.
+<chapters/images/pinzaok.png, id=1323, 580.1675pt x 485.815pt>
 File: chapters/images/pinzaok.png Graphic file (type png)
 <use chapters/images/pinzaok.png>
 Package pdftex.def Info: chapters/images/pinzaok.png  used on input line 374.
-(pdftex.def)             Requested size: 216.24323pt x 136.57211pt.
+(pdftex.def)             Requested size: 216.24323pt x 136.5684pt.
 
 Overfull \hbox (2.28003pt too wide) in paragraph at lines 365--379
 [][]  [] 
@@ -3993,12 +3993,12 @@ Package babel Info: Redefining spanish shorthand "?
 (babel)             in language append on input line 437.
 
 [61]
-<chapters/images/evaluadorpinza.png, id=1383, 593.21625pt x 414.54875pt>
+<chapters/images/evaluadorpinza.png, id=1382, 1186.4325pt x 829.0975pt>
 File: chapters/images/evaluadorpinza.png Graphic file (type png)
 <use chapters/images/evaluadorpinza.png>
 Package pdftex.def Info: chapters/images/evaluadorpinza.png  used on input line
  445.
-(pdftex.def)             Requested size: 341.44066pt x 204.85751pt.
+(pdftex.def)             Requested size: 341.43161pt x 204.85753pt.
 Package babel Info: Redefining spanish shorthand <<
 (babel)             in language append on input line 450.
 Package babel Info: Redefining spanish shorthand >>
@@ -4038,13 +4038,13 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language append on input line 453.
  [62 <./chapters/images/evaluadorpinza.png>]
-<chapters/images/solucionppython.png, id=1389, 308.15125pt x 268.00125pt>
+<chapters/images/solucionppython.png, id=1388, 308.15125pt x 268.00125pt>
 File: chapters/images/solucionppython.png Graphic file (type png)
 <use chapters/images/solucionppython.png>
 Package pdftex.def Info: chapters/images/solucionppython.png  used on input lin
 e 457.
 (pdftex.def)             Requested size: 227.62206pt x 197.97021pt.
-<chapters/images/solucionpscratch.png, id=1390, 520.94624pt x 593.21625pt>
+<chapters/images/solucionpscratch.png, id=1389, 520.94624pt x 593.21625pt>
 File: chapters/images/solucionpscratch.png Graphic file (type png)
 <use chapters/images/solucionpscratch.png>
 Package pdftex.def Info: chapters/images/solucionpscratch.png  used on input li
@@ -4175,28 +4175,28 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language append on input line 54.
  [65]
-<chapters/images/porteriablender.png, id=1449, 1854.93pt x 1050.92625pt>
+<chapters/images/porteriablender.png, id=1448, 1854.93pt x 1050.92625pt>
 File: chapters/images/porteriablender.png Graphic file (type png)
 <use chapters/images/porteriablender.png>
 Package pdftex.def Info: chapters/images/porteriablender.png  used on input lin
 e 69.
 (pdftex.def)             Requested size: 220.77054pt x 159.33192pt.
-<chapters/images/porteriawebsim.png, id=1450, 1137.24875pt x 587.19376pt>
+<chapters/images/porteriawebsim.png, id=1449, 2274.4975pt x 1174.3875pt>
 File: chapters/images/porteriawebsim.png Graphic file (type png)
 <use chapters/images/porteriawebsim.png>
 Package pdftex.def Info: chapters/images/porteriawebsim.png  used on input line
  76.
-(pdftex.def)             Requested size: 220.78217pt x 159.3329pt.
+(pdftex.def)             Requested size: 220.76482pt x 159.32393pt.
 
 Overfull \hbox (2.28003pt too wide) in paragraph at lines 67--81
 [][]  [] 
  []
 
-<chapters/images/pared.png, id=1451, 625.33624pt x 384.43625pt>
+<chapters/images/pared.png, id=1450, 1250.6725pt x 768.8725pt>
 File: chapters/images/pared.png Graphic file (type png)
 <use chapters/images/pared.png>
 Package pdftex.def Info: chapters/images/pared.png  used on input line 87.
-(pdftex.def)             Requested size: 273.15454pt x 182.09877pt.
+(pdftex.def)             Requested size: 273.14502pt x 182.0929pt.
 LaTeX Info: Redefining \. on input line 93.
 LaTeX Info: Redefining \% on input line 93.
 Package babel Info: Redefining spanish shorthand <<
@@ -4266,12 +4266,12 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language append on input line 136.
  [67]
-<chapters/images/teachablemachine.png, id=1510, 1188.44pt x 579.16376pt>
+<chapters/images/teachablemachine.png, id=1509, 2376.88pt x 1158.3275pt>
 File: chapters/images/teachablemachine.png Graphic file (type png)
 <use chapters/images/teachablemachine.png>
 Package pdftex.def Info: chapters/images/teachablemachine.png  used on input li
 ne 149.
-(pdftex.def)             Requested size: 364.20549pt x 182.09288pt.
+(pdftex.def)             Requested size: 364.16922pt x 182.08405pt.
 LaTeX Info: Redefining \. on input line 157.
 LaTeX Info: Redefining \% on input line 157.
 Package babel Info: Redefining spanish shorthand <<
@@ -4299,12 +4299,12 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language append on input line 157.
  [68 <./chapters/images/teachablemachine.png>]
-<chapters/images/teachablemachine2.png, id=1516, 336.25626pt x 654.445pt>
+<chapters/images/teachablemachine2.png, id=1515, 672.5125pt x 1308.89pt>
 File: chapters/images/teachablemachine2.png Graphic file (type png)
 <use chapters/images/teachablemachine2.png>
 Package pdftex.def Info: chapters/images/teachablemachine2.png  used on input l
 ine 164.
-(pdftex.def)             Requested size: 182.09389pt x 273.14743pt.
+(pdftex.def)             Requested size: 182.09389pt x 273.13745pt.
 LaTeX Info: Redefining \. on input line 175.
 LaTeX Info: Redefining \% on input line 175.
 Package babel Info: Redefining spanish shorthand <<
@@ -4386,18 +4386,18 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language append on input line 258.
  [71]
-<chapters/images/audioprueba.png, id=1612, 654.445pt x 339.2675pt>
+<chapters/images/audioprueba.png, id=1611, 1308.89pt x 678.535pt>
 File: chapters/images/audioprueba.png Graphic file (type png)
 <use chapters/images/audioprueba.png>
 Package pdftex.def Info: chapters/images/audioprueba.png  used on input line 27
 5.
-(pdftex.def)             Requested size: 364.1999pt x 182.09387pt.
-<chapters/images/diagrama2.png, id=1613, 559.08875pt x 147.04938pt>
+(pdftex.def)             Requested size: 364.18991pt x 182.0887pt.
+<chapters/images/diagrama2.png, id=1612, 1118.1775pt x 294.09875pt>
 File: chapters/images/diagrama2.png Graphic file (type png)
 <use chapters/images/diagrama2.png>
 Package pdftex.def Info: chapters/images/diagrama2.png  used on input line 283.
 
-(pdftex.def)             Requested size: 364.20529pt x 91.0485pt.
+(pdftex.def)             Requested size: 364.18823pt x 91.0485pt.
 LaTeX Info: Redefining \. on input line 289.
 LaTeX Info: Redefining \% on input line 289.
 Package babel Info: Redefining spanish shorthand <<
@@ -4506,7 +4506,7 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language append on input line 427.
  [75]
-<chapters/images/audio.png, id=1777, 1834.855pt x 952.55875pt>
+<chapters/images/audio.png, id=1776, 1834.855pt x 952.55875pt>
 File: chapters/images/audio.png Graphic file (type png)
 <use chapters/images/audio.png>
 Package pdftex.def Info: chapters/images/audio.png  used on input line 442.
@@ -4539,13 +4539,13 @@ Package babel Info: Redefining spanish shorthand "?
 (babel)             in language append on input line 446.
 
 [76]
-<chapters/images/optimizacionaudio.png, id=1785, 1019.81pt x 599.23875pt>
+<chapters/images/optimizacionaudio.png, id=1784, 1019.81pt x 599.23875pt>
 File: chapters/images/optimizacionaudio.png Graphic file (type png)
 <use chapters/images/optimizacionaudio.png>
 Package pdftex.def Info: chapters/images/optimizacionaudio.png  used on input l
 ine 455.
 (pdftex.def)             Requested size: 204.84537pt x 147.95316pt.
-<chapters/images/optimizacionaudio2.png, id=1786, 401.5pt x 290.08376pt>
+<chapters/images/optimizacionaudio2.png, id=1785, 401.5pt x 290.08376pt>
 File: chapters/images/optimizacionaudio2.png Graphic file (type png)
 <use chapters/images/optimizacionaudio2.png>
 Package pdftex.def Info: chapters/images/optimizacionaudio2.png  used on input 
@@ -4596,18 +4596,18 @@ Package babel Info: Redefining spanish shorthand "?
 (babel)             in language append on input line 474.
 [77 <./chapters/images/audio.png> <./chapters/images/optimizacionaudio.png> <./
 chapters/images/optimizacionaudio2.png>]
-<chapters/images/solucionaudio.png, id=1796, 1129.21875pt x 588.1975pt>
+<chapters/images/solucionaudio.png, id=1795, 2258.4375pt x 1176.395pt>
 File: chapters/images/solucionaudio.png Graphic file (type png)
 <use chapters/images/solucionaudio.png>
 Package pdftex.def Info: chapters/images/solucionaudio.png  used on input line 
 478.
-(pdftex.def)             Requested size: 227.61449pt x 159.336pt.
-<chapters/images/solucionaudio2.png, id=1797, 1163.34625pt x 641.39626pt>
+(pdftex.def)             Requested size: 227.61449pt x 159.32703pt.
+<chapters/images/solucionaudio2.png, id=1796, 2326.6925pt x 1282.7925pt>
 File: chapters/images/solucionaudio2.png Graphic file (type png)
 <use chapters/images/solucionaudio2.png>
 Package pdftex.def Info: chapters/images/solucionaudio2.png  used on input line
  485.
-(pdftex.def)             Requested size: 227.62378pt x 159.33083pt.
+(pdftex.def)             Requested size: 227.60603pt x 159.33083pt.
 
 Overfull \hbox (2.28003pt too wide) in paragraph at lines 476--490
 [][]  [] 
@@ -4653,12 +4653,12 @@ Package babel Info: Redefining spanish shorthand "?
 (babel)             in language append on input line 503.
 [78 <./chapters/images/solucionaudio.png> <./chapters/images/solucionaudio2.png
 >]
-<chapters/images/imagerecognition.png, id=1813, 1284.8pt x 682.55pt>
+<chapters/images/imagerecognition.png, id=1812, 2569.6pt x 1365.1pt>
 File: chapters/images/imagerecognition.png Graphic file (type png)
 <use chapters/images/imagerecognition.png>
 Package pdftex.def Info: chapters/images/imagerecognition.png  used on input li
 ne 507.
-(pdftex.def)             Requested size: 386.95251pt x 227.61678pt.
+(pdftex.def)             Requested size: 386.95251pt x 227.60637pt.
 LaTeX Info: Redefining \. on input line 518.
 LaTeX Info: Redefining \% on input line 518.
 Package babel Info: Redefining spanish shorthand <<
@@ -4730,12 +4730,12 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language append on input line 540.
 [80]
-<chapters/images/diagramaaudioout.png, id=1831, 661.97313pt x 227.85126pt>
+<chapters/images/diagramaaudioout.png, id=1830, 1323.94624pt x 455.7025pt>
 File: chapters/images/diagramaaudioout.png Graphic file (type png)
 <use chapters/images/diagramaaudioout.png>
 Package pdftex.def Info: chapters/images/diagramaaudioout.png  used on input li
 ne 578.
-(pdftex.def)             Requested size: 455.23672pt x 113.81409pt.
+(pdftex.def)             Requested size: 455.22662pt x 113.80713pt.
 LaTeX Info: Redefining \. on input line 582.
 LaTeX Info: Redefining \% on input line 582.
 Package babel Info: Redefining spanish shorthand <<
@@ -5386,7 +5386,7 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  13118 strings out of 492649
  198852 string characters out of 6129622
- 425744 words of memory out of 5000000
+ 425674 words of memory out of 5000000
  15658 multiletter control sequences out of 15000+600000
  45595 words of font info for 99 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -5401,10 +5401,10 @@ dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2018/texmf-dist/fonts
 w/times/utmr8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/times/ut
 mr8a.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
 
-Output written on main.pdf (99 pages, 84414257 bytes).
+Output written on main.pdf (99 pages, 26110785 bytes).
 PDF statistics:
- 2163 PDF objects out of 2487 (max. 8388607)
- 1828 compressed objects within 19 object streams
+ 2162 PDF objects out of 2487 (max. 8388607)
+ 1827 compressed objects within 19 object streams
  995 named destinations out of 1000 (max. 500000)
  950 words of extra memory for PDF output out of 10000 (max. 10000000)
 
