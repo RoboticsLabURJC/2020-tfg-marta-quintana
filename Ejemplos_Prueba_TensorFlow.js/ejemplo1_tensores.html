@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="shortcut icon" href="favicon.ico">
+        <title>TENSORES</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs/dist/tf.min.js"> </script>
+    </head>
+    <body>
+        <script>
+        tf.tensor([1,2,3,4]).print(); //arreglo valores tensor:
+       console.log (  tf.tensor([1, 2, 3, 4])  );
+       tf.tensor([[1.5, 2],[3, 4]]).print();  //matriz arreglo doble
+       console.log (  tf.tensor([[1, 2],[3, 4]])  );
+       console.log (  tf.tensor([[1.5, 2], [3, 4]],null,"int32")  );
+       tf.tensor([[1.5, 2],[3, 4]],null,"int32").print();
+       tf.tensor([1, 2, 3, 4 ], [2, 2]).print();
+       console.log (  tf.tensor([1, 2, 3, 4 ], [2, 2]) );
+
+       console.log (  tf.scalar(3.14)  ); //numero del 1 al infinito
+       console.log (  tf.tensor(3.14)  );
+
+       console.log (  tf.tensor1d([1,2,3]));
+
+       const val=[];
+          for (i=0;i<30;i++){
+                val[i]=Math.random(0,100);
+            }
+          tf.tensor3d(val,[5,3,2]).print(); // 5 matrices de 3x2 (modelo 3d)
+        </script>
+    </body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>WebSim - Drone teleoperator</title>
+    <meta charset="utf-8" />
+    <!-- Physics for A-Frame VR -->
+    <link rel="stylesheet" type="text/css" href="css/teleoperators.css"></link>
+    <script src="build/websim.bundle.js"></script>
+    <!-- <script src="../simcore/utils/config.js"></script> -->
+    <script>var config_file="config/drone.json";</script>
+    <script src="js/teleop.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/speech-commands"></script>
+  </head>
+  <body onload="listen()">
+    <nav id="navbar">
+      <a href="/index.html" ><img src="icons/jderobot.svg" alt="JdeRobot logo" style="width:70px; height:70px; margin-top: 6px;" /></a>
+      <div id="nav-button-container">
+        <button onclick id="cambtn"><img src="icons/play-camera-icon.png" alt="Stop button image"/></button>
+
+    </nav>
+    <div id="container">
+      <div id="myIFrame">
+        <script type="text/javascript" src="js/opencv3.3.1.js" ></script>
+      </div>
+      <div id="scriptContainer"></div>
+      <div id="right-container">
+        <div id="audio-regonition" >
+
+          <div>Teachable Machine Audio Model</div>
+          <button id="connection" onclick="Connect_To_Robot()">Connect to Robot</button>
+          <h3 id = "prediction" > The most probable word: </h3>
+          <!--<div  id="label-container"  style="background-color: #D3D3D3;"></div>!-->
+
+          <script type="text/javascript" src="js/audio.js">
+          </script>
+        </div>
+        <div id="cameras" style="display:inline-flex;">
+          <div id="cameras" style="display:inline-flex;">
+            <div id="robotCam" style="margin: 3px;">
+              <p>Robot Camera</p>
+              <div id="spectatorDiv" style="display: inline"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,107 @@
+
+
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Prueba tensorflow</title>
+        <meta charset="UTF-8">
+        <meta name="title" content="Prueba tensorflow">
+        <!-- Cargamos TensorFlow.js -->
+        <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs/dist/tf.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.min.js"></script>
+
+    </head>
+    <body>
+        <table border="0">
+            <tbody>
+                <tr>
+                    <td>Repeticiones</td>
+                    <td><input type="number" id="repeticiones" value="100"/></td>
+                </tr>
+                <tr>
+                    <td>Valor de x</td>
+                    <td><input type="number" id="nuevoValX" value="10"/></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td> <input type="button" value="Calcular" name="calcular" id="calcular" onclick="learnLinear()" /> </td>
+                </tr>
+                <tr>
+                    <td>Valor de Y</td>
+                    <td> <span id="valy"></span> </td>
+                </tr>
+                <tr>
+                    <td>Epoca</td>
+                    <td> <span id="epocas"></span> </td>
+                </tr>
+            </tbody>
+        </table>
+        <canvas id="myChart" width="400" height="400"></canvas>
+        <script>
+            // Definimos los parametros en x y en y
+            var valX = [1  , 2  , 3 , 4 , 5  , 6];
+            var valY = [100, 110, 90, 80, 150, 130];
+            var datosGrafica=deArrayAMatriz(valX, valY);
+            // Inicializamos la Grafica
+            var grafica = new Chart(document.getElementById("myChart"), {
+                type: 'scatter',
+                data: {
+                    datasets: [{
+                            label: "Ventas",
+                            data: datosGrafica,
+                            borderColor: "red",
+                        }]
+                },
+                options: {
+                    responsive: false
+
+                }
+            });
+
+            //Creamos una funcion asincrona (para que se active hasta que termine de cargar la pagina)
+            async function learnLinear() {
+
+                //Definimos el modelo que sera de regresion lineal
+                const model = tf.sequential();
+                //Agregamos una capa densa porque todos los nodos estan conectado entre si
+                model.add(tf.layers.dense({units: 1, inputShape: [1]}));
+
+                // Compilamos el modelo con un sistema de perdida de cuadratico y optimizamos con sdg
+                model.compile({loss: 'meanSquaredError', optimizer: 'sgd'});
+                // Creamos los tensores para x y para y
+                const xs = tf.tensor2d(valX, [6, 1]);
+                const ys = tf.tensor2d(valY, [6, 1]);
+
+                // Obtenemos la epocas (Las veces que se repetira para encontrar el valor de x)
+                var epocas = +document.getElementById("repeticiones").value;
+                // Obtenemos el valor de x
+                var nuevoValX = +document.getElementById("nuevoValX").value;
+
+                // Ciclo que va ir ajustando el calculo
+                for (i = 0; i < epocas; i++) {
+                    // Entrenamos el modelo una sola vez (pero como esta dentro de un ciclo se va ir entrenando por cada bucle)
+                    await model.fit(xs, ys, {epochs: 1});
+                    // Obtenemos el valor de Y cuando el valor de x sea
+                    var prediccionY = model.predict(tf.tensor2d([nuevoValX], [1, 1])).dataSync()[0];
+                    // Escribimos el valor de y
+                    document.getElementById("valy").innerText = prediccionY;
+                    // Escribimos en que epoca vamos
+                    document.getElementById("epocas").innerText = i+1;
+                    // Redibujamos la grafica con el nuevo valor de X y Y
+                    datosGrafica.push({x:nuevoValX,y:prediccionY});
+                    grafica.data.datasets[0].data = datosGrafica;
+                    grafica.update();
+                }
+
+            }
+            function deArrayAMatriz(arx, ary) {
+                var data = [];
+                for (i = 0; i < arx.length; i++) {
+                    data.push({x: arx[i], y: ary[i]});
+                }
+                return data;
+            }
+
+        </script>
+    </body>
+</html>

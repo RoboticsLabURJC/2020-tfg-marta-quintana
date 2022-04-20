@@ -1,0 +1,30 @@
+{% load staticfiles %}
+
+<html>
+  <link rel="stylesheet" href="{% static 'styles.css'%}" type="text/css">
+  <link rel="shortcut icon" src="{% static 'logo.ico'%}" type="image/x-icon">
+  <link rel="icon" src="{% static 'logo.ico'%}" type="image/x-icon">
+  <script src="{% static 'event.js'%}" defer></script>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Prueba1</title>
+  </head>
+  <body>
+    <audio id="audio" src="{% static 'A_Long_Cold_Sting.mp3'%}" controls loop></audio>
+
+    <button id='boton' onclick="reproducir()" type="button">Click Me!</button>
+
+
+    <div class="controls">
+     <button type="button" id="mic">Get Microphone</button>
+     <button type="button" id="record" hidden>Record</button>
+   </div>
+   <ul id="recordings"></ul>
+
+
+   <canvas></canvas>
+
+  </body>
+</html>

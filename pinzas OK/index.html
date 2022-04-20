@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <script src="//cdn.rawgit.com/donmccurdy/aframe-physics-system/v4.0.1/dist/aframe-physics-system.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/aframe-physics-system@1.4.0/dist/aframe-physics-system.min.js"></script>
+    <script src="fisicas.js"></script>
+    <script src="pinza.js"></script>
+  </head>
+  <body>
+    <a-scene id="miescena" physics="restitution:0.5; debug: true; gravity: 0">
+      <a-plane id="floor" position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#2E4053" static-body></a-plane>
+      <a-assets>
+        <a-asset-item id="mb" src="modelos/mbot_base.gltf"></a-asset-item>
+        <a-asset-item id="pala" src="modelos/gripper_left.gltf"></a-asset-item>
+
+      </a-assets>
+        <a-entity id = "mbot" position="0 0.5 -3" rotation="0 90 0" scale ="4 4 4" gltf-model="#mb" body="type: dynamic; mass: 10000; shape: none;"
+                           shape__main="shape: box;
+                           halfExtents: 0.06 0.03 0.06;
+                           offset: -0.03 0.03 0;">
+        </a-entity>
+        <!--<a-box id= "pala" position="1 0.5 -3" rotation="0 90 0" scale ="5 5 5" gltf-model="#pala" body="type: dynamic; mass: 5; shape: none;"
+                           shape__main="shape: box;
+                           halfExtents: 0.03 0.03 0.03;
+                           offset: -0.0 0.0 0;"
+                           shape__handle="shape: box;
+                           halfExtents: 0.01 0 0.01;
+                           offset: 0.1 0.03 0;">
+        </a-box>-->
+
+        <a-box id="izquierda" position="-0.1 0.6 -3.3" rotation="0 0 0" color="#FFC300" scale = "0.05 0.05 0.3" body="type: dynamic; mass: 10000;"></a-box>
+        <a-box id="derecha" position="0.1 0.6 -3.3" rotation="0 0 0" color="#FFC300" scale = "0.05 0.05 0.3"  body="type: dynamic; mass: 10000;"></a-box>-!-->
+      <a-cylinder id="objeto" height="1" radius="0.5" position="0 0.5 -5" rotation="0 0 0" color="#FFFFFF" scale = "0.1 0.1 0.1" body="type: dynamic; mass: 100; shape:cylinder"></a-cylinder>
+      <a-sky color="#ECECEC"></a-sky>
+    </a-scene>
+  </body>
+</html>

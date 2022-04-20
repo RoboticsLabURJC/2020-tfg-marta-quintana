@@ -1,0 +1,28 @@
+<html>
+  <head>
+<script src="https://aframe.io/releases/1.1.0/aframe.min.js"></script>
+   
+<script src="https://cdn.rawgit.com/donmccurdy/aframe-extras/v6.1.0/dist/aframe-extras.min.js"></script>
+
+
+  </head>
+  <body>
+
+<a-scene>
+  <a-assets>
+    <a-asset-item id="cube" src="cubo.gltf"></a-asset-item>
+  </a-assets>
+
+  <a-entity gltf-model="#cube" animation-mixer></a-entity>
+      <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4" shadow></a-plane>
+   
+ 
+<a-entity rotation="0 0 0" animation="property: rotation; to: 0 360 0; loop: true; dur: 10000">
+        <a-sphere position="5 1 -5" color="mediumseagreen"></a-sphere>
+
+</a-entity>
+ <a-plane position="0 0 -4" rotation="-90 0 0" width="15" height="6" color="green"></a-plane>
+
+</a-scene>
+  </body>
+</html>

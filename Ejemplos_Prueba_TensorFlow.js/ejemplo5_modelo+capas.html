@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <link rel="shortcut icon" href="favicon.ico">
+       <title>MODELO + CAPAS</title>
+      <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs/dist/tf.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/p5.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/addons/p5.dom.js"></script>
+  </head>
+  <body>
+     <script>
+       //MODELO DESCUBIR VALORES DE LA RECTA
+      //Creando el  modelo
+       const modelo = tf.sequential();
+
+       //Creaamos una capa oculta de 4 unidades
+       const oculta = tf.layers.dense({
+          units:4,
+          inputShape:[2],
+          activation:'sigmoid'
+       });
+      //Metemos la capa oculta al modelo
+       modelo.add(oculta);
+
+       //Creamos la capa de salida
+       const salida =tf.layers.dense({
+         units: 1,
+         activation:'sigmoid'
+       });
+       //Metemos la capa de salida en el modelo
+       modelo.add(salida);
+
+       //Creamos las opciones del sgd
+       const sgdOpciones = tf.train.sgd(0.1);
+
+       //Compilamos el modelo
+
+       modelo.compile({
+         //Le asignamos la optimización
+         optimizer:sgdOpciones,
+         //Asignamos la forma de reducir la perdida
+         loss: tf.losses.meanSquaredError
+       });
+
+       //Nuestros datos (los que conocemos
+       const x1 = tf.tensor2d([
+            [0,0],
+            [0.2,0.2],
+            [0.4,0.4],
+       ]);
+
+       //Datos que no sabemos
+       const x2 = tf.tensor2d([
+            [0.1],
+            [0.3],
+            [0.5],
+       ]);
+       async function intento(){
+         for(i=0;i<500;i++){ //para ver como se comporta con más repeticiones menores perdidas hay y más real es el valor
+           const respuesta= await modelo.fit(x1,x2,{suffle:true,epochs:100}); //hace los calculos con todas las capas
+           //suffle toma los datos y los aleaotiza, epochs= epocas cantidad de repeticiones
+           //console.log( respuesta);
+           console.log( respuesta.history.loss[0]); //necesitamos perdidas cercanas a 0
+         }
+       }
+
+       //then cuando termine la funcion intento que haga lo siguiente
+       intento().then(()=>{
+         const salida=modelo.predict(x1);
+         salida.print();
+       });
+
+
+     </script>
+  </body>
+</html>
